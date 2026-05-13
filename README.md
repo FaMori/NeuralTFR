@@ -10,13 +10,22 @@ NeuralTFR is an **encoder-decoder GRU ensemble** trained with a multi-quantile l
 
 ## Table of Contents
 
-1. [Key Features](#key-features)
-2. [Repository Structure](#repository-structure)
-3. [Setup and Installation](#setup-and-installation)
-4. [Quick-Start Tutorial](#quick-start-tutorial)
-5. [Interactive Visualizer](#interactive-visualizer)
-6. [Citing this Work](#citing-this-work)
-7. [License](#license)
+1. [Motivation](#motivation)
+2. [Key Features](#key-features)
+3. [Repository Structure](#repository-structure)
+4. [Setup and Installation](#setup-and-installation)
+5. [Quick-Start Tutorial](#quick-start-tutorial)
+6. [Interactive Visualizer](#interactive-visualizer)
+7. [Citing this Work](#citing-this-work)
+8. [License](#license)
+
+---
+
+## Motivation
+
+Total Fertility Rate (TFR) projections underpin population forecasts that guide decades of demographic, public health, and economic policy. Established approaches — from the UN's probabilistic Bayesian methods to expert-based scenario models — either impose strong parametric assumptions about convergence dynamics or lack formal uncertainty quantification. At the same time, the empirical record of fertility transitions has grown rich enough to support purely data-driven learning.
+
+NeuralTFR addresses this gap by training directly on a harmonized global panel of TFR series and learning temporal dynamics without committing to a pre-specified functional form for the demographic transition. By combining an encoder-decoder GRU ensemble with a multi-quantile loss, the framework produces calibrated prediction intervals that capture the heterogeneity of national trajectories. Systematic benchmarking against WPP, WCDE, and bayesTFR projections positions NeuralTFR as a principled, data-driven complement to established demographic methods.
 
 ---
 
@@ -132,16 +141,7 @@ For the full list of CLI flags and a more detailed walkthrough, see [compute/GUI
 
 ## Interactive Visualizer
 
-[docs/](docs/) contains a small static web app (HTML + CSS + vanilla JS) that loads the model's forecasts and lets the user explore predictions interactively. It can be:
-
-- **Opened locally** by serving the folder with any static server, e.g. `python -m http.server` from `docs/` and visiting `http://localhost:8000`.
-- **Deployed as a GitHub Pages site** by enabling Pages → Source: `main` branch → `/docs` folder in the repository settings.
-
-To regenerate the bundled data the visualizer consumes, run:
-
-```bash
-python docs/prepare_data.py
-```
+**WORKING IN PROGRESS**
 
 ---
 
