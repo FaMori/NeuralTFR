@@ -1,0 +1,95 @@
+\tikzset{
+	every picture/.style={>=Stealth, node distance = 1.8cm and 0.8cm}, %<-- 1. Disminuida la distancia horizontal y vertical
+	encblock/.style = {rectangle, rounded corners=3pt,
+		draw=cgreen!60!black, fill=cgreen!20,
+		minimum width=1.7cm, minimum height=1.2cm,
+		font=\footnotesize},
+	decblock/.style = {rectangle, rounded corners=3pt,
+		draw=cblue!70!black, fill=cblue!20,
+		minimum width=1.7cm, minimum height=1.2cm,
+		font=\footnotesize},
+	io/.style       = {font=\small\itshape},
+	outblock/.style = {rectangle, rounded corners=2pt,
+		draw=cblue!60!black, fill=cblue!5,
+		minimum width=1.3cm, minimum height=0.8cm,
+		font=\footnotesize},
+	hstate/.style   = {font=\footnotesize\itshape}
+}
+
+\begin{tikzpicture}
+	
+	%----------- ENCODER ------------
+	% Celdas (se definen primero para alinear las entradas debajo)
+	\node[encblock] (E1) {GRU};
+	\node[encblock, right=of E1] (E2) {GRU};
+	
+	% Entradas (alineadas con sus celdas correspondientes)
+	\node[io, below=1cm of E1] (xm1) {$X_{t-1}$};
+	\node[io, below=1cm of E2] (xt) {$X_{t}$}; %<-- 2. AHORA ALINEADO con E2
+	
+	% Estado oculto inicial
+	\node[io, left=of E1] (h0) {};
+	\draw[->] (h0) -- (E1);
+	
+	% Flechas internas
+	\draw[->] (xm1) -- (E1);
+	\draw[->] (xt)  -- (E2);
+	\draw[->] (E1)  -- (E2);
+	
+	% Vector de contexto
+	\node[rectangle, draw=gray!80, fill=gray!30,
+	minimum width=1.4cm, minimum height=2.0cm,
+	right=1cm of E2] (ctx) {Context}; %<-- 3. Distancia reducida
+	\draw[->] (E2) -- (ctx);
+	
+	%----------- Estados ocultos ENCODER ----------
+	\node[hstate] at ($(h0)!0.25!(E1)+(0,0.4)$) {$h_{t-2}$};
+	\node[hstate] at ($(E1)!0.5!(E2)+(0,0.4)$) {$h_{t-1}$};
+	
+	\node[above=1.5cm of ctx] (actx) {};
+	
+	%----------- DECODER ------------
+	% Primera celda
+	\node[decblock, right= 0.8cm of actx] (D0) {GRU}; %<-- 4. Posicionamiento relativo más limpio
+	% Siguientes
+	\node[decblock, right=of D0] (D1) {GRU};
+	\node[decblock, right=of D1] (D2) {GRU};
+	
+	% Flecha del contexto
+	\draw[->] (ctx) to[out=90, in=180] (D0);
+	
+	% Salidas
+	\node[outblock, above=0.8cm of D0] (Y1) {$\hat{y}_{t+1}$}; %<-- 5. Distancia vertical reducida
+	\node[outblock, above=0.8cm of D1] (Y2) {$\hat{y}_{t+2}$};
+	\node[outblock, above=0.8cm of D2] (Y3) {$\hat{y}_{t+3}$};
+	\draw[->] (D0) -- (Y1);
+	\draw[->] (D1) -- (Y2);
+	\draw[->] (D2) -- (Y3);
+	
+	% Cadena interna del decoder
+	\draw[->] (D0) -- (D1);
+	\draw[->] (D1) -- (D2);
+	
+	% Token inicial
+	\node[io, below=0.65cm of D0] (startTok) {$y_{t}$}; %<-- 5. Distancia vertical reducida
+	\draw[->] (startTok.north) -- (D0.south);
+	
+	%----------- Estados ocultos DECODER ----------
+	\node[hstate] at ($(D0)!0.5!(D1)+(0,0.35)$) {$h_{t+1}$};
+	\node[hstate] at ($(D1)!0.5!(D2)+(0,0.35)$) {$h_{t+2}$};
+	
+	%----------- Autoregresión ----------
+	\draw[->, dashed] (Y1.east) to[out=0,in=-135] (D1.south);
+	\draw[->, dashed] (Y2.east) to[out=0,in=-135] (D2.south);
+	
+	%----------- Corchete para la secuencia de entrada ----------
+	\draw[decorate, decoration={brace, amplitude=5pt, mirror}]
+	($(xm1.south west)+(-0.15,-0.15)$) -- ($(xt.south east)+(0.15,-0.15)$)
+	node[midway, below=0.4cm, font=\small\itshape] {Historical input sequences};
+	
+	%----------- CORCHETE PARA LAS PREDICCIONES ----------
+	\draw[decorate, decoration={brace, amplitude=5pt}]
+	($(Y1.north west)+(0,0.15)$) -- ($(Y3.north east)+(0,0.15)$)
+	node[midway, above=0.4cm, font=\small\itshape] {Forecasting};
+	
+\end{tikzpicture}

@@ -1,0 +1,91 @@
+\begin{tikzpicture}[
+	% Estilo para las cajas de tiempo
+	inputbox/.style={
+		draw,
+		rectangle,
+		draw=cblue!50,
+		fill=cblue!30,
+		minimum width=1.4cm,
+		minimum height=1.2cm,
+		align=center,
+		font=\scriptsize\bfseries
+	},
+	labelbox/.style={
+		draw,
+		rectangle,
+		draw=cgreen!50,
+		fill=cgreen!30,
+		minimum width=1.4cm,
+		minimum height=1.2cm,
+		align=center,
+		font=\scriptsize\bfseries
+	},
+	% Estilo para las llaves decorativas
+	brace/.style={
+		decorate,
+		decoration={brace, amplitude=6pt, raise=4pt},
+		line width=0.8pt
+	},
+	% Estilo para el texto sobre las llaves
+	bracelabel/.style={
+		font=\small,
+		above=10pt
+	}
+	]
+	
+	% --- Ventana de Datos #1 ---
+	\begin{scope}[local bounding box=window1]
+		% Nodos de la izquierda (Input)
+		\node[inputbox] (t0) {$\bm{t-L_{enc}+1}$};
+		\node[inputbox, right=0 of t0] (t1) {$\bm{t-L_{enc}+2}$};
+		\node[inputbox, right=0 of t1] (dots1a) {\dots};
+		\node[inputbox, right=0 of dots1a] (t22) {$\bm{t-1}$};
+		\node[inputbox, right=0 of t22] (t23) {$\bm{t}$};
+		
+		% Nodos de la derecha (Label)
+		\node[labelbox, right=0 of t23] (t24) {$\bm{t+1}$};
+		\node[labelbox, right=0 of t24] (t25) {$\bm{t+2}$};
+		\node[labelbox, right=0 of t25] (dots1b) {\dots};
+		\node[labelbox, right=0 of dots1b] (t46) {$\bm{t+L_{pred}-1}$};
+		\node[labelbox, right=0 of t46] (t47) {$\bm{t+L_{pred}}$};
+		
+		% Llaves superiores (Input y Label)
+		\draw[brace] (t0.north west) -- (t23.north east) 
+		node[midway, bracelabel] {Input};
+		\draw[brace] (t24.north west) -- (t47.north east) 
+		node[midway, bracelabel] {Label};
+		
+		% Llave inferior (Data window)
+		\draw[brace] (t47.south east) -- (t0.south west) 
+		node[midway, below=10pt, font=\small] {Window \#1};
+	\end{scope}
+	
+	
+	% --- Ventana de Datos #2 ---
+	\begin{scope}[yshift=-3.5cm, local bounding box=window2]
+		% Nodos de la izquierda (Input)
+		\node[inputbox] (t0) {$\bm{t-L_{enc}+2}$};
+		\node[inputbox, right=0 of t0] (t1) {$\bm{t-L_{enc}+3}$};
+		\node[inputbox, right=0 of t1] (dots1a) {\dots};
+		\node[inputbox, right=0 of dots1a] (t22) {$\bm{t}$};
+		\node[inputbox, right=0 of t22] (t23) {$\bm{t+1}$};
+		
+		% Nodos de la derecha (Label)
+		\node[labelbox, right=0 of t23] (t24) {$\bm{t+2}$};
+		\node[labelbox, right=0 of t24] (t25) {$\bm{t+3}$};
+		\node[labelbox, right=0 of t25] (dots1b) {\dots};
+		\node[labelbox, right=0 of dots1b] (t46) {$\bm{t+L_{pred}}$};
+		\node[labelbox, right=0 of t46] (t47) {$\bm{t+L_{pred}+1}$};
+		
+		% Llaves superiores (Input y Label)
+		\draw[brace] (t0.north west) -- (t23.north east) 
+		node[midway, bracelabel] {Input};
+		\draw[brace] (t24.north west) -- (t47.north east) 
+		node[midway, bracelabel] {Label};
+		
+		% Llave inferior (Data window)
+		\draw[brace] (t47.south east) -- (t0.south west) 
+		node[midway, below=10pt, font=\small] {Window \#2};
+	\end{scope}
+	
+\end{tikzpicture}
