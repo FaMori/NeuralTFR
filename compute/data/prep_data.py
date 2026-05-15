@@ -10,7 +10,7 @@ import pandas as pd
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 
-DEFAULT_EMPIRICAL_PATH = Path("data/raw/EMPIRICAL_TFR_EXT.csv")
+DEFAULT_EMPIRICAL_PATH = Path("data/raw/EMPIRICAL_TFR.csv")
 DEFAULT_INCLUDE_PATH = Path("data/include_2024.txt")
 
 SMOOTH_FENCE_K = 1.5
