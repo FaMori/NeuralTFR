@@ -141,7 +141,23 @@ For the full list of CLI flags and a more detailed walkthrough, see [compute/GUI
 
 ## Interactive Visualizer
 
-**WORKING IN PROGRESS**
+The interactive dashboard is available through GitHub Pages at
+[https://famori.github.io/NeuralTFR](https://famori.github.io/NeuralTFR).
+It provides a lightweight companion to the reproducibility pipeline and the
+paper figures, making it easier to inspect country-level TFR trajectories and
+compare alternative forecast sources without running the training code.
+
+The visualizer supports:
+
+- Country search across the 195 series included in the NeuralTFR forecast set.
+- Time-series comparison of historical TFR estimates, raw empirical points, and
+  forecast trajectories from NeuralTFR and benchmark models.
+- Model toggles and an adjustable forecast horizon for inspecting how projected
+  paths change over time.
+- A map view for comparing forecast levels across countries at a selected
+  horizon.
+
+The static site is served from [docs/](docs/). 
 
 ---
 

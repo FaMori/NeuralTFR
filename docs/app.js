@@ -54,7 +54,6 @@
   const $chartCanvas = document.getElementById("main-chart");
   const $chartLegend = document.getElementById("chart-legend");
   const $resetZoom = document.getElementById("btn-reset-zoom");
-  const $countryCount = document.getElementById("country-count");
   const $horizonSlider = document.getElementById("horizon-slider");
   const $horizonValue = document.getElementById("horizon-value");
 
@@ -124,8 +123,6 @@
     if (allModels.has("NeuralTFR_New")) enabledModels.add("NeuralTFR_New");
     //if (allModels.has("WPP")) enabledModels.add("WPP");
     if (enabledModels.size === 0 && allModels.size > 0) enabledModels.add(Array.from(allModels)[0]);
-
-    $countryCount.textContent = DATA.countries.length;
 
     // Set horizon slider limits
     if (DATA.modelYearRanges) {
