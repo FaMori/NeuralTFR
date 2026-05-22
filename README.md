@@ -1,10 +1,8 @@
 # NeuralTFR
 
-**WORKING IN PROGRESS**
+Reproducibility code for the paper **"NeuralTFR: A neural ensemble approach to global Total Fertility Rate forecasting"**. The repository includes the forecasting model, harmonized data, evaluation and forecast outputs, manuscript PDF, and an interactive visualizer.
 
-Reproducibility code for the paper **"NeuralTFR: A neural ensemble approach to global Total Fertility Rate forecasting"** (Ciganda et al). The repository ships the model, the harmonized dataset, the scripts that produce every figure and metric in the manuscript, and an interactive visualizer.
-
-NeuralTFR is an **encoder-decoder GRU ensemble** trained with a multi-quantile loss to forecast country-level TFR series. It is evaluated against a holdout period and benchmarked against established projections (WPP, WCDE, bayesTFR).
+NeuralTFR is an **encoder-decoder GRU ensemble** trained with a multi-quantile loss to forecast country-level Total Fertility Rate (TFR) series. It is evaluated against a historical holdout period and benchmarked against established projections (WPP, WCDE, bayesTFR) and a naive-drift baseline.
 
 ---
 
@@ -16,14 +14,14 @@ NeuralTFR is an **encoder-decoder GRU ensemble** trained with a multi-quantile l
 4. [Setup and Installation](#setup-and-installation)
 5. [Quick-Start Tutorial](#quick-start-tutorial)
 6. [Interactive Visualizer](#interactive-visualizer)
-7. [Citing this Work](#citing-this-work)
-8. [License](#license)
+7. [Anonymization Note](#anonymization-note)
+8. [License and Data Sources](#license-and-data-sources)
 
 ---
 
 ## Motivation
 
-Total Fertility Rate (TFR) projections underpin population forecasts that guide decades of demographic, public health, and economic policy. Established approaches — from the UN's probabilistic Bayesian methods to expert-based scenario models — either impose strong parametric assumptions about convergence dynamics or lack formal uncertainty quantification. At the same time, the empirical record of fertility transitions has grown rich enough to support purely data-driven learning.
+Total Fertility Rate (TFR) projections underpin population forecasts that guide decades of demographic, public health, and economic policy. Established approaches - from the UN's probabilistic Bayesian methods to expert-based scenario models - either impose strong parametric assumptions about convergence dynamics or lack formal uncertainty quantification. At the same time, the empirical record of fertility transitions has grown rich enough to support purely data-driven learning.
 
 NeuralTFR addresses this gap by training directly on a harmonized global panel of TFR series and learning temporal dynamics without committing to a pre-specified functional form for the demographic transition. By combining an encoder-decoder GRU ensemble with a multi-quantile loss, the framework produces calibrated prediction intervals that capture the heterogeneity of national trajectories. Systematic benchmarking against WPP, WCDE, and bayesTFR projections positions NeuralTFR as a principled, data-driven complement to established demographic methods.
 
@@ -36,41 +34,34 @@ NeuralTFR addresses this gap by training directly on a harmonized global panel o
 - **Data augmentation** by oversampling recent windows of low-TFR series.
 - **Two execution modes**: historical evaluation against a holdout, and future forecasting up to user-defined horizons.
 - **Baseline comparison** against WPP, WCDE, bayesTFR and a naive-drift benchmark.
-- **Interactive visualizer** ([docs/](docs/)) deployable as a GitHub Pages site.
+- **Interactive visualizer** ([docs/](docs/)).
 
 ---
 
 ## Repository Structure
 
-```
+```text
 NeuralTFR/
-├── compute/                   # Reproducibility code
-│   ├── run_neuraltfr.py       # CLI entry-point (eval / forecast / all)
-│   ├── neuraltfr.py           # Model wrapper and training pipeline
-│   ├── common/                # Dataset, preprocessing, trainer, losses, evaluation, Optuna
-│   ├── models/                # ENC_DEC_GRU and NAIVE_DRIFT baselines
-│   ├── data/                  # Raw and harmonized TFR series (WPP, GBD, empirical)
-│   ├── results/               # Outputs reproducing the figures and metrics of the paper
-│   └── GUIDE.md               # Short usage guide
-├── docs/                      # Interactive visualizer
-├── paper/                     # Manuscript: LaTeX source, bibliography, figures, compiled PDF
-├── environment.yml            # Conda environment specification
-├── LICENSE                    # Apache 2.0
-└── README.md
+|-- compute/                   # Reproducibility code
+|   |-- run_neuraltfr.py       # CLI entry point (eval / forecast / all)
+|   |-- neuraltfr.py           # Model wrapper and training pipeline
+|   |-- common/                # Dataset, preprocessing, trainer, losses, evaluation, Optuna
+|   |-- models/                # ENC_DEC_GRU and NAIVE_DRIFT baselines
+|   |-- data/                  # Raw and harmonized TFR series (WPP, GBD, empirical)
+|   |-- results/               # Precomputed outputs, figures, predictions, and metrics
+|   `-- GUIDE.md               # Short usage guide
+|-- app/                      # Interactive visualizer
+|-- paper/                     # Manuscript PDF
+|-- environment.yml            # Conda environment specification
+|-- LICENSE                    # Apache 2.0
+`-- README.md
 ```
 
 ---
 
 ## Setup and Installation
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/<your-org>/NeuralTFR.git
-cd NeuralTFR
-```
-
-### 2. Create the Conda environment
+### 1. Create the Conda environment
 
 The environment is fully specified in [environment.yml](environment.yml) and pins Python 3.12 with PyTorch, scikit-learn, scipy, matplotlib, seaborn, joblib, tqdm and optuna.
 
@@ -79,7 +70,7 @@ conda env create -f environment.yml
 conda activate neuraltfr
 ```
 
-### 3. Verify the install
+### 2. Verify the install
 
 From the repository root, run a short sanity check:
 
@@ -109,9 +100,9 @@ python run_neuraltfr.py --mode eval
 
 Outputs:
 
-- `results/evaluation/metrics/metrics.csv` — per-series scores (RMSE, RMSSE, sMAPE, CRPS, 90% coverage and MPIW).
-- `results/evaluation/predictions/predictions.csv` — point and quantile predictions.
-- `results/evaluation/predictions/plot_evaluation.pdf` — per-country prediction plots.
+- `results/evaluation/metrics/metrics.csv` - per-series scores (RMSE, RMSSE, sMAPE, CRPS, 90% coverage and MPIW).
+- `results/evaluation/predictions/predictions.csv` - point and quantile predictions.
+- `results/evaluation/predictions/plot_evaluation.pdf` - per-country prediction plots.
 
 ### Run a forecast to the future
 
@@ -141,32 +132,17 @@ For the full list of CLI flags and a more detailed walkthrough, see [compute/GUI
 
 ## Interactive Visualizer
 
-The interactive dashboard is available through GitHub Pages at
-[https://famori.github.io/NeuralTFR](https://famori.github.io/NeuralTFR).
-It provides a lightweight companion to the reproducibility pipeline and the
-paper figures, making it easier to inspect country-level TFR trajectories and
-compare alternative forecast sources without running the training code.
+The interactive dashboard is available from [docs/](docs/). It provides a lightweight companion to the reproducibility pipeline and the paper figures, making it easier to inspect country-level TFR trajectories and compare alternative forecast sources without running the training code.
 
 The visualizer supports:
 
 - Country search across the 195 series included in the NeuralTFR forecast set.
-- Time-series comparison of historical TFR estimates, raw empirical points, and
-  forecast trajectories from NeuralTFR and benchmark models.
-- Model toggles and an adjustable forecast horizon for inspecting how projected
-  paths change over time.
-- A map view for comparing forecast levels across countries at a selected
-  horizon.
-
-The static site is served from [docs/](docs/). 
+- Time-series comparison of historical TFR estimates, raw empirical points, and forecast trajectories from NeuralTFR and benchmark models.
+- Model toggles and an adjustable forecast horizon for inspecting how projected paths change over time.
+- A map view for comparing forecast levels across countries at a selected horizon.
 
 ---
 
-## Citing this Work
+## License and Data Sources
 
-**WORKING IN PROGRESS**
-
----
-
-## License
-
-This project is released under the [Apache License 2.0](LICENSE).
+The code in this project is released under the [Apache License 2.0](LICENSE). Data files derived from external sources are redistributed only for reproducibility and remain subject to the terms of their original providers.
