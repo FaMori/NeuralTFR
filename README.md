@@ -50,7 +50,7 @@ NeuralTFR/
 |   |-- data/                  # Raw and harmonized TFR series (WPP, GBD, empirical)
 |   |-- results/               # Precomputed outputs, figures, predictions, and metrics
 |   `-- GUIDE.md               # Short usage guide
-|-- app/                      # Interactive visualizer
+|-- doc/                       # Interactive visualizer
 |-- environment.yml            # Conda environment specification
 |-- LICENSE                    # Apache 2.0
 `-- README.md
