@@ -1,6 +1,6 @@
 # NeuralTFR
 
-Reproducibility code for the paper **"NeuralTFR: A neural ensemble approach to global Total Fertility Rate forecasting"**. The repository includes the forecasting model, harmonized data, evaluation and forecast outputs, and an interactive visualizer.
+Reproducibility code for the paper **"Anticipating Continued Global Fertility Decline via Neural Forecasting"**. The repository includes the forecasting model, harmonized data, evaluation and forecast outputs, and an interactive visualizer.
 
 NeuralTFR is an **encoder-decoder GRU ensemble** trained with a multi-quantile loss to forecast country-level Total Fertility Rate (TFR) series. It is evaluated against a historical holdout period and benchmarked against established projections (WPP, WCDE, bayesTFR) and a naive-drift baseline.
 
