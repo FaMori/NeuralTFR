@@ -1,0 +1,18 @@
+# NeuralTFR: Python dependencies, the versions every result was checked with
+# (Python 3.12).
+#
+#   conda create -y -n neuraltfr python=3.12
+#   conda activate neuraltfr
+#   pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu
+#   pip install -r requirements.txt
+#
+# torch is installed first as the CPU-only build: the network has 2,005
+# parameters and runs are parallel across processes (--jobs), so a GPU adds
+# nothing. The BayesTFR re-estimation needs R with the bayesTFR package (see
+# bayestfr/README.md).
+
+torch==2.14.0
+numpy==2.5.2
+pandas==3.0.5
+pyarrow==25.0.1
+scipy==1.18.1

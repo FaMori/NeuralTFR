@@ -1,0 +1,2438 @@
+name,id,id_reg,id_sreg,year,TFR,source,is_projection
+Afghanistan,4,142,34,2022,5.4,Survey,False
+Afghanistan,4,142,34,2023,5.4,Survey,False
+Afghanistan,4,142,34,2024,5.4,Estimate,False
+Albania,8,150,39,2002,1.9,Official statistics,False
+Albania,8,150,39,2003,2.06,Official statistics,False
+Albania,8,150,39,2004,1.86,Official statistics,False
+Albania,8,150,39,2005,1.79,Official statistics,False
+Albania,8,150,39,2006,1.67,Official statistics,False
+Albania,8,150,39,2007,1.62,Official statistics,False
+Albania,8,150,39,2008,1.58,Official statistics,False
+Albania,8,150,39,2009,1.63,Official statistics,False
+Albania,8,150,39,2010,1.63,Official statistics,False
+Albania,8,150,39,2011,1.65,Official statistics,False
+Albania,8,150,39,2012,1.71,Official statistics,False
+Albania,8,150,39,2013,1.73,Official statistics,False
+Albania,8,150,39,2014,1.73,Official statistics,False
+Albania,8,150,39,2015,1.59,Official statistics,False
+Albania,8,150,39,2016,1.54,Official statistics,False
+Albania,8,150,39,2017,1.48,Official statistics,False
+Albania,8,150,39,2018,1.37,Official statistics,False
+Albania,8,150,39,2020,1.34,Official statistics,False
+Albania,8,150,39,2021,1.31,Official statistics,False
+Albania,8,150,39,2022,1.21,Official statistics,False
+Albania,8,150,39,2023,1.61,Estimate,False
+Albania,8,150,39,2024,1.64,Estimate,False
+Albania,8,150,39,2024,1.64,Official statistics,False
+Algeria,12,2,15,2020,2.9,Estimate,False
+Algeria,12,2,15,2022,2.82,Estimate,False
+American Samoa,16,9,61,2020,2.0,Estimate,False
+American Samoa,16,9,61,2021,2.0,Estimate,False
+Andorra,20,150,39,2006,1.24,Official statistics,False
+Andorra,20,150,39,2007,1.18,Official statistics,False
+Andorra,20,150,39,2008,1.25,Official statistics,False
+Andorra,20,150,39,2009,1.19,Official statistics,False
+Andorra,20,150,39,2010,1.27,Official statistics,False
+Andorra,20,150,39,2022,0.94,Estimate,False
+Andorra,20,150,39,2023,0.79,Estimate,False
+Andorra,20,150,39,2024,0.84,Estimate,False
+Angola,24,2,202,2015,6.2,Survey,False
+Angola,24,2,202,2016,5.5,Estimate,True
+Angola,24,2,202,2017,5.5,Estimate,True
+Angola,24,2,202,2018,5.5,Estimate,True
+Angola,24,2,202,2019,5.5,Estimate,True
+Angola,24,2,202,2020,5.4,Estimate,True
+Angola,24,2,202,2021,5.3,Estimate,True
+Angola,24,2,202,2022,5.2,Estimate,True
+Angola,24,2,202,2023,4.8,Survey,False
+Antigua and Barbuda,28,19,419,2021,1.58,Estimate,False
+Antigua and Barbuda,28,19,419,2022,1.58,Estimate,False
+Antigua and Barbuda,28,19,419,2023,1.58,Estimate,False
+Azerbaijan,31,142,145,2006,1.97,Official statistics,False
+Azerbaijan,31,142,145,2007,1.97,Official statistics,False
+Azerbaijan,31,142,145,2008,1.9,Official statistics,False
+Azerbaijan,31,142,145,2009,1.82,Official statistics,False
+Azerbaijan,31,142,145,2010,1.92,Official statistics,False
+Azerbaijan,31,142,145,2012,2.0,Official statistics,False
+Azerbaijan,31,142,145,2013,1.98,Official statistics,False
+Azerbaijan,31,142,145,2014,1.97,Official statistics,False
+Azerbaijan,31,142,145,2015,1.94,Official statistics,False
+Azerbaijan,31,142,145,2016,1.9,Official statistics,False
+Azerbaijan,31,142,145,2017,1.75,Official statistics,False
+Azerbaijan,31,142,145,2018,1.73,Official statistics,False
+Azerbaijan,31,142,145,2019,1.81,Official statistics,False
+Azerbaijan,31,142,145,2023,1.6,Estimate,False
+Azerbaijan,31,142,145,2024,1.4,Estimate,False
+Argentina,32,19,419,2023,1.33,Estimate,False
+Austria,40,150,155,1960,2.69,Official statistics,False
+Austria,40,150,155,1961,2.78,Official statistics,False
+Austria,40,150,155,1962,2.8,Official statistics,False
+Austria,40,150,155,1963,2.82,Official statistics,False
+Austria,40,150,155,1964,2.79,Official statistics,False
+Austria,40,150,155,1965,2.7,Official statistics,False
+Austria,40,150,155,1966,2.66,Official statistics,False
+Austria,40,150,155,1967,2.62,Official statistics,False
+Austria,40,150,155,1968,2.58,Official statistics,False
+Austria,40,150,155,1969,2.49,Official statistics,False
+Austria,40,150,155,1970,2.29,Official statistics,False
+Austria,40,150,155,1971,2.2,Official statistics,False
+Austria,40,150,155,1972,2.08,Official statistics,False
+Austria,40,150,155,1973,1.94,Official statistics,False
+Austria,40,150,155,1974,1.91,Official statistics,False
+Austria,40,150,155,1975,1.83,Official statistics,False
+Austria,40,150,155,1976,1.69,Official statistics,False
+Austria,40,150,155,1977,1.63,Official statistics,False
+Austria,40,150,155,1978,1.6,Official statistics,False
+Austria,40,150,155,1979,1.6,Official statistics,False
+Austria,40,150,155,1980,1.65,Official statistics,False
+Austria,40,150,155,1981,1.67,Official statistics,False
+Austria,40,150,155,1982,1.66,Official statistics,False
+Austria,40,150,155,1983,1.56,Official statistics,False
+Austria,40,150,155,1984,1.52,Official statistics,False
+Austria,40,150,155,1985,1.47,Official statistics,False
+Austria,40,150,155,1986,1.45,Official statistics,False
+Austria,40,150,155,1987,1.43,Official statistics,False
+Austria,40,150,155,1988,1.45,Official statistics,False
+Austria,40,150,155,1989,1.45,Official statistics,False
+Austria,40,150,155,1990,1.46,Official statistics,False
+Austria,40,150,155,1991,1.51,Official statistics,False
+Austria,40,150,155,1992,1.51,Official statistics,False
+Austria,40,150,155,1993,1.5,Official statistics,False
+Austria,40,150,155,1994,1.47,Official statistics,False
+Austria,40,150,155,1995,1.42,Official statistics,False
+Austria,40,150,155,1996,1.45,Official statistics,False
+Austria,40,150,155,1997,1.39,Official statistics,False
+Austria,40,150,155,1998,1.37,Official statistics,False
+Austria,40,150,155,1999,1.34,Official statistics,False
+Austria,40,150,155,2000,1.36,Official statistics,False
+Austria,40,150,155,2001,1.33,Official statistics,False
+Austria,40,150,155,2002,1.39,Official statistics,False
+Austria,40,150,155,2003,1.38,Official statistics,False
+Austria,40,150,155,2004,1.42,Official statistics,False
+Austria,40,150,155,2005,1.41,Official statistics,False
+Austria,40,150,155,2006,1.41,Official statistics,False
+Austria,40,150,155,2007,1.38,Official statistics,False
+Austria,40,150,155,2008,1.42,Official statistics,False
+Austria,40,150,155,2009,1.39,Official statistics,False
+Austria,40,150,155,2010,1.44,Official statistics,False
+Austria,40,150,155,2011,1.43,Official statistics,False
+Austria,40,150,155,2012,1.44,Official statistics,False
+Austria,40,150,155,2013,1.44,Official statistics,False
+Austria,40,150,155,2014,1.46,Official statistics,False
+Austria,40,150,155,2015,1.49,Official statistics,False
+Austria,40,150,155,2016,1.53,Official statistics,False
+Austria,40,150,155,2017,1.52,Official statistics,False
+Austria,40,150,155,2018,1.47,Official statistics,False
+Austria,40,150,155,2019,1.46,Official statistics,False
+Austria,40,150,155,2020,1.44,Official statistics,False
+Austria,40,150,155,2021,1.48,Official statistics,False
+Austria,40,150,155,2022,1.41,Official statistics,False
+Austria,40,150,155,2023,1.32,Official statistics,False
+Austria,40,150,155,2024,1.31,Official statistics,False
+Bahamas,44,19,419,2018,1.4,Estimate,False
+Bahamas,44,19,419,2018,1.97,Estimate,True
+Bahamas,44,19,419,2019,1.4,Estimate,False
+Bahamas,44,19,419,2019,1.99,Estimate,True
+Bahamas,44,19,419,2020,1.39,Estimate,False
+Bahamas,44,19,419,2020,2.01,Estimate,True
+Bahamas,44,19,419,2021,1.38,Estimate,False
+Bahamas,44,19,419,2021,2.01,Estimate,True
+Bahamas,44,19,419,2022,1.38,Estimate,False
+Bahamas,44,19,419,2022,2.01,Estimate,True
+Bahamas,44,19,419,2023,1.37,Estimate,False
+Bahamas,44,19,419,2023,2.01,Estimate,True
+Bahrain,48,142,145,2021,1.7,Register,False
+Bahrain,48,142,145,2022,1.6,Register,False
+Bangladesh,50,142,34,2021,2.05,Estimate,False
+Bangladesh,50,142,34,2022,2.2,Estimate,False
+Bangladesh,50,142,34,2023,2.17,Estimate,False
+Armenia,51,142,145,2006,1.34,Official statistics,False
+Armenia,51,142,145,2007,1.41,Official statistics,False
+Armenia,51,142,145,2008,1.43,Official statistics,False
+Armenia,51,142,145,2009,1.53,Official statistics,False
+Armenia,51,142,145,2015,1.62,Official statistics,False
+Armenia,51,142,145,2016,1.62,Official statistics,False
+Armenia,51,142,145,2017,1.56,Official statistics,False
+Armenia,51,142,145,2018,1.57,Official statistics,False
+Armenia,51,142,145,2019,1.6,Official statistics,False
+Armenia,51,142,145,2022,1.7,Estimate,False
+Armenia,51,142,145,2023,1.9,Estimate,False
+Armenia,51,142,145,2024,1.7,Estimate,False
+Barbados,52,19,419,2013,1.73,Estimate,False
+Barbados,52,19,419,2014,1.73,Estimate,False
+Barbados,52,19,419,2015,1.73,Estimate,False
+Barbados,52,19,419,2016,1.72,Estimate,False
+Barbados,52,19,419,2017,1.72,Estimate,False
+Barbados,52,19,419,2018,1.72,Estimate,False
+Barbados,52,19,419,2019,1.72,Estimate,False
+Barbados,52,19,419,2020,1.4,Estimate,False
+Barbados,52,19,419,2021,1.3,Estimate,False
+Barbados,52,19,419,2022,1.0,Estimate,False
+Barbados,52,19,419,2023,1.2,Estimate,False
+Belgium,56,150,155,1960,2.54,Official statistics,False
+Belgium,56,150,155,1961,2.63,Official statistics,False
+Belgium,56,150,155,1962,2.59,Official statistics,False
+Belgium,56,150,155,1963,2.68,Official statistics,False
+Belgium,56,150,155,1964,2.71,Official statistics,False
+Belgium,56,150,155,1965,2.61,Official statistics,False
+Belgium,56,150,155,1966,2.52,Official statistics,False
+Belgium,56,150,155,1967,2.41,Official statistics,False
+Belgium,56,150,155,1968,2.31,Official statistics,False
+Belgium,56,150,155,1969,2.27,Official statistics,False
+Belgium,56,150,155,1970,2.25,Official statistics,False
+Belgium,56,150,155,1971,2.21,Official statistics,False
+Belgium,56,150,155,1972,2.09,Official statistics,False
+Belgium,56,150,155,1973,1.95,Official statistics,False
+Belgium,56,150,155,1974,1.83,Official statistics,False
+Belgium,56,150,155,1975,1.74,Official statistics,False
+Belgium,56,150,155,1976,1.73,Official statistics,False
+Belgium,56,150,155,1977,1.71,Official statistics,False
+Belgium,56,150,155,1978,1.69,Official statistics,False
+Belgium,56,150,155,1979,1.69,Official statistics,False
+Belgium,56,150,155,1980,1.68,Official statistics,False
+Belgium,56,150,155,1981,1.66,Official statistics,False
+Belgium,56,150,155,1982,1.61,Official statistics,False
+Belgium,56,150,155,1983,1.57,Official statistics,False
+Belgium,56,150,155,1984,1.54,Official statistics,False
+Belgium,56,150,155,1985,1.51,Official statistics,False
+Belgium,56,150,155,1986,1.54,Official statistics,False
+Belgium,56,150,155,1987,1.54,Official statistics,False
+Belgium,56,150,155,1988,1.57,Official statistics,False
+Belgium,56,150,155,1989,1.58,Official statistics,False
+Belgium,56,150,155,1990,1.62,Official statistics,False
+Belgium,56,150,155,1991,1.66,Official statistics,False
+Belgium,56,150,155,1992,1.65,Official statistics,False
+Belgium,56,150,155,1993,1.61,Official statistics,False
+Belgium,56,150,155,1994,1.56,Official statistics,False
+Belgium,56,150,155,1995,1.56,Official statistics,False
+Belgium,56,150,155,1996,1.59,Official statistics,False
+Belgium,56,150,155,1997,1.6,Official statistics,False
+Belgium,56,150,155,1998,1.6,Official statistics,False
+Belgium,56,150,155,1999,1.62,Official statistics,False
+Belgium,56,150,155,2000,1.67,Official statistics,False
+Belgium,56,150,155,2001,1.67,Official statistics,False
+Belgium,56,150,155,2002,1.65,Official statistics,False
+Belgium,56,150,155,2003,1.67,Official statistics,False
+Belgium,56,150,155,2004,1.72,Official statistics,False
+Belgium,56,150,155,2005,1.76,Official statistics,False
+Belgium,56,150,155,2006,1.8,Official statistics,False
+Belgium,56,150,155,2007,1.82,Official statistics,False
+Belgium,56,150,155,2008,1.85,Official statistics,False
+Belgium,56,150,155,2009,1.84,Official statistics,False
+Belgium,56,150,155,2010,1.86,Official statistics,False
+Belgium,56,150,155,2011,1.81,Official statistics,False
+Belgium,56,150,155,2012,1.8,Official statistics,False
+Belgium,56,150,155,2013,1.76,Official statistics,False
+Belgium,56,150,155,2014,1.74,Official statistics,False
+Belgium,56,150,155,2015,1.7,Official statistics,False
+Belgium,56,150,155,2016,1.68,Official statistics,False
+Belgium,56,150,155,2017,1.65,Official statistics,False
+Belgium,56,150,155,2018,1.62,Official statistics,False
+Belgium,56,150,155,2019,1.6,Official statistics,False
+Belgium,56,150,155,2020,1.55,Official statistics,False
+Belgium,56,150,155,2021,1.6,Official statistics,False
+Belgium,56,150,155,2022,1.53,Official statistics,False
+Belgium,56,150,155,2023,1.47,Official statistics,False
+Belgium,56,150,155,2024,1.44,Official statistics,False
+Bermuda,60,19,21,2022,1.3,Estimate,False
+Bermuda,60,19,21,2023,1.2,Estimate,False
+Bermuda,60,19,21,2024,1.2,Estimate,False
+Bhutan,64,142,34,2022,1.46,Estimate,False
+Bhutan,64,142,34,2023,2.0,Survey,False
+"Bolivia, Plurinational State of",68,19,419,2016,2.83,Estimate,False
+"Bolivia, Plurinational State of",68,19,419,2017,2.78,Estimate,False
+"Bolivia, Plurinational State of",68,19,419,2018,2.73,Estimate,False
+"Bolivia, Plurinational State of",68,19,419,2019,2.69,Estimate,False
+"Bolivia, Plurinational State of",68,19,419,2020,2.65,Estimate,False
+"Bolivia, Plurinational State of",68,19,419,2021,2.62,Estimate,False
+"Bolivia, Plurinational State of",68,19,419,2022,2.49,Estimate,True
+"Bolivia, Plurinational State of",68,19,419,2023,2.1,Estimate,False
+Bosnia and Herzegovina,70,150,39,2020,1.185,Estimate,False
+Bosnia and Herzegovina,70,150,39,2021,1.19,Estimate,False
+Bosnia and Herzegovina,70,150,39,2022,1.18,Estimate,False
+Bosnia and Herzegovina,70,150,39,2023,1.182,Estimate,False
+Bosnia and Herzegovina,70,150,39,2024,1.179,Estimate,False
+Botswana,72,2,202,2022,2.9,Census,False
+Botswana,72,2,202,2022,2.4,Estimate,False
+Botswana,72,2,202,2023,2.3,Estimate,False
+Brazil,76,19,419,2023,1.57,Estimate,True
+Belize,84,19,419,2023,1.8,Estimate,False
+Belize,84,19,419,2024,2.1,Survey,False
+Virgin Islands (British),92,19,419,2022,1.02,Estimate,False
+Virgin Islands (British),92,19,419,2023,1.03,Estimate,False
+Brunei Darussalam,96,142,35,2022,1.8,Register,False
+Brunei Darussalam,96,142,35,2023,1.8,Register,False
+Brunei Darussalam,96,142,35,2024,1.5,Register,False
+Bulgaria,100,150,151,1960,2.31,Official statistics,False
+Bulgaria,100,150,151,1961,2.29,Official statistics,False
+Bulgaria,100,150,151,1962,2.24,Official statistics,False
+Bulgaria,100,150,151,1963,2.21,Official statistics,False
+Bulgaria,100,150,151,1964,2.19,Official statistics,False
+Bulgaria,100,150,151,1965,2.09,Official statistics,False
+Bulgaria,100,150,151,1966,2.03,Official statistics,False
+Bulgaria,100,150,151,1967,2.02,Official statistics,False
+Bulgaria,100,150,151,1968,2.27,Official statistics,False
+Bulgaria,100,150,151,1969,2.27,Official statistics,False
+Bulgaria,100,150,151,1970,2.17,Official statistics,False
+Bulgaria,100,150,151,1971,2.1,Official statistics,False
+Bulgaria,100,150,151,1972,2.03,Official statistics,False
+Bulgaria,100,150,151,1973,2.15,Official statistics,False
+Bulgaria,100,150,151,1974,2.29,Official statistics,False
+Bulgaria,100,150,151,1975,2.23,Official statistics,False
+Bulgaria,100,150,151,1976,2.24,Official statistics,False
+Bulgaria,100,150,151,1977,2.21,Official statistics,False
+Bulgaria,100,150,151,1978,2.15,Official statistics,False
+Bulgaria,100,150,151,1979,2.16,Official statistics,False
+Bulgaria,100,150,151,1980,2.05,Official statistics,False
+Bulgaria,100,150,151,1981,2.0,Official statistics,False
+Bulgaria,100,150,151,1982,2.01,Official statistics,False
+Bulgaria,100,150,151,1983,2.01,Official statistics,False
+Bulgaria,100,150,151,1984,2.01,Official statistics,False
+Bulgaria,100,150,151,1985,1.97,Official statistics,False
+Bulgaria,100,150,151,1986,2.02,Official statistics,False
+Bulgaria,100,150,151,1987,1.96,Official statistics,False
+Bulgaria,100,150,151,1988,1.97,Official statistics,False
+Bulgaria,100,150,151,1989,1.9,Official statistics,False
+Bulgaria,100,150,151,1990,1.82,Official statistics,False
+Bulgaria,100,150,151,1991,1.66,Official statistics,False
+Bulgaria,100,150,151,1992,1.55,Official statistics,False
+Bulgaria,100,150,151,1993,1.46,Official statistics,False
+Bulgaria,100,150,151,1994,1.37,Official statistics,False
+Bulgaria,100,150,151,1995,1.23,Official statistics,False
+Bulgaria,100,150,151,1996,1.23,Official statistics,False
+Bulgaria,100,150,151,1997,1.09,Official statistics,False
+Bulgaria,100,150,151,1998,1.11,Official statistics,False
+Bulgaria,100,150,151,1999,1.23,Official statistics,False
+Bulgaria,100,150,151,2000,1.26,Official statistics,False
+Bulgaria,100,150,151,2001,1.21,Official statistics,False
+Bulgaria,100,150,151,2002,1.23,Official statistics,False
+Bulgaria,100,150,151,2003,1.26,Official statistics,False
+Bulgaria,100,150,151,2004,1.33,Official statistics,False
+Bulgaria,100,150,151,2005,1.37,Official statistics,False
+Bulgaria,100,150,151,2006,1.44,Official statistics,False
+Bulgaria,100,150,151,2007,1.49,Official statistics,False
+Bulgaria,100,150,151,2008,1.56,Official statistics,False
+Bulgaria,100,150,151,2009,1.66,Official statistics,False
+Bulgaria,100,150,151,2010,1.57,Official statistics,False
+Bulgaria,100,150,151,2011,1.51,Official statistics,False
+Bulgaria,100,150,151,2012,1.5,Official statistics,False
+Bulgaria,100,150,151,2013,1.54,Official statistics,False
+Bulgaria,100,150,151,2014,1.62,Official statistics,False
+Bulgaria,100,150,151,2015,1.64,Official statistics,False
+Bulgaria,100,150,151,2016,1.67,Official statistics,False
+Bulgaria,100,150,151,2017,1.71,Official statistics,False
+Bulgaria,100,150,151,2018,1.73,Official statistics,False
+Bulgaria,100,150,151,2019,1.79,Official statistics,False
+Bulgaria,100,150,151,2020,1.77,Official statistics,False
+Bulgaria,100,150,151,2021,1.8,Official statistics,False
+Bulgaria,100,150,151,2022,1.78,Official statistics,False
+Bulgaria,100,150,151,2023,1.81,Official statistics,False
+Bulgaria,100,150,151,2024,1.72,Official statistics,False
+Myanmar,104,142,35,2017,2.4,Register,False
+Myanmar,104,142,35,2018,2.4,Register,False
+Myanmar,104,142,35,2019,2.4,Register,False
+Myanmar,104,142,35,2020,2.4,Register,False
+Myanmar,104,142,35,2021,2.2,Register,False
+Myanmar,104,142,35,2022,2.2,Register,False
+Myanmar,104,142,35,2023,2.3,Estimate,True
+Burundi,108,2,202,2016,5.5,Estimate,False
+Burundi,108,2,202,2017,5.5,Estimate,False
+Burundi,108,2,202,2018,4.19,Estimate,False
+Burundi,108,2,202,2019,5.5,Estimate,False
+Burundi,108,2,202,2020,5.5,Estimate,False
+Burundi,108,2,202,2021,3.78,Estimate,False
+Burundi,108,2,202,2022,3.68,Estimate,False
+Burundi,108,2,202,2023,3.57,Estimate,False
+Burundi,108,2,202,2024,3.46,Estimate,False
+Belarus,112,150,151,2006,1.29,Official statistics,False
+Belarus,112,150,151,2007,1.37,Official statistics,False
+Belarus,112,150,151,2008,1.42,Official statistics,False
+Belarus,112,150,151,2011,1.51,Official statistics,False
+Belarus,112,150,151,2012,1.62,Official statistics,False
+Belarus,112,150,151,2013,1.67,Official statistics,False
+Belarus,112,150,151,2014,1.7,Official statistics,False
+Belarus,112,150,151,2015,1.72,Official statistics,False
+Belarus,112,150,151,2016,1.73,Official statistics,False
+Belarus,112,150,151,2017,1.54,Official statistics,False
+Belarus,112,150,151,2018,1.45,Official statistics,False
+Belarus,112,150,151,2019,1.388,Register,False
+Belarus,112,150,151,2024,1.081,Register,False
+Belarus,112,150,151,2025,1.026,Register,False
+Cambodia,116,142,35,2022,2.7,Survey,False
+Cambodia,116,142,35,2023,2.3,Estimate,True
+Cameroon,120,2,202,2022,4.5,Estimate,True
+Cameroon,120,2,202,2023,4.5,Estimate,True
+Cabo Verde,132,2,202,2021,2.23,Estimate,True
+Cabo Verde,132,2,202,2022,2.21,Estimate,True
+Cabo Verde,132,2,202,2023,2.2,Estimate,True
+Cabo Verde,132,2,202,2024,2.18,Estimate,True
+Cayman Islands,136,19,419,2022,1.22,Estimate,False
+Cayman Islands,136,19,419,2023,1.21,Estimate,False
+Central African Republic,140,2,202,2019,6.4,Survey,False
+Chad,148,2,202,2019,6.4,Survey,False
+China,156,142,30,2021,1.08,Survey,False
+China,156,142,30,2022,1.05,Survey,False
+China,156,142,30,2023,1.01,Survey,False
+Colombia,170,19,419,2023,1.65,Estimate,False
+Colombia,170,19,419,2024,1.63,Estimate,False
+Comoros,174,2,202,2018,4.2,,False
+Comoros,174,2,202,2019,4.12,,False
+Comoros,174,2,202,2020,4.05,,False
+Comoros,174,2,202,2021,3.98,,False
+Comoros,174,2,202,2022,4.3,Survey,False
+Mayotte,175,2,202,2023,4.2,Register,False
+Mayotte,175,2,202,2024,3.54,Register,False
+Mayotte,175,2,202,2025,3.48,Register,False
+Congo,178,2,202,2015,4.4,Survey,False
+Congo,178,2,202,2020,4.25,Estimate,True
+"Congo, Democratic Republic of the",180,2,202,2023,5.5,Survey,False
+Costa Rica,188,19,419,2023,1.33,Estimate,False
+Costa Rica,188,19,419,2024,1.32,Estimate,False
+Croatia,191,150,39,2001,1.46,Official statistics,False
+Croatia,191,150,39,2002,1.42,Official statistics,False
+Croatia,191,150,39,2003,1.41,Official statistics,False
+Croatia,191,150,39,2004,1.43,Official statistics,False
+Croatia,191,150,39,2005,1.5,Official statistics,False
+Croatia,191,150,39,2006,1.47,Official statistics,False
+Croatia,191,150,39,2007,1.48,Official statistics,False
+Croatia,191,150,39,2008,1.55,Official statistics,False
+Croatia,191,150,39,2009,1.58,Official statistics,False
+Croatia,191,150,39,2010,1.55,Official statistics,False
+Croatia,191,150,39,2011,1.48,Official statistics,False
+Croatia,191,150,39,2012,1.51,Official statistics,False
+Croatia,191,150,39,2013,1.47,Official statistics,False
+Croatia,191,150,39,2014,1.47,Official statistics,False
+Croatia,191,150,39,2015,1.42,Official statistics,False
+Croatia,191,150,39,2016,1.44,Official statistics,False
+Croatia,191,150,39,2017,1.46,Official statistics,False
+Croatia,191,150,39,2018,1.53,Official statistics,False
+Croatia,191,150,39,2019,1.54,Official statistics,False
+Croatia,191,150,39,2020,1.56,Official statistics,False
+Croatia,191,150,39,2021,1.63,Official statistics,False
+Croatia,191,150,39,2022,1.53,Official statistics,False
+Croatia,191,150,39,2023,1.47,Official statistics,False
+Croatia,191,150,39,2024,1.46,Official statistics,False
+Cuba,192,19,419,2022,1.52,Register,False
+Cuba,192,19,419,2023,1.54,Register,False
+Cuba,192,19,419,2024,1.29,Register,False
+Cyprus,196,142,145,1982,2.48,Official statistics,False
+Cyprus,196,142,145,1983,2.5,Official statistics,False
+Cyprus,196,142,145,1984,2.52,Official statistics,False
+Cyprus,196,142,145,1985,2.43,Official statistics,False
+Cyprus,196,142,145,1986,2.46,Official statistics,False
+Cyprus,196,142,145,1987,2.38,Official statistics,False
+Cyprus,196,142,145,1988,2.49,Official statistics,False
+Cyprus,196,142,145,1989,2.36,Official statistics,False
+Cyprus,196,142,145,1990,2.41,Official statistics,False
+Cyprus,196,142,145,1991,2.32,Official statistics,False
+Cyprus,196,142,145,1992,2.48,Official statistics,False
+Cyprus,196,142,145,1993,2.24,Official statistics,False
+Cyprus,196,142,145,1994,2.17,Official statistics,False
+Cyprus,196,142,145,1995,2.03,Official statistics,False
+Cyprus,196,142,145,1996,1.95,Official statistics,False
+Cyprus,196,142,145,1997,1.86,Official statistics,False
+Cyprus,196,142,145,1998,1.76,Official statistics,False
+Cyprus,196,142,145,1999,1.67,Official statistics,False
+Cyprus,196,142,145,2000,1.64,Official statistics,False
+Cyprus,196,142,145,2001,1.57,Official statistics,False
+Cyprus,196,142,145,2002,1.49,Official statistics,False
+Cyprus,196,142,145,2003,1.51,Official statistics,False
+Cyprus,196,142,145,2004,1.52,Official statistics,False
+Cyprus,196,142,145,2005,1.48,Official statistics,False
+Cyprus,196,142,145,2006,1.52,Official statistics,False
+Cyprus,196,142,145,2007,1.44,Official statistics,False
+Cyprus,196,142,145,2008,1.48,Official statistics,False
+Cyprus,196,142,145,2009,1.47,Official statistics,False
+Cyprus,196,142,145,2010,1.44,Official statistics,False
+Cyprus,196,142,145,2011,1.35,Official statistics,False
+Cyprus,196,142,145,2012,1.39,Official statistics,False
+Cyprus,196,142,145,2013,1.31,Official statistics,False
+Cyprus,196,142,145,2014,1.31,Official statistics,False
+Cyprus,196,142,145,2015,1.31,Official statistics,False
+Cyprus,196,142,145,2016,1.36,Official statistics,False
+Cyprus,196,142,145,2017,1.34,Official statistics,False
+Cyprus,196,142,145,2018,1.36,Official statistics,False
+Cyprus,196,142,145,2019,1.4,Official statistics,False
+Cyprus,196,142,145,2020,1.36,Official statistics,False
+Cyprus,196,142,145,2021,1.39,Official statistics,False
+Cyprus,196,142,145,2022,1.37,Official statistics,False
+Cyprus,196,142,145,2023,1.4,Official statistics,False
+Cyprus,196,142,145,2024,1.38,Official statistics,False
+Czechia,203,150,151,1960,2.09,Official statistics,False
+Czechia,203,150,151,1961,2.11,Official statistics,False
+Czechia,203,150,151,1962,2.12,Official statistics,False
+Czechia,203,150,151,1963,2.31,Official statistics,False
+Czechia,203,150,151,1964,2.34,Official statistics,False
+Czechia,203,150,151,1965,2.18,Official statistics,False
+Czechia,203,150,151,1966,2.02,Official statistics,False
+Czechia,203,150,151,1967,1.91,Official statistics,False
+Czechia,203,150,151,1968,1.84,Official statistics,False
+Czechia,203,150,151,1969,1.87,Official statistics,False
+Czechia,203,150,151,1970,1.92,Official statistics,False
+Czechia,203,150,151,1971,2.0,Official statistics,False
+Czechia,203,150,151,1972,2.09,Official statistics,False
+Czechia,203,150,151,1973,2.31,Official statistics,False
+Czechia,203,150,151,1974,2.46,Official statistics,False
+Czechia,203,150,151,1975,2.43,Official statistics,False
+Czechia,203,150,151,1976,2.39,Official statistics,False
+Czechia,203,150,151,1977,2.34,Official statistics,False
+Czechia,203,150,151,1978,2.33,Official statistics,False
+Czechia,203,150,151,1979,2.27,Official statistics,False
+Czechia,203,150,151,1980,2.08,Official statistics,False
+Czechia,203,150,151,1981,2.0,Official statistics,False
+Czechia,203,150,151,1982,2.0,Official statistics,False
+Czechia,203,150,151,1983,1.97,Official statistics,False
+Czechia,203,150,151,1984,1.97,Official statistics,False
+Czechia,203,150,151,1985,1.95,Official statistics,False
+Czechia,203,150,151,1986,1.92,Official statistics,False
+Czechia,203,150,151,1987,1.91,Official statistics,False
+Czechia,203,150,151,1988,1.94,Official statistics,False
+Czechia,203,150,151,1989,1.87,Official statistics,False
+Czechia,203,150,151,1990,1.9,Official statistics,False
+Czechia,203,150,151,1991,1.86,Official statistics,False
+Czechia,203,150,151,1992,1.71,Official statistics,False
+Czechia,203,150,151,1993,1.67,Official statistics,False
+Czechia,203,150,151,1994,1.44,Official statistics,False
+Czechia,203,150,151,1995,1.28,Official statistics,False
+Czechia,203,150,151,1996,1.18,Official statistics,False
+Czechia,203,150,151,1997,1.17,Official statistics,False
+Czechia,203,150,151,1998,1.16,Official statistics,False
+Czechia,203,150,151,1999,1.13,Official statistics,False
+Czechia,203,150,151,2000,1.15,Official statistics,False
+Czechia,203,150,151,2001,1.15,Official statistics,False
+Czechia,203,150,151,2002,1.17,Official statistics,False
+Czechia,203,150,151,2003,1.18,Official statistics,False
+Czechia,203,150,151,2004,1.23,Official statistics,False
+Czechia,203,150,151,2005,1.29,Official statistics,False
+Czechia,203,150,151,2006,1.34,Official statistics,False
+Czechia,203,150,151,2007,1.45,Official statistics,False
+Czechia,203,150,151,2008,1.51,Official statistics,False
+Czechia,203,150,151,2009,1.51,Official statistics,False
+Czechia,203,150,151,2010,1.51,Official statistics,False
+Czechia,203,150,151,2011,1.43,Official statistics,False
+Czechia,203,150,151,2012,1.45,Official statistics,False
+Czechia,203,150,151,2013,1.46,Official statistics,False
+Czechia,203,150,151,2014,1.53,Official statistics,False
+Czechia,203,150,151,2015,1.57,Official statistics,False
+Czechia,203,150,151,2016,1.63,Official statistics,False
+Czechia,203,150,151,2017,1.69,Official statistics,False
+Czechia,203,150,151,2018,1.71,Official statistics,False
+Czechia,203,150,151,2019,1.71,Official statistics,False
+Czechia,203,150,151,2020,1.74,Official statistics,False
+Czechia,203,150,151,2021,1.83,Official statistics,False
+Czechia,203,150,151,2022,1.64,Official statistics,False
+Czechia,203,150,151,2023,1.46,Official statistics,False
+Czechia,203,150,151,2024,1.36,Official statistics,False
+Benin,204,2,202,2021,5.38,Estimate,True
+Benin,204,2,202,2022,5.34,Estimate,True
+Benin,204,2,202,2023,5.3,Estimate,True
+Denmark,208,150,154,1960,2.57,Official statistics,False
+Denmark,208,150,154,1961,2.55,Official statistics,False
+Denmark,208,150,154,1962,2.55,Official statistics,False
+Denmark,208,150,154,1963,2.67,Official statistics,False
+Denmark,208,150,154,1964,2.6,Official statistics,False
+Denmark,208,150,154,1965,2.61,Official statistics,False
+Denmark,208,150,154,1966,2.62,Official statistics,False
+Denmark,208,150,154,1967,2.35,Official statistics,False
+Denmark,208,150,154,1968,2.12,Official statistics,False
+Denmark,208,150,154,1969,2.0,Official statistics,False
+Denmark,208,150,154,1970,1.95,Official statistics,False
+Denmark,208,150,154,1971,2.04,Official statistics,False
+Denmark,208,150,154,1972,2.03,Official statistics,False
+Denmark,208,150,154,1973,1.92,Official statistics,False
+Denmark,208,150,154,1974,1.9,Official statistics,False
+Denmark,208,150,154,1975,1.92,Official statistics,False
+Denmark,208,150,154,1976,1.75,Official statistics,False
+Denmark,208,150,154,1977,1.66,Official statistics,False
+Denmark,208,150,154,1978,1.67,Official statistics,False
+Denmark,208,150,154,1979,1.6,Official statistics,False
+Denmark,208,150,154,1980,1.55,Official statistics,False
+Denmark,208,150,154,1981,1.44,Official statistics,False
+Denmark,208,150,154,1982,1.43,Official statistics,False
+Denmark,208,150,154,1983,1.38,Official statistics,False
+Denmark,208,150,154,1984,1.4,Official statistics,False
+Denmark,208,150,154,1985,1.45,Official statistics,False
+Denmark,208,150,154,1986,1.48,Official statistics,False
+Denmark,208,150,154,1987,1.5,Official statistics,False
+Denmark,208,150,154,1988,1.56,Official statistics,False
+Denmark,208,150,154,1989,1.62,Official statistics,False
+Denmark,208,150,154,1990,1.67,Official statistics,False
+Denmark,208,150,154,1991,1.68,Official statistics,False
+Denmark,208,150,154,1992,1.76,Official statistics,False
+Denmark,208,150,154,1993,1.75,Official statistics,False
+Denmark,208,150,154,1994,1.81,Official statistics,False
+Denmark,208,150,154,1995,1.8,Official statistics,False
+Denmark,208,150,154,1996,1.75,Official statistics,False
+Denmark,208,150,154,1997,1.75,Official statistics,False
+Denmark,208,150,154,1998,1.72,Official statistics,False
+Denmark,208,150,154,1999,1.73,Official statistics,False
+Denmark,208,150,154,2000,1.77,Official statistics,False
+Denmark,208,150,154,2001,1.74,Official statistics,False
+Denmark,208,150,154,2002,1.72,Official statistics,False
+Denmark,208,150,154,2003,1.76,Official statistics,False
+Denmark,208,150,154,2004,1.78,Official statistics,False
+Denmark,208,150,154,2005,1.8,Official statistics,False
+Denmark,208,150,154,2006,1.85,Official statistics,False
+Denmark,208,150,154,2007,1.84,Official statistics,False
+Denmark,208,150,154,2008,1.89,Official statistics,False
+Denmark,208,150,154,2009,1.84,Official statistics,False
+Denmark,208,150,154,2010,1.87,Official statistics,False
+Denmark,208,150,154,2011,1.75,Official statistics,False
+Denmark,208,150,154,2012,1.73,Official statistics,False
+Denmark,208,150,154,2013,1.67,Official statistics,False
+Denmark,208,150,154,2014,1.69,Official statistics,False
+Denmark,208,150,154,2015,1.71,Official statistics,False
+Denmark,208,150,154,2016,1.79,Official statistics,False
+Denmark,208,150,154,2017,1.75,Official statistics,False
+Denmark,208,150,154,2018,1.73,Official statistics,False
+Denmark,208,150,154,2019,1.7,Official statistics,False
+Denmark,208,150,154,2020,1.68,Official statistics,False
+Denmark,208,150,154,2021,1.72,Official statistics,False
+Denmark,208,150,154,2022,1.55,Official statistics,False
+Denmark,208,150,154,2023,1.5,Official statistics,False
+Denmark,208,150,154,2024,1.47,Official statistics,False
+Dominica,212,19,419,2018,1.62,Estimate,False
+Dominica,212,19,419,2019,1.61,Estimate,False
+Dominica,212,19,419,2020,1.6,Estimate,False
+Dominica,212,19,419,2021,1.59,Estimate,False
+Dominica,212,19,419,2022,1.59,Estimate,False
+Dominica,212,19,419,2023,1.58,Estimate,False
+Dominican Republic,214,19,419,2023,2.16,Estimate,True
+Ecuador,218,19,419,2022,1.86,Estimate,False
+Ecuador,218,19,419,2023,1.82,Estimate,False
+El Salvador,222,19,419,2019,1.84,Estimate,False
+El Salvador,222,19,419,2020,1.82,Estimate,False
+El Salvador,222,19,419,2021,1.8,Estimate,False
+El Salvador,222,19,419,2022,1.78,Estimate,False
+El Salvador,222,19,419,2023,1.78,Estimate,False
+Ethiopia,231,2,202,2018,3.45,Estimate,True
+Ethiopia,231,2,202,2019,4.2,Survey,False
+Ethiopia,231,2,202,2020,3.45,Estimate,True
+Ethiopia,231,2,202,2021,3.45,Estimate,True
+Ethiopia,231,2,202,2022,3.45,Estimate,True
+Ethiopia,231,2,202,2023,3.05,Estimate,True
+Estonia,233,150,154,1960,1.98,Official statistics,False
+Estonia,233,150,154,1961,1.98,Official statistics,False
+Estonia,233,150,154,1962,1.95,Official statistics,False
+Estonia,233,150,154,1963,1.89,Official statistics,False
+Estonia,233,150,154,1964,1.94,Official statistics,False
+Estonia,233,150,154,1965,1.88,Official statistics,False
+Estonia,233,150,154,1966,1.87,Official statistics,False
+Estonia,233,150,154,1967,1.9,Official statistics,False
+Estonia,233,150,154,1968,2.03,Official statistics,False
+Estonia,233,150,154,1969,2.13,Official statistics,False
+Estonia,233,150,154,1970,2.17,Official statistics,False
+Estonia,233,150,154,1971,2.19,Official statistics,False
+Estonia,233,150,154,1972,2.13,Official statistics,False
+Estonia,233,150,154,1973,2.06,Official statistics,False
+Estonia,233,150,154,1974,2.07,Official statistics,False
+Estonia,233,150,154,1975,2.04,Official statistics,False
+Estonia,233,150,154,1976,2.07,Official statistics,False
+Estonia,233,150,154,1977,2.06,Official statistics,False
+Estonia,233,150,154,1978,2.02,Official statistics,False
+Estonia,233,150,154,1979,2.0,Official statistics,False
+Estonia,233,150,154,1980,2.02,Official statistics,False
+Estonia,233,150,154,1981,2.07,Official statistics,False
+Estonia,233,150,154,1982,2.07,Official statistics,False
+Estonia,233,150,154,1983,2.16,Official statistics,False
+Estonia,233,150,154,1984,2.17,Official statistics,False
+Estonia,233,150,154,1985,2.13,Official statistics,False
+Estonia,233,150,154,1986,2.18,Official statistics,False
+Estonia,233,150,154,1987,2.27,Official statistics,False
+Estonia,233,150,154,1988,2.27,Official statistics,False
+Estonia,233,150,154,1989,2.22,Official statistics,False
+Estonia,233,150,154,1990,2.05,Official statistics,False
+Estonia,233,150,154,1991,1.8,Official statistics,False
+Estonia,233,150,154,1992,1.71,Official statistics,False
+Estonia,233,150,154,1993,1.49,Official statistics,False
+Estonia,233,150,154,1994,1.42,Official statistics,False
+Estonia,233,150,154,1995,1.38,Official statistics,False
+Estonia,233,150,154,1996,1.37,Official statistics,False
+Estonia,233,150,154,1997,1.32,Official statistics,False
+Estonia,233,150,154,1998,1.28,Official statistics,False
+Estonia,233,150,154,1999,1.3,Official statistics,False
+Estonia,233,150,154,2000,1.36,Official statistics,False
+Estonia,233,150,154,2001,1.32,Official statistics,False
+Estonia,233,150,154,2002,1.36,Official statistics,False
+Estonia,233,150,154,2003,1.37,Official statistics,False
+Estonia,233,150,154,2004,1.47,Official statistics,False
+Estonia,233,150,154,2005,1.52,Official statistics,False
+Estonia,233,150,154,2006,1.58,Official statistics,False
+Estonia,233,150,154,2007,1.69,Official statistics,False
+Estonia,233,150,154,2008,1.72,Official statistics,False
+Estonia,233,150,154,2009,1.7,Official statistics,False
+Estonia,233,150,154,2010,1.72,Official statistics,False
+Estonia,233,150,154,2011,1.61,Official statistics,False
+Estonia,233,150,154,2012,1.56,Official statistics,False
+Estonia,233,150,154,2013,1.52,Official statistics,False
+Estonia,233,150,154,2014,1.54,Official statistics,False
+Estonia,233,150,154,2015,1.58,Official statistics,False
+Estonia,233,150,154,2016,1.6,Official statistics,False
+Estonia,233,150,154,2017,1.59,Official statistics,False
+Estonia,233,150,154,2018,1.67,Official statistics,False
+Estonia,233,150,154,2019,1.66,Official statistics,False
+Estonia,233,150,154,2020,1.58,Official statistics,False
+Estonia,233,150,154,2021,1.61,Official statistics,False
+Estonia,233,150,154,2022,1.41,Official statistics,False
+Estonia,233,150,154,2023,1.31,Official statistics,False
+Estonia,233,150,154,2024,1.18,Official statistics,False
+Faroe Islands,234,150,154,2022,2.07,Estimate,False
+Faroe Islands,234,150,154,2023,1.86,Estimate,False
+Fiji,242,9,54,2021,2.7,Register,False
+Fiji,242,9,54,2022,2.7,Register,False
+Finland,246,150,154,1960,2.72,Official statistics,False
+Finland,246,150,154,1961,2.72,Official statistics,False
+Finland,246,150,154,1962,2.68,Official statistics,False
+Finland,246,150,154,1963,2.68,Official statistics,False
+Finland,246,150,154,1964,2.59,Official statistics,False
+Finland,246,150,154,1965,2.48,Official statistics,False
+Finland,246,150,154,1966,2.41,Official statistics,False
+Finland,246,150,154,1967,2.32,Official statistics,False
+Finland,246,150,154,1968,2.14,Official statistics,False
+Finland,246,150,154,1969,1.93,Official statistics,False
+Finland,246,150,154,1970,1.83,Official statistics,False
+Finland,246,150,154,1971,1.68,Official statistics,False
+Finland,246,150,154,1972,1.58,Official statistics,False
+Finland,246,150,154,1973,1.49,Official statistics,False
+Finland,246,150,154,1974,1.61,Official statistics,False
+Finland,246,150,154,1975,1.68,Official statistics,False
+Finland,246,150,154,1976,1.7,Official statistics,False
+Finland,246,150,154,1977,1.68,Official statistics,False
+Finland,246,150,154,1978,1.64,Official statistics,False
+Finland,246,150,154,1979,1.64,Official statistics,False
+Finland,246,150,154,1980,1.63,Official statistics,False
+Finland,246,150,154,1981,1.64,Official statistics,False
+Finland,246,150,154,1982,1.71,Official statistics,False
+Finland,246,150,154,1983,1.74,Official statistics,False
+Finland,246,150,154,1984,1.69,Official statistics,False
+Finland,246,150,154,1985,1.64,Official statistics,False
+Finland,246,150,154,1986,1.6,Official statistics,False
+Finland,246,150,154,1987,1.59,Official statistics,False
+Finland,246,150,154,1988,1.69,Official statistics,False
+Finland,246,150,154,1989,1.71,Official statistics,False
+Finland,246,150,154,1990,1.78,Official statistics,False
+Finland,246,150,154,1991,1.79,Official statistics,False
+Finland,246,150,154,1992,1.85,Official statistics,False
+Finland,246,150,154,1993,1.81,Official statistics,False
+Finland,246,150,154,1994,1.85,Official statistics,False
+Finland,246,150,154,1995,1.81,Official statistics,False
+Finland,246,150,154,1996,1.78,Official statistics,False
+Finland,246,150,154,1997,1.75,Official statistics,False
+Finland,246,150,154,1998,1.7,Official statistics,False
+Finland,246,150,154,1999,1.73,Official statistics,False
+Finland,246,150,154,2000,1.73,Official statistics,False
+Finland,246,150,154,2001,1.73,Official statistics,False
+Finland,246,150,154,2002,1.72,Official statistics,False
+Finland,246,150,154,2003,1.76,Official statistics,False
+Finland,246,150,154,2004,1.8,Official statistics,False
+Finland,246,150,154,2005,1.8,Official statistics,False
+Finland,246,150,154,2006,1.84,Official statistics,False
+Finland,246,150,154,2007,1.83,Official statistics,False
+Finland,246,150,154,2008,1.85,Official statistics,False
+Finland,246,150,154,2009,1.86,Official statistics,False
+Finland,246,150,154,2010,1.87,Official statistics,False
+Finland,246,150,154,2011,1.83,Official statistics,False
+Finland,246,150,154,2012,1.8,Official statistics,False
+Finland,246,150,154,2013,1.75,Official statistics,False
+Finland,246,150,154,2014,1.71,Official statistics,False
+Finland,246,150,154,2015,1.65,Official statistics,False
+Finland,246,150,154,2016,1.57,Official statistics,False
+Finland,246,150,154,2017,1.49,Official statistics,False
+Finland,246,150,154,2018,1.41,Official statistics,False
+Finland,246,150,154,2019,1.35,Official statistics,False
+Finland,246,150,154,2020,1.37,Official statistics,False
+Finland,246,150,154,2021,1.46,Official statistics,False
+Finland,246,150,154,2022,1.32,Official statistics,False
+Finland,246,150,154,2023,1.26,Official statistics,False
+Finland,246,150,154,2024,1.25,Official statistics,False
+France,250,150,155,1998,1.78,Official statistics,False
+France,250,150,155,1999,1.81,Official statistics,False
+France,250,150,155,2000,1.89,Official statistics,False
+France,250,150,155,2001,1.9,Official statistics,False
+France,250,150,155,2002,1.88,Official statistics,False
+France,250,150,155,2003,1.89,Official statistics,False
+France,250,150,155,2004,1.92,Official statistics,False
+France,250,150,155,2005,1.94,Official statistics,False
+France,250,150,155,2006,2.0,Official statistics,False
+France,250,150,155,2007,1.98,Official statistics,False
+France,250,150,155,2008,2.01,Official statistics,False
+France,250,150,155,2009,2.0,Official statistics,False
+France,250,150,155,2010,2.03,Official statistics,False
+France,250,150,155,2011,2.01,Official statistics,False
+France,250,150,155,2012,2.01,Official statistics,False
+France,250,150,155,2013,1.99,Official statistics,False
+France,250,150,155,2014,2.0,Official statistics,False
+France,250,150,155,2015,1.96,Official statistics,False
+France,250,150,155,2016,1.92,Official statistics,False
+France,250,150,155,2017,1.89,Official statistics,False
+France,250,150,155,2018,1.87,Official statistics,False
+France,250,150,155,2019,1.86,Official statistics,False
+France,250,150,155,2020,1.82,Official statistics,False
+France,250,150,155,2021,1.83,Official statistics,False
+France,250,150,155,2022,1.78,Official statistics,False
+France,250,150,155,2023,1.66,Official statistics,False
+France,250,150,155,2024,1.61,Official statistics,False
+French Guiana,254,19,419,2022,3.58,Estimate,False
+French Guiana,254,19,419,2023,3.51,Estimate,False
+French Guiana,254,19,419,2024,3.12,Estimate,False
+French Guiana,254,19,419,2025,3.04,Estimate,False
+French Polynesia,258,9,61,2022,1.8,Estimate,False
+French Polynesia,258,9,61,2023,1.8,Estimate,False
+Djibouti,262,2,202,2012,2.94,Estimate,False
+Djibouti,262,2,202,2016,2.9,Estimate,False
+Djibouti,262,2,202,2017,2.9,Estimate,True
+Djibouti,262,2,202,2018,2.9,Estimate,False
+Djibouti,262,2,202,2020,2.9,Estimate,False
+Djibouti,262,2,202,2021,2.9,Estimate,False
+Djibouti,262,2,202,2022,2.6,Estimate,False
+Djibouti,262,2,202,2023,2.6,Estimate,False
+Djibouti,262,2,202,2024,3.5,Estimate,False
+Gabon,266,2,202,2020,4.1,Estimate,True
+Gabon,266,2,202,2021,4.09,Estimate,True
+Gabon,266,2,202,2022,4.07,Estimate,True
+Gabon,266,2,202,2023,4.06,Estimate,True
+Georgia,268,142,145,2006,1.41,Official statistics,False
+Georgia,268,142,145,2007,1.45,Official statistics,False
+Georgia,268,142,145,2008,1.66,Official statistics,False
+Georgia,268,142,145,2009,1.85,Official statistics,False
+Georgia,268,142,145,2010,1.81,Official statistics,False
+Georgia,268,142,145,2014,1.97,Official statistics,False
+Georgia,268,142,145,2015,2.21,Official statistics,False
+Georgia,268,142,145,2016,2.23,Official statistics,False
+Georgia,268,142,145,2017,2.14,Official statistics,False
+Georgia,268,142,145,2018,2.09,Official statistics,False
+Georgia,268,142,145,2019,2.02,Official statistics,False
+Georgia,268,142,145,2020,1.98,Official statistics,False
+Georgia,268,142,145,2022,1.83,Official statistics,False
+Georgia,268,142,145,2023,1.71,Official statistics,False
+Georgia,268,142,145,2023,1.7,Register,False
+Georgia,268,142,145,2024,1.69,Official statistics,False
+Georgia,268,142,145,2024,1.67,Register,False
+Georgia,268,142,145,2025,1.53,Register,False
+Gambia,270,2,202,2019,4.4,Survey,False
+Germany,276,150,155,2000,1.38,Official statistics,False
+Germany,276,150,155,2001,1.35,Official statistics,False
+Germany,276,150,155,2002,1.34,Official statistics,False
+Germany,276,150,155,2003,1.34,Official statistics,False
+Germany,276,150,155,2004,1.36,Official statistics,False
+Germany,276,150,155,2005,1.34,Official statistics,False
+Germany,276,150,155,2006,1.33,Official statistics,False
+Germany,276,150,155,2007,1.37,Official statistics,False
+Germany,276,150,155,2008,1.38,Official statistics,False
+Germany,276,150,155,2009,1.36,Official statistics,False
+Germany,276,150,155,2010,1.39,Official statistics,False
+Germany,276,150,155,2011,1.39,Official statistics,False
+Germany,276,150,155,2012,1.41,Official statistics,False
+Germany,276,150,155,2013,1.42,Official statistics,False
+Germany,276,150,155,2014,1.47,Official statistics,False
+Germany,276,150,155,2015,1.5,Official statistics,False
+Germany,276,150,155,2016,1.6,Official statistics,False
+Germany,276,150,155,2017,1.57,Official statistics,False
+Germany,276,150,155,2018,1.57,Official statistics,False
+Germany,276,150,155,2019,1.54,Official statistics,False
+Germany,276,150,155,2020,1.53,Official statistics,False
+Germany,276,150,155,2021,1.58,Official statistics,False
+Germany,276,150,155,2022,1.46,Official statistics,False
+Germany,276,150,155,2023,1.39,Official statistics,False
+Germany,276,150,155,2024,1.36,Official statistics,False
+Ghana,288,2,202,2022,3.9,Survey,False
+Gibraltar,292,150,39,2021,1.39,Estimate,False
+Kiribati,296,9,57,2023,3.2,Estimate,False
+Greece,300,150,39,1960,2.23,Official statistics,False
+Greece,300,150,39,1961,2.13,Official statistics,False
+Greece,300,150,39,1962,2.16,Official statistics,False
+Greece,300,150,39,1963,2.14,Official statistics,False
+Greece,300,150,39,1964,2.24,Official statistics,False
+Greece,300,150,39,1965,2.25,Official statistics,False
+Greece,300,150,39,1966,2.32,Official statistics,False
+Greece,300,150,39,1967,2.45,Official statistics,False
+Greece,300,150,39,1968,2.42,Official statistics,False
+Greece,300,150,39,1969,2.36,Official statistics,False
+Greece,300,150,39,1970,2.4,Official statistics,False
+Greece,300,150,39,1971,2.32,Official statistics,False
+Greece,300,150,39,1972,2.32,Official statistics,False
+Greece,300,150,39,1973,2.27,Official statistics,False
+Greece,300,150,39,1974,2.38,Official statistics,False
+Greece,300,150,39,1975,2.33,Official statistics,False
+Greece,300,150,39,1976,2.35,Official statistics,False
+Greece,300,150,39,1977,2.27,Official statistics,False
+Greece,300,150,39,1978,2.28,Official statistics,False
+Greece,300,150,39,1979,2.26,Official statistics,False
+Greece,300,150,39,1980,2.23,Official statistics,False
+Greece,300,150,39,1981,2.09,Official statistics,False
+Greece,300,150,39,1982,2.03,Official statistics,False
+Greece,300,150,39,1983,1.94,Official statistics,False
+Greece,300,150,39,1984,1.83,Official statistics,False
+Greece,300,150,39,1985,1.67,Official statistics,False
+Greece,300,150,39,1986,1.6,Official statistics,False
+Greece,300,150,39,1987,1.5,Official statistics,False
+Greece,300,150,39,1988,1.5,Official statistics,False
+Greece,300,150,39,1989,1.4,Official statistics,False
+Greece,300,150,39,1990,1.39,Official statistics,False
+Greece,300,150,39,1991,1.37,Official statistics,False
+Greece,300,150,39,1992,1.36,Official statistics,False
+Greece,300,150,39,1993,1.32,Official statistics,False
+Greece,300,150,39,1994,1.33,Official statistics,False
+Greece,300,150,39,1995,1.28,Official statistics,False
+Greece,300,150,39,1996,1.26,Official statistics,False
+Greece,300,150,39,1997,1.27,Official statistics,False
+Greece,300,150,39,1998,1.24,Official statistics,False
+Greece,300,150,39,1999,1.23,Official statistics,False
+Greece,300,150,39,2000,1.25,Official statistics,False
+Greece,300,150,39,2001,1.25,Official statistics,False
+Greece,300,150,39,2002,1.28,Official statistics,False
+Greece,300,150,39,2003,1.29,Official statistics,False
+Greece,300,150,39,2004,1.31,Official statistics,False
+Greece,300,150,39,2005,1.34,Official statistics,False
+Greece,300,150,39,2006,1.4,Official statistics,False
+Greece,300,150,39,2007,1.41,Official statistics,False
+Greece,300,150,39,2008,1.5,Official statistics,False
+Greece,300,150,39,2009,1.5,Official statistics,False
+Greece,300,150,39,2010,1.48,Official statistics,False
+Greece,300,150,39,2011,1.4,Official statistics,False
+Greece,300,150,39,2012,1.34,Official statistics,False
+Greece,300,150,39,2013,1.29,Official statistics,False
+Greece,300,150,39,2014,1.3,Official statistics,False
+Greece,300,150,39,2015,1.33,Official statistics,False
+Greece,300,150,39,2016,1.38,Official statistics,False
+Greece,300,150,39,2017,1.35,Official statistics,False
+Greece,300,150,39,2018,1.35,Official statistics,False
+Greece,300,150,39,2019,1.34,Official statistics,False
+Greece,300,150,39,2020,1.39,Official statistics,False
+Greece,300,150,39,2021,1.43,Official statistics,False
+Greece,300,150,39,2022,1.32,Official statistics,False
+Greece,300,150,39,2023,1.26,Official statistics,False
+Greece,300,150,39,2024,1.24,Official statistics,False
+Greenland,304,19,21,2023,1.8,Register,False
+Grenada,308,19,419,2019,1.54,Estimate,False
+Grenada,308,19,419,2020,1.53,Estimate,False
+Grenada,308,19,419,2021,1.52,Estimate,False
+Grenada,308,19,419,2022,1.5,Estimate,False
+Grenada,308,19,419,2023,1.49,Estimate,False
+Guadeloupe,312,19,419,2022,2.11,Estimate,False
+Guadeloupe,312,19,419,2023,2.09,Estimate,False
+Guam,316,9,57,2019,2.74,Register,False
+Guam,316,9,57,2020,2.635,Register,False
+Guam,316,9,57,2021,2.355,Register,False
+Guam,316,9,57,2022,2.256,Register,False
+Guam,316,9,57,2023,2.114,Register,False
+Guatemala,320,19,419,2022,2.34,Estimate,False
+Guatemala,320,19,419,2023,2.31,Estimate,False
+Guinea,324,2,202,2022,4.5,Estimate,True
+Guinea,324,2,202,2023,4.4,Estimate,True
+Guyana,328,19,419,2019,2.52,Estimate,False
+Guyana,328,19,419,2020,2.49,Estimate,False
+Guyana,328,19,419,2021,2.46,Estimate,False
+Guyana,328,19,419,2022,2.44,Estimate,False
+Guyana,328,19,419,2023,2.41,Estimate,False
+Haiti,332,19,419,2016,3.05,Estimate,False
+Haiti,332,19,419,2017,2.98,Estimate,False
+Haiti,332,19,419,2018,2.92,Estimate,False
+Haiti,332,19,419,2019,2.86,Estimate,False
+Haiti,332,19,419,2020,2.8,Estimate,False
+Haiti,332,19,419,2021,2.75,Estimate,False
+Haiti,332,19,419,2022,2.7,Estimate,False
+Haiti,332,19,419,2023,2.66,Estimate,False
+Honduras,340,19,419,2014,2.79,Estimate,False
+Honduras,340,19,419,2015,2.75,Estimate,False
+Honduras,340,19,419,2016,2.7,Estimate,False
+Honduras,340,19,419,2017,2.66,Estimate,False
+Honduras,340,19,419,2018,2.65,Estimate,False
+Honduras,340,19,419,2019,2.61,Estimate,False
+Honduras,340,19,419,2020,2.58,Estimate,False
+Honduras,340,19,419,2021,2.55,Estimate,False
+Honduras,340,19,419,2022,2.52,Estimate,False
+Honduras,340,19,419,2023,2.5,Estimate,False
+Hungary,348,150,151,1960,2.02,Official statistics,False
+Hungary,348,150,151,1961,1.94,Official statistics,False
+Hungary,348,150,151,1962,1.79,Official statistics,False
+Hungary,348,150,151,1963,1.82,Official statistics,False
+Hungary,348,150,151,1964,1.82,Official statistics,False
+Hungary,348,150,151,1965,1.82,Official statistics,False
+Hungary,348,150,151,1966,1.89,Official statistics,False
+Hungary,348,150,151,1967,2.01,Official statistics,False
+Hungary,348,150,151,1968,2.06,Official statistics,False
+Hungary,348,150,151,1969,2.04,Official statistics,False
+Hungary,348,150,151,1970,1.98,Official statistics,False
+Hungary,348,150,151,1971,1.93,Official statistics,False
+Hungary,348,150,151,1972,1.93,Official statistics,False
+Hungary,348,150,151,1973,1.93,Official statistics,False
+Hungary,348,150,151,1974,2.27,Official statistics,False
+Hungary,348,150,151,1975,2.35,Official statistics,False
+Hungary,348,150,151,1976,2.23,Official statistics,False
+Hungary,348,150,151,1977,2.15,Official statistics,False
+Hungary,348,150,151,1978,2.06,Official statistics,False
+Hungary,348,150,151,1979,2.01,Official statistics,False
+Hungary,348,150,151,1980,1.91,Official statistics,False
+Hungary,348,150,151,1981,1.88,Official statistics,False
+Hungary,348,150,151,1982,1.8,Official statistics,False
+Hungary,348,150,151,1983,1.75,Official statistics,False
+Hungary,348,150,151,1984,1.75,Official statistics,False
+Hungary,348,150,151,1985,1.85,Official statistics,False
+Hungary,348,150,151,1986,1.84,Official statistics,False
+Hungary,348,150,151,1987,1.82,Official statistics,False
+Hungary,348,150,151,1988,1.81,Official statistics,False
+Hungary,348,150,151,1989,1.82,Official statistics,False
+Hungary,348,150,151,1990,1.87,Official statistics,False
+Hungary,348,150,151,1991,1.87,Official statistics,False
+Hungary,348,150,151,1992,1.77,Official statistics,False
+Hungary,348,150,151,1993,1.68,Official statistics,False
+Hungary,348,150,151,1994,1.64,Official statistics,False
+Hungary,348,150,151,1995,1.57,Official statistics,False
+Hungary,348,150,151,1996,1.46,Official statistics,False
+Hungary,348,150,151,1997,1.37,Official statistics,False
+Hungary,348,150,151,1998,1.32,Official statistics,False
+Hungary,348,150,151,1999,1.28,Official statistics,False
+Hungary,348,150,151,2000,1.32,Official statistics,False
+Hungary,348,150,151,2001,1.31,Official statistics,False
+Hungary,348,150,151,2002,1.3,Official statistics,False
+Hungary,348,150,151,2003,1.27,Official statistics,False
+Hungary,348,150,151,2004,1.28,Official statistics,False
+Hungary,348,150,151,2005,1.31,Official statistics,False
+Hungary,348,150,151,2006,1.34,Official statistics,False
+Hungary,348,150,151,2007,1.32,Official statistics,False
+Hungary,348,150,151,2008,1.35,Official statistics,False
+Hungary,348,150,151,2009,1.32,Official statistics,False
+Hungary,348,150,151,2010,1.25,Official statistics,False
+Hungary,348,150,151,2011,1.23,Official statistics,False
+Hungary,348,150,151,2012,1.34,Official statistics,False
+Hungary,348,150,151,2013,1.36,Official statistics,False
+Hungary,348,150,151,2014,1.45,Official statistics,False
+Hungary,348,150,151,2015,1.46,Official statistics,False
+Hungary,348,150,151,2016,1.55,Official statistics,False
+Hungary,348,150,151,2017,1.56,Official statistics,False
+Hungary,348,150,151,2018,1.57,Official statistics,False
+Hungary,348,150,151,2019,1.58,Official statistics,False
+Hungary,348,150,151,2020,1.61,Official statistics,False
+Hungary,348,150,151,2021,1.63,Official statistics,False
+Hungary,348,150,151,2022,1.57,Official statistics,False
+Hungary,348,150,151,2023,1.55,Official statistics,False
+Hungary,348,150,151,2024,1.41,Official statistics,False
+Iceland,352,150,154,1963,3.99,Official statistics,False
+Iceland,352,150,154,1964,3.88,Official statistics,False
+Iceland,352,150,154,1965,3.73,Official statistics,False
+Iceland,352,150,154,1966,3.59,Official statistics,False
+Iceland,352,150,154,1967,3.28,Official statistics,False
+Iceland,352,150,154,1968,3.06,Official statistics,False
+Iceland,352,150,154,1969,2.99,Official statistics,False
+Iceland,352,150,154,1970,2.81,Official statistics,False
+Iceland,352,150,154,1971,2.92,Official statistics,False
+Iceland,352,150,154,1972,3.09,Official statistics,False
+Iceland,352,150,154,1973,2.94,Official statistics,False
+Iceland,352,150,154,1974,2.66,Official statistics,False
+Iceland,352,150,154,1975,2.65,Official statistics,False
+Iceland,352,150,154,1976,2.52,Official statistics,False
+Iceland,352,150,154,1977,2.31,Official statistics,False
+Iceland,352,150,154,1978,2.35,Official statistics,False
+Iceland,352,150,154,1979,2.49,Official statistics,False
+Iceland,352,150,154,1980,2.48,Official statistics,False
+Iceland,352,150,154,1981,2.33,Official statistics,False
+Iceland,352,150,154,1982,2.27,Official statistics,False
+Iceland,352,150,154,1983,2.24,Official statistics,False
+Iceland,352,150,154,1984,2.08,Official statistics,False
+Iceland,352,150,154,1985,1.93,Official statistics,False
+Iceland,352,150,154,1986,1.92,Official statistics,False
+Iceland,352,150,154,1987,2.06,Official statistics,False
+Iceland,352,150,154,1988,2.26,Official statistics,False
+Iceland,352,150,154,1989,2.19,Official statistics,False
+Iceland,352,150,154,1990,2.3,Official statistics,False
+Iceland,352,150,154,1991,2.18,Official statistics,False
+Iceland,352,150,154,1992,2.21,Official statistics,False
+Iceland,352,150,154,1993,2.22,Official statistics,False
+Iceland,352,150,154,1994,2.14,Official statistics,False
+Iceland,352,150,154,1995,2.08,Official statistics,False
+Iceland,352,150,154,1996,2.12,Official statistics,False
+Iceland,352,150,154,1997,2.04,Official statistics,False
+Iceland,352,150,154,1998,2.05,Official statistics,False
+Iceland,352,150,154,1999,1.99,Official statistics,False
+Iceland,352,150,154,2000,2.08,Official statistics,False
+Iceland,352,150,154,2001,1.95,Official statistics,False
+Iceland,352,150,154,2002,1.93,Official statistics,False
+Iceland,352,150,154,2003,1.99,Official statistics,False
+Iceland,352,150,154,2004,2.04,Official statistics,False
+Iceland,352,150,154,2005,2.05,Official statistics,False
+Iceland,352,150,154,2006,2.08,Official statistics,False
+Iceland,352,150,154,2007,2.09,Official statistics,False
+Iceland,352,150,154,2008,2.15,Official statistics,False
+Iceland,352,150,154,2009,2.23,Official statistics,False
+Iceland,352,150,154,2010,2.2,Official statistics,False
+Iceland,352,150,154,2011,2.02,Official statistics,False
+Iceland,352,150,154,2012,2.04,Official statistics,False
+Iceland,352,150,154,2013,1.93,Official statistics,False
+Iceland,352,150,154,2014,1.93,Official statistics,False
+Iceland,352,150,154,2015,1.8,Official statistics,False
+Iceland,352,150,154,2016,1.74,Official statistics,False
+Iceland,352,150,154,2017,1.71,Official statistics,False
+Iceland,352,150,154,2018,1.71,Official statistics,False
+Iceland,352,150,154,2019,1.74,Official statistics,False
+Iceland,352,150,154,2020,1.72,Official statistics,False
+Iceland,352,150,154,2021,1.82,Official statistics,False
+Iceland,352,150,154,2022,1.59,Official statistics,False
+Iceland,352,150,154,2023,1.55,Official statistics,False
+Iceland,352,150,154,2024,1.56,Official statistics,False
+India,356,142,34,2021,2.0,Estimate,False
+India,356,142,34,2022,2.0,Estimate,False
+India,356,142,34,2023,1.9,Estimate,False
+Indonesia,360,142,35,2021,2.24,Estimate,False
+Indonesia,360,142,35,2022,2.14,Estimate,False
+Indonesia,360,142,35,2023,2.14,Estimate,False
+"Iran, Islamic Republic of",364,142,34,2022,1.66,Estimate,False
+Iraq,368,142,145,2017,4.0,Register,False
+Iraq,368,142,145,2018,3.9,Register,False
+Iraq,368,142,145,2019,3.9,Register,False
+Iraq,368,142,145,2020,3.9,Register,False
+Iraq,368,142,145,2021,3.9,Register,False
+Ireland,372,150,154,1960,3.78,Official statistics,False
+Ireland,372,150,154,1961,3.78,Official statistics,False
+Ireland,372,150,154,1962,3.92,Official statistics,False
+Ireland,372,150,154,1963,4.01,Official statistics,False
+Ireland,372,150,154,1964,4.07,Official statistics,False
+Ireland,372,150,154,1965,4.04,Official statistics,False
+Ireland,372,150,154,1966,3.94,Official statistics,False
+Ireland,372,150,154,1967,3.84,Official statistics,False
+Ireland,372,150,154,1968,3.77,Official statistics,False
+Ireland,372,150,154,1969,3.83,Official statistics,False
+Ireland,372,150,154,1970,3.85,Official statistics,False
+Ireland,372,150,154,1971,3.93,Official statistics,False
+Ireland,372,150,154,1972,3.84,Official statistics,False
+Ireland,372,150,154,1973,3.71,Official statistics,False
+Ireland,372,150,154,1974,3.59,Official statistics,False
+Ireland,372,150,154,1975,3.37,Official statistics,False
+Ireland,372,150,154,1976,3.29,Official statistics,False
+Ireland,372,150,154,1977,3.24,Official statistics,False
+Ireland,372,150,154,1978,3.21,Official statistics,False
+Ireland,372,150,154,1979,3.21,Official statistics,False
+Ireland,372,150,154,1980,3.21,Official statistics,False
+Ireland,372,150,154,1981,3.05,Official statistics,False
+Ireland,372,150,154,1982,2.94,Official statistics,False
+Ireland,372,150,154,1983,2.74,Official statistics,False
+Ireland,372,150,154,1984,2.58,Official statistics,False
+Ireland,372,150,154,1985,2.48,Official statistics,False
+Ireland,372,150,154,1986,2.44,Official statistics,False
+Ireland,372,150,154,1987,2.32,Official statistics,False
+Ireland,372,150,154,1988,2.17,Official statistics,False
+Ireland,372,150,154,1989,2.08,Official statistics,False
+Ireland,372,150,154,1990,2.11,Official statistics,False
+Ireland,372,150,154,1991,2.08,Official statistics,False
+Ireland,372,150,154,1992,1.99,Official statistics,False
+Ireland,372,150,154,1993,1.9,Official statistics,False
+Ireland,372,150,154,1994,1.85,Official statistics,False
+Ireland,372,150,154,1995,1.84,Official statistics,False
+Ireland,372,150,154,1996,1.88,Official statistics,False
+Ireland,372,150,154,1997,1.93,Official statistics,False
+Ireland,372,150,154,1998,1.94,Official statistics,False
+Ireland,372,150,154,1999,1.9,Official statistics,False
+Ireland,372,150,154,2000,1.89,Official statistics,False
+Ireland,372,150,154,2001,1.94,Official statistics,False
+Ireland,372,150,154,2002,1.97,Official statistics,False
+Ireland,372,150,154,2003,1.96,Official statistics,False
+Ireland,372,150,154,2004,1.93,Official statistics,False
+Ireland,372,150,154,2005,1.86,Official statistics,False
+Ireland,372,150,154,2006,1.91,Official statistics,False
+Ireland,372,150,154,2007,2.01,Official statistics,False
+Ireland,372,150,154,2008,2.06,Official statistics,False
+Ireland,372,150,154,2009,2.06,Official statistics,False
+Ireland,372,150,154,2010,2.05,Official statistics,False
+Ireland,372,150,154,2011,2.03,Official statistics,False
+Ireland,372,150,154,2012,1.98,Official statistics,False
+Ireland,372,150,154,2013,1.93,Official statistics,False
+Ireland,372,150,154,2014,1.89,Official statistics,False
+Ireland,372,150,154,2015,1.85,Official statistics,False
+Ireland,372,150,154,2016,1.81,Official statistics,False
+Ireland,372,150,154,2017,1.76,Official statistics,False
+Ireland,372,150,154,2018,1.74,Official statistics,False
+Ireland,372,150,154,2019,1.69,Official statistics,False
+Ireland,372,150,154,2020,1.6,Official statistics,False
+Ireland,372,150,154,2021,1.72,Official statistics,False
+Ireland,372,150,154,2022,1.51,Official statistics,False
+Ireland,372,150,154,2023,1.5,Official statistics,False
+Ireland,372,150,154,2024,1.47,Official statistics,False
+Italy,380,150,39,1960,2.4,Official statistics,False
+Italy,380,150,39,1961,2.44,Official statistics,False
+Italy,380,150,39,1962,2.46,Official statistics,False
+Italy,380,150,39,1963,2.51,Official statistics,False
+Italy,380,150,39,1964,2.66,Official statistics,False
+Italy,380,150,39,1965,2.6,Official statistics,False
+Italy,380,150,39,1966,2.58,Official statistics,False
+Italy,380,150,39,1967,2.5,Official statistics,False
+Italy,380,150,39,1968,2.46,Official statistics,False
+Italy,380,150,39,1969,2.47,Official statistics,False
+Italy,380,150,39,1970,2.38,Official statistics,False
+Italy,380,150,39,1971,2.4,Official statistics,False
+Italy,380,150,39,1972,2.35,Official statistics,False
+Italy,380,150,39,1973,2.3,Official statistics,False
+Italy,380,150,39,1974,2.28,Official statistics,False
+Italy,380,150,39,1975,2.17,Official statistics,False
+Italy,380,150,39,1976,2.04,Official statistics,False
+Italy,380,150,39,1977,1.93,Official statistics,False
+Italy,380,150,39,1978,1.84,Official statistics,False
+Italy,380,150,39,1979,1.73,Official statistics,False
+Italy,380,150,39,1980,1.64,Official statistics,False
+Italy,380,150,39,1981,1.58,Official statistics,False
+Italy,380,150,39,1982,1.56,Official statistics,False
+Italy,380,150,39,1983,1.51,Official statistics,False
+Italy,380,150,39,1984,1.46,Official statistics,False
+Italy,380,150,39,1985,1.42,Official statistics,False
+Italy,380,150,39,1986,1.35,Official statistics,False
+Italy,380,150,39,1987,1.33,Official statistics,False
+Italy,380,150,39,1988,1.36,Official statistics,False
+Italy,380,150,39,1989,1.33,Official statistics,False
+Italy,380,150,39,1990,1.33,Official statistics,False
+Italy,380,150,39,1991,1.3,Official statistics,False
+Italy,380,150,39,1992,1.3,Official statistics,False
+Italy,380,150,39,1993,1.25,Official statistics,False
+Italy,380,150,39,1994,1.21,Official statistics,False
+Italy,380,150,39,1995,1.19,Official statistics,False
+Italy,380,150,39,1996,1.2,Official statistics,False
+Italy,380,150,39,1997,1.22,Official statistics,False
+Italy,380,150,39,1998,1.22,Official statistics,False
+Italy,380,150,39,1999,1.23,Official statistics,False
+Italy,380,150,39,2000,1.26,Official statistics,False
+Italy,380,150,39,2001,1.25,Official statistics,False
+Italy,380,150,39,2002,1.27,Official statistics,False
+Italy,380,150,39,2003,1.29,Official statistics,False
+Italy,380,150,39,2004,1.34,Official statistics,False
+Italy,380,150,39,2005,1.33,Official statistics,False
+Italy,380,150,39,2006,1.37,Official statistics,False
+Italy,380,150,39,2007,1.39,Official statistics,False
+Italy,380,150,39,2008,1.44,Official statistics,False
+Italy,380,150,39,2009,1.44,Official statistics,False
+Italy,380,150,39,2010,1.44,Official statistics,False
+Italy,380,150,39,2011,1.42,Official statistics,False
+Italy,380,150,39,2012,1.42,Official statistics,False
+Italy,380,150,39,2013,1.39,Official statistics,False
+Italy,380,150,39,2014,1.38,Official statistics,False
+Italy,380,150,39,2015,1.36,Official statistics,False
+Italy,380,150,39,2016,1.36,Official statistics,False
+Italy,380,150,39,2017,1.34,Official statistics,False
+Italy,380,150,39,2018,1.31,Official statistics,False
+Italy,380,150,39,2019,1.27,Official statistics,False
+Italy,380,150,39,2020,1.24,Official statistics,False
+Italy,380,150,39,2021,1.25,Official statistics,False
+Italy,380,150,39,2022,1.24,Official statistics,False
+Italy,380,150,39,2023,1.21,Official statistics,False
+Italy,380,150,39,2024,1.18,Official statistics,False
+Côte d'Ivoire,384,2,202,2022,4.3,Estimate,False
+Côte d'Ivoire,384,2,202,2023,4.2,Estimate,False
+Côte d'Ivoire,384,2,202,2024,4.2,Estimate,False
+Côte d'Ivoire,384,2,202,2025,4.1,Estimate,False
+Jamaica,388,19,419,2019,1.39,Estimate,False
+Jamaica,388,19,419,2020,1.38,Estimate,False
+Jamaica,388,19,419,2021,1.38,Estimate,False
+Jamaica,388,19,419,2022,1.37,Estimate,False
+Jamaica,388,19,419,2023,1.36,Estimate,False
+Kazakhstan,398,142,143,2023,2.96,Register,False
+Jordan,400,142,145,2023,2.6,Survey,False
+Kosovo,412,150,39,2016,1.66,Official statistics,False
+Kosovo,412,150,39,2017,1.65,Official statistics,False
+Kosovo,412,150,39,2018,1.61,Official statistics,False
+Kosovo,412,150,39,2019,1.55,Official statistics,False
+Kosovo,412,150,39,2020,1.995,Estimate,True
+Kosovo,412,150,39,2021,1.95,Estimate,True
+Kosovo,412,150,39,2022,1.905,Estimate,True
+Kosovo,412,150,39,2023,1.86,Estimate,True
+Kuwait,414,142,145,2023,1.524,Register,False
+Kuwait,414,142,145,2024,1.56,Register,False
+Kyrgyzstan,417,142,143,2023,2.7,Register,False
+Kyrgyzstan,417,142,143,2024,2.6,Register,False
+Lao People's Democratic Republic,418,142,35,2018,2.76,Estimate,False
+Lao People's Democratic Republic,418,142,35,2019,2.68,Estimate,False
+Lao People's Democratic Republic,418,142,35,2020,2.5,Estimate,False
+Lao People's Democratic Republic,418,142,35,2021,2.54,Estimate,False
+Lao People's Democratic Republic,418,142,35,2022,2.48,Estimate,False
+Lao People's Democratic Republic,418,142,35,2023,2.42,Estimate,False
+Lao People's Democratic Republic,418,142,35,2023,2.5,Survey,False
+Lao People's Democratic Republic,418,142,35,2024,2.36,Estimate,False
+Lesotho,426,2,202,2021,2.93,Estimate,True
+Lesotho,426,2,202,2022,2.88,Estimate,True
+Lesotho,426,2,202,2023,2.82,Estimate,True
+Lesotho,426,2,202,2023,2.5,Survey,False
+Latvia,428,150,154,2000,1.25,Official statistics,False
+Latvia,428,150,154,2001,1.22,Official statistics,False
+Latvia,428,150,154,2002,1.26,Official statistics,False
+Latvia,428,150,154,2003,1.32,Official statistics,False
+Latvia,428,150,154,2004,1.29,Official statistics,False
+Latvia,428,150,154,2005,1.39,Official statistics,False
+Latvia,428,150,154,2006,1.46,Official statistics,False
+Latvia,428,150,154,2007,1.54,Official statistics,False
+Latvia,428,150,154,2008,1.58,Official statistics,False
+Latvia,428,150,154,2009,1.46,Official statistics,False
+Latvia,428,150,154,2010,1.36,Official statistics,False
+Latvia,428,150,154,2011,1.33,Official statistics,False
+Latvia,428,150,154,2012,1.44,Official statistics,False
+Latvia,428,150,154,2013,1.52,Official statistics,False
+Latvia,428,150,154,2014,1.65,Official statistics,False
+Latvia,428,150,154,2015,1.7,Official statistics,False
+Latvia,428,150,154,2016,1.74,Official statistics,False
+Latvia,428,150,154,2017,1.69,Official statistics,False
+Latvia,428,150,154,2018,1.6,Official statistics,False
+Latvia,428,150,154,2019,1.61,Official statistics,False
+Latvia,428,150,154,2020,1.55,Official statistics,False
+Latvia,428,150,154,2021,1.57,Official statistics,False
+Latvia,428,150,154,2022,1.47,Official statistics,False
+Latvia,428,150,154,2023,1.34,Official statistics,False
+Latvia,428,150,154,2024,1.24,Official statistics,False
+Liberia,430,2,202,2022,3.85,Estimate,False
+Liberia,430,2,202,2023,3.8833,Estimate,True
+Libya,434,2,15,2014,3.4,Survey,False
+Libya,434,2,15,2018,4.17,Register,False
+Libya,434,2,15,2019,4.22,Register,False
+Libya,434,2,15,2020,4.14,Register,False
+Libya,434,2,15,2021,3.92,Register,False
+Libya,434,2,15,2022,3.83,Register,False
+Liechtenstein,438,150,155,2000,1.57,Official statistics,False
+Liechtenstein,438,150,155,2001,1.52,Official statistics,False
+Liechtenstein,438,150,155,2002,1.47,Official statistics,False
+Liechtenstein,438,150,155,2003,1.36,Official statistics,False
+Liechtenstein,438,150,155,2004,1.44,Official statistics,False
+Liechtenstein,438,150,155,2005,1.49,Official statistics,False
+Liechtenstein,438,150,155,2006,1.43,Official statistics,False
+Liechtenstein,438,150,155,2007,1.42,Official statistics,False
+Liechtenstein,438,150,155,2008,1.43,Official statistics,False
+Liechtenstein,438,150,155,2009,1.71,Official statistics,False
+Liechtenstein,438,150,155,2010,1.4,Official statistics,False
+Liechtenstein,438,150,155,2011,1.69,Official statistics,False
+Liechtenstein,438,150,155,2012,1.51,Official statistics,False
+Liechtenstein,438,150,155,2013,1.45,Official statistics,False
+Liechtenstein,438,150,155,2014,1.59,Official statistics,False
+Liechtenstein,438,150,155,2015,1.4,Official statistics,False
+Liechtenstein,438,150,155,2016,1.61,Official statistics,False
+Liechtenstein,438,150,155,2017,1.44,Official statistics,False
+Liechtenstein,438,150,155,2018,1.58,Official statistics,False
+Liechtenstein,438,150,155,2019,1.48,Official statistics,False
+Liechtenstein,438,150,155,2020,1.46,Official statistics,False
+Liechtenstein,438,150,155,2021,1.53,Official statistics,False
+Liechtenstein,438,150,155,2022,1.47,Official statistics,False
+Liechtenstein,438,150,155,2023,1.45,Official statistics,False
+Liechtenstein,438,150,155,2024,1.37,Official statistics,False
+Lithuania,440,150,154,1970,2.4,Official statistics,False
+Lithuania,440,150,154,1971,2.41,Official statistics,False
+Lithuania,440,150,154,1972,2.34,Official statistics,False
+Lithuania,440,150,154,1973,2.22,Official statistics,False
+Lithuania,440,150,154,1974,2.21,Official statistics,False
+Lithuania,440,150,154,1975,2.18,Official statistics,False
+Lithuania,440,150,154,1976,2.18,Official statistics,False
+Lithuania,440,150,154,1977,2.14,Official statistics,False
+Lithuania,440,150,154,1978,2.08,Official statistics,False
+Lithuania,440,150,154,1979,2.05,Official statistics,False
+Lithuania,440,150,154,1980,1.99,Official statistics,False
+Lithuania,440,150,154,1981,1.98,Official statistics,False
+Lithuania,440,150,154,1982,1.97,Official statistics,False
+Lithuania,440,150,154,1983,2.1,Official statistics,False
+Lithuania,440,150,154,1984,2.07,Official statistics,False
+Lithuania,440,150,154,1985,2.08,Official statistics,False
+Lithuania,440,150,154,1986,2.12,Official statistics,False
+Lithuania,440,150,154,1987,2.11,Official statistics,False
+Lithuania,440,150,154,1988,2.02,Official statistics,False
+Lithuania,440,150,154,1989,1.98,Official statistics,False
+Lithuania,440,150,154,1990,2.03,Official statistics,False
+Lithuania,440,150,154,1991,2.01,Official statistics,False
+Lithuania,440,150,154,1992,1.97,Official statistics,False
+Lithuania,440,150,154,1993,1.74,Official statistics,False
+Lithuania,440,150,154,1994,1.57,Official statistics,False
+Lithuania,440,150,154,1995,1.55,Official statistics,False
+Lithuania,440,150,154,1996,1.49,Official statistics,False
+Lithuania,440,150,154,1997,1.47,Official statistics,False
+Lithuania,440,150,154,1998,1.46,Official statistics,False
+Lithuania,440,150,154,1999,1.46,Official statistics,False
+Lithuania,440,150,154,2000,1.39,Official statistics,False
+Lithuania,440,150,154,2001,1.29,Official statistics,False
+Lithuania,440,150,154,2002,1.23,Official statistics,False
+Lithuania,440,150,154,2003,1.26,Official statistics,False
+Lithuania,440,150,154,2004,1.27,Official statistics,False
+Lithuania,440,150,154,2005,1.29,Official statistics,False
+Lithuania,440,150,154,2006,1.33,Official statistics,False
+Lithuania,440,150,154,2007,1.36,Official statistics,False
+Lithuania,440,150,154,2008,1.45,Official statistics,False
+Lithuania,440,150,154,2009,1.5,Official statistics,False
+Lithuania,440,150,154,2010,1.5,Official statistics,False
+Lithuania,440,150,154,2011,1.55,Official statistics,False
+Lithuania,440,150,154,2012,1.6,Official statistics,False
+Lithuania,440,150,154,2013,1.59,Official statistics,False
+Lithuania,440,150,154,2014,1.57,Official statistics,False
+Lithuania,440,150,154,2015,1.63,Official statistics,False
+Lithuania,440,150,154,2016,1.63,Official statistics,False
+Lithuania,440,150,154,2017,1.57,Official statistics,False
+Lithuania,440,150,154,2018,1.53,Official statistics,False
+Lithuania,440,150,154,2019,1.43,Official statistics,False
+Lithuania,440,150,154,2020,1.36,Official statistics,False
+Lithuania,440,150,154,2021,1.36,Official statistics,False
+Lithuania,440,150,154,2022,1.27,Official statistics,False
+Lithuania,440,150,154,2023,1.18,Official statistics,False
+Lithuania,440,150,154,2024,1.11,Official statistics,False
+Luxembourg,442,150,155,1960,2.29,Official statistics,False
+Luxembourg,442,150,155,1967,2.24,Official statistics,False
+Luxembourg,442,150,155,1968,2.12,Official statistics,False
+Luxembourg,442,150,155,1969,2.02,Official statistics,False
+Luxembourg,442,150,155,1970,1.97,Official statistics,False
+Luxembourg,442,150,155,1971,1.95,Official statistics,False
+Luxembourg,442,150,155,1972,1.75,Official statistics,False
+Luxembourg,442,150,155,1973,1.58,Official statistics,False
+Luxembourg,442,150,155,1974,1.58,Official statistics,False
+Luxembourg,442,150,155,1975,1.55,Official statistics,False
+Luxembourg,442,150,155,1976,1.48,Official statistics,False
+Luxembourg,442,150,155,1977,1.5,Official statistics,False
+Luxembourg,442,150,155,1978,1.48,Official statistics,False
+Luxembourg,442,150,155,1979,1.48,Official statistics,False
+Luxembourg,442,150,155,1980,1.5,Official statistics,False
+Luxembourg,442,150,155,1981,1.55,Official statistics,False
+Luxembourg,442,150,155,1982,1.49,Official statistics,False
+Luxembourg,442,150,155,1983,1.43,Official statistics,False
+Luxembourg,442,150,155,1984,1.42,Official statistics,False
+Luxembourg,442,150,155,1985,1.38,Official statistics,False
+Luxembourg,442,150,155,1986,1.43,Official statistics,False
+Luxembourg,442,150,155,1987,1.4,Official statistics,False
+Luxembourg,442,150,155,1988,1.51,Official statistics,False
+Luxembourg,442,150,155,1989,1.52,Official statistics,False
+Luxembourg,442,150,155,1990,1.6,Official statistics,False
+Luxembourg,442,150,155,1991,1.6,Official statistics,False
+Luxembourg,442,150,155,1992,1.64,Official statistics,False
+Luxembourg,442,150,155,1993,1.7,Official statistics,False
+Luxembourg,442,150,155,1994,1.72,Official statistics,False
+Luxembourg,442,150,155,1995,1.7,Official statistics,False
+Luxembourg,442,150,155,1996,1.77,Official statistics,False
+Luxembourg,442,150,155,1997,1.71,Official statistics,False
+Luxembourg,442,150,155,1998,1.68,Official statistics,False
+Luxembourg,442,150,155,1999,1.74,Official statistics,False
+Luxembourg,442,150,155,2000,1.76,Official statistics,False
+Luxembourg,442,150,155,2001,1.66,Official statistics,False
+Luxembourg,442,150,155,2002,1.63,Official statistics,False
+Luxembourg,442,150,155,2003,1.62,Official statistics,False
+Luxembourg,442,150,155,2004,1.66,Official statistics,False
+Luxembourg,442,150,155,2005,1.63,Official statistics,False
+Luxembourg,442,150,155,2006,1.65,Official statistics,False
+Luxembourg,442,150,155,2007,1.61,Official statistics,False
+Luxembourg,442,150,155,2008,1.61,Official statistics,False
+Luxembourg,442,150,155,2009,1.59,Official statistics,False
+Luxembourg,442,150,155,2010,1.63,Official statistics,False
+Luxembourg,442,150,155,2011,1.52,Official statistics,False
+Luxembourg,442,150,155,2012,1.57,Official statistics,False
+Luxembourg,442,150,155,2013,1.55,Official statistics,False
+Luxembourg,442,150,155,2014,1.5,Official statistics,False
+Luxembourg,442,150,155,2015,1.47,Official statistics,False
+Luxembourg,442,150,155,2016,1.41,Official statistics,False
+Luxembourg,442,150,155,2017,1.39,Official statistics,False
+Luxembourg,442,150,155,2018,1.38,Official statistics,False
+Luxembourg,442,150,155,2019,1.34,Official statistics,False
+Luxembourg,442,150,155,2020,1.36,Official statistics,False
+Luxembourg,442,150,155,2021,1.38,Official statistics,False
+Luxembourg,442,150,155,2022,1.31,Official statistics,False
+Luxembourg,442,150,155,2023,1.25,Official statistics,False
+Luxembourg,442,150,155,2024,1.25,Official statistics,False
+Macao,446,142,30,2023,0.586,Register,False
+Madagascar,450,2,202,2020,4.54,Estimate,True
+Madagascar,450,2,202,2021,4.51,Estimate,True
+Madagascar,450,2,202,2021,4.3,Survey,False
+Madagascar,450,2,202,2022,4.48,Estimate,True
+Madagascar,450,2,202,2023,4.45,Estimate,True
+Malawi,454,2,202,2020,4.03,Estimate,True
+Malawi,454,2,202,2020,4.2,Survey,False
+Malawi,454,2,202,2021,3.95,Estimate,True
+Malawi,454,2,202,2022,3.87,Estimate,True
+Malawi,454,2,202,2023,3.78,Estimate,True
+Malaysia,458,142,35,2022,1.6,Register,False
+Malaysia,458,142,35,2023,1.7,Register,False
+Malaysia,458,142,35,2024,1.6,Register,False
+Maldives,462,142,34,2023,1.67,Estimate,True
+Mali,466,2,202,2021,6.1,Estimate,True
+Mali,466,2,202,2022,6.1,Census,False
+Mali,466,2,202,2023,6.0,Estimate,True
+Malta,470,150,39,1977,2.14,Official statistics,False
+Malta,470,150,39,1978,2.05,Official statistics,False
+Malta,470,150,39,1979,2.1,Official statistics,False
+Malta,470,150,39,1980,1.99,Official statistics,False
+Malta,470,150,39,1981,1.87,Official statistics,False
+Malta,470,150,39,1984,1.95,Official statistics,False
+Malta,470,150,39,1985,1.95,Official statistics,False
+Malta,470,150,39,1986,1.93,Official statistics,False
+Malta,470,150,39,1987,1.97,Official statistics,False
+Malta,470,150,39,1988,2.06,Official statistics,False
+Malta,470,150,39,1989,2.1,Official statistics,False
+Malta,470,150,39,1990,2.02,Official statistics,False
+Malta,470,150,39,1991,1.99,Official statistics,False
+Malta,470,150,39,1992,2.07,Official statistics,False
+Malta,470,150,39,1993,1.96,Official statistics,False
+Malta,470,150,39,1994,1.84,Official statistics,False
+Malta,470,150,39,1995,1.77,Official statistics,False
+Malta,470,150,39,1996,1.99,Official statistics,False
+Malta,470,150,39,1997,1.93,Official statistics,False
+Malta,470,150,39,1998,1.84,Official statistics,False
+Malta,470,150,39,1999,1.73,Official statistics,False
+Malta,470,150,39,2000,1.68,Official statistics,False
+Malta,470,150,39,2001,1.48,Official statistics,False
+Malta,470,150,39,2002,1.45,Official statistics,False
+Malta,470,150,39,2003,1.48,Official statistics,False
+Malta,470,150,39,2004,1.4,Official statistics,False
+Malta,470,150,39,2005,1.38,Official statistics,False
+Malta,470,150,39,2006,1.36,Official statistics,False
+Malta,470,150,39,2007,1.35,Official statistics,False
+Malta,470,150,39,2008,1.43,Official statistics,False
+Malta,470,150,39,2009,1.42,Official statistics,False
+Malta,470,150,39,2010,1.36,Official statistics,False
+Malta,470,150,39,2011,1.45,Official statistics,False
+Malta,470,150,39,2012,1.42,Official statistics,False
+Malta,470,150,39,2013,1.36,Official statistics,False
+Malta,470,150,39,2014,1.38,Official statistics,False
+Malta,470,150,39,2015,1.37,Official statistics,False
+Malta,470,150,39,2016,1.37,Official statistics,False
+Malta,470,150,39,2017,1.26,Official statistics,False
+Malta,470,150,39,2018,1.23,Official statistics,False
+Malta,470,150,39,2019,1.14,Official statistics,False
+Malta,470,150,39,2020,1.14,Official statistics,False
+Malta,470,150,39,2021,1.13,Official statistics,False
+Malta,470,150,39,2022,1.08,Official statistics,False
+Malta,470,150,39,2023,1.06,Official statistics,False
+Malta,470,150,39,2024,1.01,Official statistics,False
+Martinique,474,19,419,2022,2.02,Estimate,False
+Martinique,474,19,419,2023,2.01,Estimate,False
+Mauritania,478,2,202,2021,5.2,Survey,False
+Mauritania,478,2,202,2023,4.7,Census,False
+Mauritius,480,2,202,2023,1.4,Register,False
+Mexico,484,19,419,2021,1.97,Estimate,False
+Mexico,484,19,419,2022,1.94,Estimate,False
+Mexico,484,19,419,2023,1.91,Estimate,False
+Monaco,492,150,155,2022,2.1,Register,False
+Monaco,492,150,155,2023,2.1,Register,False
+Mongolia,496,142,30,2023,2.7,Register,False
+Mongolia,496,142,30,2024,2.5,Register,False
+"Moldova, Republic of",498,150,151,2006,1.22,Official statistics,False
+"Moldova, Republic of",498,150,151,2007,1.25,Official statistics,False
+"Moldova, Republic of",498,150,151,2008,1.27,Official statistics,False
+"Moldova, Republic of",498,150,151,2009,1.31,Official statistics,False
+"Moldova, Republic of",498,150,151,2010,1.3,Official statistics,False
+"Moldova, Republic of",498,150,151,2011,1.27,Official statistics,False
+"Moldova, Republic of",498,150,151,2012,1.28,Official statistics,False
+"Moldova, Republic of",498,150,151,2014,1.33,Official statistics,False
+"Moldova, Republic of",498,150,151,2015,1.54,Official statistics,False
+"Moldova, Republic of",498,150,151,2017,1.72,Official statistics,False
+"Moldova, Republic of",498,150,151,2018,1.71,Official statistics,False
+"Moldova, Republic of",498,150,151,2019,1.68,Official statistics,False
+"Moldova, Republic of",498,150,151,2020,1.69,Official statistics,False
+"Moldova, Republic of",498,150,151,2021,1.72,Official statistics,False
+"Moldova, Republic of",498,150,151,2022,1.7,Official statistics,False
+"Moldova, Republic of",498,150,151,2023,1.62,Official statistics,False
+Montenegro,499,150,39,2005,1.69,Official statistics,False
+Montenegro,499,150,39,2006,1.73,Official statistics,False
+Montenegro,499,150,39,2007,1.8,Official statistics,False
+Montenegro,499,150,39,2008,1.89,Official statistics,False
+Montenegro,499,150,39,2009,1.98,Official statistics,False
+Montenegro,499,150,39,2010,1.7,Official statistics,False
+Montenegro,499,150,39,2011,1.65,Official statistics,False
+Montenegro,499,150,39,2012,1.72,Official statistics,False
+Montenegro,499,150,39,2013,1.73,Official statistics,False
+Montenegro,499,150,39,2014,1.75,Official statistics,False
+Montenegro,499,150,39,2015,1.74,Official statistics,False
+Montenegro,499,150,39,2016,1.79,Official statistics,False
+Montenegro,499,150,39,2017,1.78,Official statistics,False
+Montenegro,499,150,39,2018,1.76,Official statistics,False
+Montenegro,499,150,39,2019,1.77,Official statistics,False
+Montenegro,499,150,39,2020,1.75,Official statistics,False
+Montenegro,499,150,39,2021,1.76,Official statistics,False
+Montenegro,499,150,39,2022,1.78,Official statistics,False
+Montenegro,499,150,39,2023,1.76,Official statistics,False
+Montenegro,499,150,39,2024,1.75,Official statistics,False
+Montserrat,500,19,419,2021,1.57,Estimate,False
+Montserrat,500,19,419,2022,1.57,Estimate,False
+Montserrat,500,19,419,2023,1.56,Estimate,False
+Morocco,504,2,15,2022,2.07,Estimate,True
+Morocco,504,2,15,2023,2.05,Estimate,True
+Morocco,504,2,15,2024,1.97,Estimate,True
+Mozambique,508,2,202,2022,4.9,Estimate,True
+Mozambique,508,2,202,2023,4.8,Estimate,True
+Oman,512,142,145,2023,2.0,Register,False
+Oman,512,142,145,2024,1.9,Register,False
+Oman,512,142,145,2025,1.9,Register,False
+Namibia,516,2,202,2017,3.6,Estimate,True
+Namibia,516,2,202,2018,3.55,Estimate,True
+Namibia,516,2,202,2019,3.5,Estimate,True
+Namibia,516,2,202,2020,3.45,Estimate,True
+Namibia,516,2,202,2021,3.4,Estimate,True
+Namibia,516,2,202,2022,3.35,Estimate,True
+Namibia,516,2,202,2023,3.8,Census,False
+Nauru,520,9,57,2023,3.3,Survey,False
+Nepal,524,142,34,2021,1.94,Census,False
+Nepal,524,142,34,2022,2.1,Survey,False
+Nepal,524,142,34,2023,1.917,Estimate,True
+"Netherlands, Kingdom of the",528,150,155,1960,3.12,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1961,3.22,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1962,3.18,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1963,3.19,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1964,3.17,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1965,3.04,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1966,2.9,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1967,2.81,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1968,2.72,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1969,2.75,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1970,2.57,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1971,2.36,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1972,2.15,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1973,1.9,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1974,1.77,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1975,1.66,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1976,1.63,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1977,1.58,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1978,1.58,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1979,1.56,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1980,1.6,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1981,1.56,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1982,1.5,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1983,1.47,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1984,1.49,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1985,1.51,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1986,1.55,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1987,1.56,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1988,1.55,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1989,1.55,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1990,1.62,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1991,1.61,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1992,1.59,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1993,1.57,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1994,1.57,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1995,1.53,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1996,1.53,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1997,1.56,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1998,1.63,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,1999,1.65,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2000,1.72,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2001,1.71,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2002,1.73,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2003,1.75,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2004,1.72,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2005,1.71,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2006,1.72,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2007,1.72,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2008,1.77,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2009,1.79,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2010,1.79,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2011,1.76,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2012,1.72,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2013,1.68,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2014,1.71,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2015,1.66,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2016,1.66,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2017,1.62,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2018,1.59,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2019,1.57,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2020,1.54,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2021,1.62,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2022,1.49,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2023,1.43,Official statistics,False
+"Netherlands, Kingdom of the",528,150,155,2024,1.43,Official statistics,False
+Curaçao,531,19,419,2020,1.1,Estimate,False
+Curaçao,531,19,419,2021,1.08,Estimate,False
+Curaçao,531,19,419,2022,1.4,Register,False
+Curaçao,531,19,419,2023,1.3,Register,False
+Curaçao,531,19,419,2024,1.4,Register,False
+Curaçao,531,19,419,2025,1.2,Register,False
+Aruba,533,19,419,2022,1.5,Register,False
+Aruba,533,19,419,2023,1.4,Register,False
+Aruba,533,19,419,2024,1.4,Register,False
+Aruba,533,19,419,2025,1.3,Register,False
+"Bonaire, Sint Eustatius and Saba",535,19,419,2023,1.44,Register,False
+"Bonaire, Sint Eustatius and Saba",535,19,419,2024,1.39,Register,False
+New Caledonia,540,9,54,2022,2.05,Estimate,False
+Vanuatu,548,9,54,2023,3.6,Survey,False
+New Zealand,554,9,53,2023,1.56,Register,False
+Nicaragua,558,19,419,2011,2.56,Estimate,False
+Nicaragua,558,19,419,2012,2.53,Estimate,False
+Nicaragua,558,19,419,2013,2.49,Estimate,False
+Nicaragua,558,19,419,2014,2.46,Estimate,False
+Nicaragua,558,19,419,2015,2.43,Estimate,False
+Nicaragua,558,19,419,2016,2.41,Estimate,False
+Nicaragua,558,19,419,2017,2.38,Estimate,False
+Nicaragua,558,19,419,2018,2.35,Estimate,False
+Nicaragua,558,19,419,2019,2.32,Estimate,False
+Nicaragua,558,19,419,2020,2.3,Estimate,False
+Nicaragua,558,19,419,2021,2.27,Estimate,False
+Nicaragua,558,19,419,2022,2.24,Estimate,False
+Nicaragua,558,19,419,2023,2.22,Estimate,False
+Nigeria,566,2,202,2022,5.14,Estimate,False
+Nigeria,566,2,202,2023,4.8,Survey,False
+Norway,578,150,154,1961,2.94,Official statistics,False
+Norway,578,150,154,1962,2.91,Official statistics,False
+Norway,578,150,154,1963,2.93,Official statistics,False
+Norway,578,150,154,1964,2.98,Official statistics,False
+Norway,578,150,154,1965,2.94,Official statistics,False
+Norway,578,150,154,1966,2.9,Official statistics,False
+Norway,578,150,154,1967,2.81,Official statistics,False
+Norway,578,150,154,1968,2.75,Official statistics,False
+Norway,578,150,154,1969,2.7,Official statistics,False
+Norway,578,150,154,1970,2.5,Official statistics,False
+Norway,578,150,154,1971,2.49,Official statistics,False
+Norway,578,150,154,1972,2.38,Official statistics,False
+Norway,578,150,154,1973,2.23,Official statistics,False
+Norway,578,150,154,1974,2.13,Official statistics,False
+Norway,578,150,154,1975,1.98,Official statistics,False
+Norway,578,150,154,1976,1.86,Official statistics,False
+Norway,578,150,154,1977,1.75,Official statistics,False
+Norway,578,150,154,1978,1.77,Official statistics,False
+Norway,578,150,154,1979,1.75,Official statistics,False
+Norway,578,150,154,1980,1.72,Official statistics,False
+Norway,578,150,154,1981,1.7,Official statistics,False
+Norway,578,150,154,1982,1.71,Official statistics,False
+Norway,578,150,154,1983,1.66,Official statistics,False
+Norway,578,150,154,1984,1.66,Official statistics,False
+Norway,578,150,154,1985,1.68,Official statistics,False
+Norway,578,150,154,1986,1.71,Official statistics,False
+Norway,578,150,154,1987,1.74,Official statistics,False
+Norway,578,150,154,1988,1.84,Official statistics,False
+Norway,578,150,154,1989,1.89,Official statistics,False
+Norway,578,150,154,1990,1.93,Official statistics,False
+Norway,578,150,154,1991,1.92,Official statistics,False
+Norway,578,150,154,1992,1.88,Official statistics,False
+Norway,578,150,154,1993,1.86,Official statistics,False
+Norway,578,150,154,1994,1.87,Official statistics,False
+Norway,578,150,154,1995,1.87,Official statistics,False
+Norway,578,150,154,1996,1.89,Official statistics,False
+Norway,578,150,154,1997,1.86,Official statistics,False
+Norway,578,150,154,1998,1.81,Official statistics,False
+Norway,578,150,154,1999,1.85,Official statistics,False
+Norway,578,150,154,2000,1.85,Official statistics,False
+Norway,578,150,154,2001,1.78,Official statistics,False
+Norway,578,150,154,2002,1.75,Official statistics,False
+Norway,578,150,154,2003,1.8,Official statistics,False
+Norway,578,150,154,2004,1.83,Official statistics,False
+Norway,578,150,154,2005,1.84,Official statistics,False
+Norway,578,150,154,2006,1.9,Official statistics,False
+Norway,578,150,154,2007,1.9,Official statistics,False
+Norway,578,150,154,2008,1.96,Official statistics,False
+Norway,578,150,154,2009,1.98,Official statistics,False
+Norway,578,150,154,2010,1.95,Official statistics,False
+Norway,578,150,154,2011,1.88,Official statistics,False
+Norway,578,150,154,2012,1.85,Official statistics,False
+Norway,578,150,154,2013,1.78,Official statistics,False
+Norway,578,150,154,2014,1.75,Official statistics,False
+Norway,578,150,154,2015,1.72,Official statistics,False
+Norway,578,150,154,2016,1.71,Official statistics,False
+Norway,578,150,154,2017,1.62,Official statistics,False
+Norway,578,150,154,2018,1.56,Official statistics,False
+Norway,578,150,154,2019,1.53,Official statistics,False
+Norway,578,150,154,2020,1.48,Official statistics,False
+Norway,578,150,154,2021,1.55,Official statistics,False
+Norway,578,150,154,2022,1.41,Official statistics,False
+Norway,578,150,154,2023,1.4,Official statistics,False
+Norway,578,150,154,2024,1.45,Official statistics,False
+Northern Mariana Islands,580,9,57,2020,1.9,Estimate,True
+Pakistan,586,142,34,2022,3.7,Survey,False
+Pakistan,586,142,34,2023,3.6,Estimate,False
+Panama,591,19,419,2022,2.14,Estimate,False
+Panama,591,19,419,2023,2.12,Estimate,False
+Papua New Guinea,598,9,54,2017,4.2,Survey,False
+Papua New Guinea,598,9,54,2020,4.01,Estimate,True
+Papua New Guinea,598,9,54,2021,3.72,Estimate,False
+Paraguay,600,19,419,2016,2.62,Estimate,False
+Paraguay,600,19,419,2017,2.59,Estimate,False
+Paraguay,600,19,419,2018,2.56,Estimate,False
+Paraguay,600,19,419,2019,2.52,Estimate,False
+Paraguay,600,19,419,2020,2.5,Estimate,False
+Paraguay,600,19,419,2021,2.47,Estimate,False
+Paraguay,600,19,419,2022,2.44,Estimate,False
+Paraguay,600,19,419,2023,2.42,Estimate,False
+Peru,604,19,419,2022,2.0,Estimate,False
+Peru,604,19,419,2023,1.98,Estimate,False
+Philippines,608,142,35,2022,1.9,Survey,False
+Poland,616,150,151,1990,2.06,Official statistics,False
+Poland,616,150,151,1991,2.07,Official statistics,False
+Poland,616,150,151,1992,1.95,Official statistics,False
+Poland,616,150,151,1993,1.87,Official statistics,False
+Poland,616,150,151,1994,1.81,Official statistics,False
+Poland,616,150,151,1995,1.62,Official statistics,False
+Poland,616,150,151,1996,1.59,Official statistics,False
+Poland,616,150,151,1997,1.51,Official statistics,False
+Poland,616,150,151,1998,1.44,Official statistics,False
+Poland,616,150,151,1999,1.37,Official statistics,False
+Poland,616,150,151,2000,1.37,Official statistics,False
+Poland,616,150,151,2001,1.31,Official statistics,False
+Poland,616,150,151,2002,1.25,Official statistics,False
+Poland,616,150,151,2003,1.22,Official statistics,False
+Poland,616,150,151,2004,1.23,Official statistics,False
+Poland,616,150,151,2005,1.24,Official statistics,False
+Poland,616,150,151,2006,1.27,Official statistics,False
+Poland,616,150,151,2007,1.31,Official statistics,False
+Poland,616,150,151,2008,1.39,Official statistics,False
+Poland,616,150,151,2009,1.4,Official statistics,False
+Poland,616,150,151,2010,1.41,Official statistics,False
+Poland,616,150,151,2011,1.33,Official statistics,False
+Poland,616,150,151,2012,1.33,Official statistics,False
+Poland,616,150,151,2013,1.29,Official statistics,False
+Poland,616,150,151,2014,1.32,Official statistics,False
+Poland,616,150,151,2015,1.32,Official statistics,False
+Poland,616,150,151,2016,1.39,Official statistics,False
+Poland,616,150,151,2017,1.48,Official statistics,False
+Poland,616,150,151,2018,1.46,Official statistics,False
+Poland,616,150,151,2019,1.44,Official statistics,False
+Poland,616,150,151,2020,1.39,Official statistics,False
+Poland,616,150,151,2021,1.33,Official statistics,False
+Poland,616,150,151,2022,1.29,Official statistics,False
+Poland,616,150,151,2023,1.2,Official statistics,False
+Poland,616,150,151,2024,1.14,Official statistics,False
+Portugal,620,150,39,1960,3.16,Official statistics,False
+Portugal,620,150,39,1961,3.21,Official statistics,False
+Portugal,620,150,39,1962,3.23,Official statistics,False
+Portugal,620,150,39,1963,3.12,Official statistics,False
+Portugal,620,150,39,1964,3.21,Official statistics,False
+Portugal,620,150,39,1965,3.15,Official statistics,False
+Portugal,620,150,39,1966,3.16,Official statistics,False
+Portugal,620,150,39,1967,3.16,Official statistics,False
+Portugal,620,150,39,1968,3.12,Official statistics,False
+Portugal,620,150,39,1969,3.12,Official statistics,False
+Portugal,620,150,39,1970,3.01,Official statistics,False
+Portugal,620,150,39,1971,3.0,Official statistics,False
+Portugal,620,150,39,1972,2.86,Official statistics,False
+Portugal,620,150,39,1973,2.77,Official statistics,False
+Portugal,620,150,39,1974,2.7,Official statistics,False
+Portugal,620,150,39,1975,2.75,Official statistics,False
+Portugal,620,150,39,1976,2.82,Official statistics,False
+Portugal,620,150,39,1977,2.69,Official statistics,False
+Portugal,620,150,39,1978,2.45,Official statistics,False
+Portugal,620,150,39,1979,2.31,Official statistics,False
+Portugal,620,150,39,1980,2.25,Official statistics,False
+Portugal,620,150,39,1981,2.13,Official statistics,False
+Portugal,620,150,39,1982,2.07,Official statistics,False
+Portugal,620,150,39,1983,1.95,Official statistics,False
+Portugal,620,150,39,1984,1.9,Official statistics,False
+Portugal,620,150,39,1985,1.72,Official statistics,False
+Portugal,620,150,39,1986,1.66,Official statistics,False
+Portugal,620,150,39,1987,1.62,Official statistics,False
+Portugal,620,150,39,1988,1.61,Official statistics,False
+Portugal,620,150,39,1989,1.57,Official statistics,False
+Portugal,620,150,39,1990,1.56,Official statistics,False
+Portugal,620,150,39,1991,1.56,Official statistics,False
+Portugal,620,150,39,1992,1.54,Official statistics,False
+Portugal,620,150,39,1993,1.52,Official statistics,False
+Portugal,620,150,39,1994,1.45,Official statistics,False
+Portugal,620,150,39,1995,1.41,Official statistics,False
+Portugal,620,150,39,1996,1.44,Official statistics,False
+Portugal,620,150,39,1997,1.47,Official statistics,False
+Portugal,620,150,39,1998,1.47,Official statistics,False
+Portugal,620,150,39,1999,1.5,Official statistics,False
+Portugal,620,150,39,2000,1.55,Official statistics,False
+Portugal,620,150,39,2001,1.45,Official statistics,False
+Portugal,620,150,39,2002,1.46,Official statistics,False
+Portugal,620,150,39,2003,1.44,Official statistics,False
+Portugal,620,150,39,2004,1.4,Official statistics,False
+Portugal,620,150,39,2005,1.41,Official statistics,False
+Portugal,620,150,39,2006,1.37,Official statistics,False
+Portugal,620,150,39,2007,1.35,Official statistics,False
+Portugal,620,150,39,2008,1.39,Official statistics,False
+Portugal,620,150,39,2009,1.34,Official statistics,False
+Portugal,620,150,39,2010,1.39,Official statistics,False
+Portugal,620,150,39,2011,1.35,Official statistics,False
+Portugal,620,150,39,2012,1.28,Official statistics,False
+Portugal,620,150,39,2013,1.21,Official statistics,False
+Portugal,620,150,39,2014,1.24,Official statistics,False
+Portugal,620,150,39,2015,1.31,Official statistics,False
+Portugal,620,150,39,2016,1.37,Official statistics,False
+Portugal,620,150,39,2017,1.38,Official statistics,False
+Portugal,620,150,39,2018,1.42,Official statistics,False
+Portugal,620,150,39,2019,1.44,Official statistics,False
+Portugal,620,150,39,2020,1.42,Official statistics,False
+Portugal,620,150,39,2021,1.35,Official statistics,False
+Portugal,620,150,39,2022,1.43,Official statistics,False
+Portugal,620,150,39,2023,1.45,Official statistics,False
+Portugal,620,150,39,2024,1.41,Official statistics,False
+Guinea-Bissau,624,2,202,2019,4.3,Survey,False
+Guinea-Bissau,624,2,202,2020,4.67,Estimate,True
+Guinea-Bissau,624,2,202,2021,4.63,Estimate,True
+Guinea-Bissau,624,2,202,2022,4.59,Estimate,True
+Guinea-Bissau,624,2,202,2023,4.55,Estimate,True
+Timor-Leste,626,142,35,2022,3.6,Estimate,False
+Timor-Leste,626,142,35,2023,3.44,Estimate,True
+Puerto Rico,630,19,419,2023,0.94,Estimate,False
+Réunion,638,2,202,2022,2.36,Estimate,False
+Réunion,638,2,202,2023,2.3,Estimate,False
+Réunion,638,2,202,2024,2.12,Estimate,False
+Réunion,638,2,202,2025,2.14,Estimate,False
+Romania,642,150,151,1975,2.59,Official statistics,False
+Romania,642,150,151,1976,2.54,Official statistics,False
+Romania,642,150,151,1977,2.57,Official statistics,False
+Romania,642,150,151,1978,2.52,Official statistics,False
+Romania,642,150,151,1979,2.49,Official statistics,False
+Romania,642,150,151,1980,2.43,Official statistics,False
+Romania,642,150,151,1981,2.36,Official statistics,False
+Romania,642,150,151,1982,2.17,Official statistics,False
+Romania,642,150,151,1983,2.06,Official statistics,False
+Romania,642,150,151,1984,2.26,Official statistics,False
+Romania,642,150,151,1985,2.31,Official statistics,False
+Romania,642,150,151,1986,2.39,Official statistics,False
+Romania,642,150,151,1987,2.38,Official statistics,False
+Romania,642,150,151,1988,2.3,Official statistics,False
+Romania,642,150,151,1989,2.22,Official statistics,False
+Romania,642,150,151,1990,1.83,Official statistics,False
+Romania,642,150,151,1991,1.59,Official statistics,False
+Romania,642,150,151,1992,1.51,Official statistics,False
+Romania,642,150,151,1993,1.43,Official statistics,False
+Romania,642,150,151,1994,1.4,Official statistics,False
+Romania,642,150,151,1995,1.33,Official statistics,False
+Romania,642,150,151,1996,1.3,Official statistics,False
+Romania,642,150,151,1997,1.32,Official statistics,False
+Romania,642,150,151,1998,1.32,Official statistics,False
+Romania,642,150,151,1999,1.3,Official statistics,False
+Romania,642,150,151,2000,1.31,Official statistics,False
+Romania,642,150,151,2001,1.27,Official statistics,False
+Romania,642,150,151,2002,1.27,Official statistics,False
+Romania,642,150,151,2003,1.3,Official statistics,False
+Romania,642,150,151,2004,1.33,Official statistics,False
+Romania,642,150,151,2005,1.4,Official statistics,False
+Romania,642,150,151,2006,1.42,Official statistics,False
+Romania,642,150,151,2007,1.45,Official statistics,False
+Romania,642,150,151,2008,1.6,Official statistics,False
+Romania,642,150,151,2009,1.66,Official statistics,False
+Romania,642,150,151,2010,1.59,Official statistics,False
+Romania,642,150,151,2011,1.47,Official statistics,False
+Romania,642,150,151,2012,1.52,Official statistics,False
+Romania,642,150,151,2013,1.46,Official statistics,False
+Romania,642,150,151,2014,1.56,Official statistics,False
+Romania,642,150,151,2015,1.62,Official statistics,False
+Romania,642,150,151,2016,1.69,Official statistics,False
+Romania,642,150,151,2017,1.78,Official statistics,False
+Romania,642,150,151,2018,1.76,Official statistics,False
+Romania,642,150,151,2019,1.77,Official statistics,False
+Romania,642,150,151,2020,1.8,Official statistics,False
+Romania,642,150,151,2021,1.81,Official statistics,False
+Romania,642,150,151,2022,1.75,Official statistics,False
+Romania,642,150,151,2023,1.54,Official statistics,False
+Romania,642,150,151,2024,1.39,Official statistics,False
+Russian Federation,643,150,151,2006,1.3,Official statistics,False
+Russian Federation,643,150,151,2007,1.41,Official statistics,False
+Russian Federation,643,150,151,2008,1.49,Official statistics,False
+Russian Federation,643,150,151,2009,1.54,Official statistics,False
+Russian Federation,643,150,151,2010,1.57,Official statistics,False
+Rwanda,646,2,202,2023,3.6,Estimate,False
+Saint Barthélemy,652,19,419,2020,0.8,Estimate,False
+Saint Kitts and Nevis,659,19,419,2020,1.55,Estimate,False
+Saint Kitts and Nevis,659,19,419,2021,1.53,Estimate,False
+Saint Kitts and Nevis,659,19,419,2022,1.51,Estimate,False
+Saint Kitts and Nevis,659,19,419,2023,1.51,Estimate,False
+Anguilla,660,19,419,2023,1.27,Estimate,False
+Saint Lucia,662,19,419,2021,1.4,Estimate,False
+Saint Lucia,662,19,419,2022,1.39,Estimate,False
+Saint Lucia,662,19,419,2023,1.38,Estimate,False
+Saint Vincent and the Grenadines,670,19,419,2022,1.79,Estimate,False
+Saint Vincent and the Grenadines,670,19,419,2023,1.78,Estimate,False
+San Marino,674,150,39,2012,1.26,Official statistics,False
+San Marino,674,150,39,2022,1.18,Register,False
+San Marino,674,150,39,2023,1.08,Register,False
+Sao Tome and Principe,678,2,202,2019,3.3,Estimate,True
+Sao Tome and Principe,678,2,202,2019,3.8,Survey,False
+Sao Tome and Principe,678,2,202,2020,3.3,Estimate,True
+Sao Tome and Principe,678,2,202,2021,3.3,Estimate,True
+Sao Tome and Principe,678,2,202,2022,3.2,Estimate,True
+Sao Tome and Principe,678,2,202,2023,3.2,Estimate,True
+Saudi Arabia,682,142,145,2023,2.1,Estimate,False
+Saudi Arabia,682,142,145,2024,2.0,Estimate,False
+Senegal,686,2,202,2021,4.9,Estimate,True
+Senegal,686,2,202,2022,4.87,Estimate,True
+Senegal,686,2,202,2023,4.84,Estimate,True
+Senegal,686,2,202,2023,4.0,Survey,False
+Serbia,688,150,39,2000,1.48,Official statistics,False
+Serbia,688,150,39,2001,1.58,Official statistics,False
+Serbia,688,150,39,2002,1.57,Official statistics,False
+Serbia,688,150,39,2003,1.59,Official statistics,False
+Serbia,688,150,39,2004,1.57,Official statistics,False
+Serbia,688,150,39,2005,1.45,Official statistics,False
+Serbia,688,150,39,2006,1.43,Official statistics,False
+Serbia,688,150,39,2007,1.38,Official statistics,False
+Serbia,688,150,39,2008,1.4,Official statistics,False
+Serbia,688,150,39,2009,1.44,Official statistics,False
+Serbia,688,150,39,2010,1.4,Official statistics,False
+Serbia,688,150,39,2011,1.4,Official statistics,False
+Serbia,688,150,39,2012,1.45,Official statistics,False
+Serbia,688,150,39,2013,1.43,Official statistics,False
+Serbia,688,150,39,2014,1.46,Official statistics,False
+Serbia,688,150,39,2015,1.46,Official statistics,False
+Serbia,688,150,39,2016,1.46,Official statistics,False
+Serbia,688,150,39,2017,1.49,Official statistics,False
+Serbia,688,150,39,2018,1.49,Official statistics,False
+Serbia,688,150,39,2019,1.52,Official statistics,False
+Serbia,688,150,39,2020,1.48,Official statistics,False
+Serbia,688,150,39,2021,1.52,Official statistics,False
+Serbia,688,150,39,2022,1.59,Official statistics,False
+Serbia,688,150,39,2023,1.62,Official statistics,False
+Serbia,688,150,39,2024,1.64,Official statistics,False
+Seychelles,690,2,202,2018,2.4,Register,False
+Seychelles,690,2,202,2019,2.4,Register,False
+Seychelles,690,2,202,2020,2.3,Register,False
+Seychelles,690,2,202,2021,2.5,Register,False
+Seychelles,690,2,202,2022,2.0,Register,False
+Seychelles,690,2,202,2023,2.0,Register,False
+Seychelles,690,2,202,2024,1.7,Register,False
+Sierra Leone,694,2,202,2019,4.9,Estimate,True
+Sierra Leone,694,2,202,2019,4.2,Survey,False
+Sierra Leone,694,2,202,2020,4.9,Estimate,True
+Sierra Leone,694,2,202,2021,4.6,Estimate,True
+Sierra Leone,694,2,202,2022,4.6,Estimate,True
+Sierra Leone,694,2,202,2023,4.6,Estimate,True
+Slovakia,703,150,151,1960,3.04,Official statistics,False
+Slovakia,703,150,151,1961,2.96,Official statistics,False
+Slovakia,703,150,151,1962,2.83,Official statistics,False
+Slovakia,703,150,151,1963,2.92,Official statistics,False
+Slovakia,703,150,151,1964,2.89,Official statistics,False
+Slovakia,703,150,151,1965,2.78,Official statistics,False
+Slovakia,703,150,151,1966,2.66,Official statistics,False
+Slovakia,703,150,151,1967,2.48,Official statistics,False
+Slovakia,703,150,151,1968,2.39,Official statistics,False
+Slovakia,703,150,151,1969,2.43,Official statistics,False
+Slovakia,703,150,151,1970,2.41,Official statistics,False
+Slovakia,703,150,151,1971,2.43,Official statistics,False
+Slovakia,703,150,151,1972,2.49,Official statistics,False
+Slovakia,703,150,151,1973,2.56,Official statistics,False
+Slovakia,703,150,151,1974,2.61,Official statistics,False
+Slovakia,703,150,151,1975,2.55,Official statistics,False
+Slovakia,703,150,151,1976,2.55,Official statistics,False
+Slovakia,703,150,151,1977,2.49,Official statistics,False
+Slovakia,703,150,151,1978,2.47,Official statistics,False
+Slovakia,703,150,151,1979,2.45,Official statistics,False
+Slovakia,703,150,151,1980,2.32,Official statistics,False
+Slovakia,703,150,151,1981,2.29,Official statistics,False
+Slovakia,703,150,151,1982,2.28,Official statistics,False
+Slovakia,703,150,151,1983,2.28,Official statistics,False
+Slovakia,703,150,151,1984,2.26,Official statistics,False
+Slovakia,703,150,151,1985,2.26,Official statistics,False
+Slovakia,703,150,151,1986,2.2,Official statistics,False
+Slovakia,703,150,151,1987,2.14,Official statistics,False
+Slovakia,703,150,151,1988,2.13,Official statistics,False
+Slovakia,703,150,151,1989,2.07,Official statistics,False
+Slovakia,703,150,151,1990,2.09,Official statistics,False
+Slovakia,703,150,151,1991,2.05,Official statistics,False
+Slovakia,703,150,151,1992,1.93,Official statistics,False
+Slovakia,703,150,151,1993,1.87,Official statistics,False
+Slovakia,703,150,151,1994,1.67,Official statistics,False
+Slovakia,703,150,151,1995,1.52,Official statistics,False
+Slovakia,703,150,151,1996,1.47,Official statistics,False
+Slovakia,703,150,151,1997,1.43,Official statistics,False
+Slovakia,703,150,151,1998,1.37,Official statistics,False
+Slovakia,703,150,151,1999,1.33,Official statistics,False
+Slovakia,703,150,151,2000,1.3,Official statistics,False
+Slovakia,703,150,151,2001,1.2,Official statistics,False
+Slovakia,703,150,151,2002,1.19,Official statistics,False
+Slovakia,703,150,151,2003,1.2,Official statistics,False
+Slovakia,703,150,151,2004,1.25,Official statistics,False
+Slovakia,703,150,151,2005,1.27,Official statistics,False
+Slovakia,703,150,151,2006,1.25,Official statistics,False
+Slovakia,703,150,151,2007,1.27,Official statistics,False
+Slovakia,703,150,151,2008,1.34,Official statistics,False
+Slovakia,703,150,151,2009,1.44,Official statistics,False
+Slovakia,703,150,151,2010,1.43,Official statistics,False
+Slovakia,703,150,151,2011,1.45,Official statistics,False
+Slovakia,703,150,151,2012,1.34,Official statistics,False
+Slovakia,703,150,151,2013,1.34,Official statistics,False
+Slovakia,703,150,151,2014,1.37,Official statistics,False
+Slovakia,703,150,151,2015,1.4,Official statistics,False
+Slovakia,703,150,151,2016,1.48,Official statistics,False
+Slovakia,703,150,151,2017,1.52,Official statistics,False
+Slovakia,703,150,151,2018,1.54,Official statistics,False
+Slovakia,703,150,151,2019,1.57,Official statistics,False
+Slovakia,703,150,151,2020,1.59,Official statistics,False
+Slovakia,703,150,151,2021,1.63,Official statistics,False
+Slovakia,703,150,151,2022,1.57,Official statistics,False
+Slovakia,703,150,151,2023,1.49,Official statistics,False
+Slovakia,703,150,151,2024,1.46,Official statistics,False
+Viet Nam,704,142,35,2021,2.11,Estimate,False
+Viet Nam,704,142,35,2022,2.01,Estimate,False
+Viet Nam,704,142,35,2023,1.96,Estimate,False
+Slovenia,705,150,39,1982,1.93,Official statistics,False
+Slovenia,705,150,39,1983,1.81,Official statistics,False
+Slovenia,705,150,39,1984,1.74,Official statistics,False
+Slovenia,705,150,39,1985,1.71,Official statistics,False
+Slovenia,705,150,39,1986,1.67,Official statistics,False
+Slovenia,705,150,39,1987,1.65,Official statistics,False
+Slovenia,705,150,39,1988,1.63,Official statistics,False
+Slovenia,705,150,39,1989,1.52,Official statistics,False
+Slovenia,705,150,39,1990,1.46,Official statistics,False
+Slovenia,705,150,39,1991,1.42,Official statistics,False
+Slovenia,705,150,39,1992,1.33,Official statistics,False
+Slovenia,705,150,39,1993,1.33,Official statistics,False
+Slovenia,705,150,39,1994,1.32,Official statistics,False
+Slovenia,705,150,39,1995,1.29,Official statistics,False
+Slovenia,705,150,39,1996,1.28,Official statistics,False
+Slovenia,705,150,39,1997,1.25,Official statistics,False
+Slovenia,705,150,39,1998,1.23,Official statistics,False
+Slovenia,705,150,39,1999,1.21,Official statistics,False
+Slovenia,705,150,39,2000,1.26,Official statistics,False
+Slovenia,705,150,39,2001,1.21,Official statistics,False
+Slovenia,705,150,39,2002,1.21,Official statistics,False
+Slovenia,705,150,39,2003,1.2,Official statistics,False
+Slovenia,705,150,39,2004,1.25,Official statistics,False
+Slovenia,705,150,39,2005,1.26,Official statistics,False
+Slovenia,705,150,39,2006,1.31,Official statistics,False
+Slovenia,705,150,39,2007,1.38,Official statistics,False
+Slovenia,705,150,39,2008,1.53,Official statistics,False
+Slovenia,705,150,39,2009,1.53,Official statistics,False
+Slovenia,705,150,39,2010,1.57,Official statistics,False
+Slovenia,705,150,39,2011,1.56,Official statistics,False
+Slovenia,705,150,39,2012,1.58,Official statistics,False
+Slovenia,705,150,39,2013,1.55,Official statistics,False
+Slovenia,705,150,39,2014,1.58,Official statistics,False
+Slovenia,705,150,39,2015,1.57,Official statistics,False
+Slovenia,705,150,39,2016,1.58,Official statistics,False
+Slovenia,705,150,39,2017,1.62,Official statistics,False
+Slovenia,705,150,39,2018,1.6,Official statistics,False
+Slovenia,705,150,39,2019,1.61,Official statistics,False
+Slovenia,705,150,39,2020,1.59,Official statistics,False
+Slovenia,705,150,39,2021,1.64,Official statistics,False
+Slovenia,705,150,39,2022,1.55,Official statistics,False
+Slovenia,705,150,39,2023,1.51,Official statistics,False
+Slovenia,705,150,39,2024,1.52,Official statistics,False
+Somalia,706,2,202,2019,6.9,Survey,False
+South Africa,710,2,202,2022,2.26,Estimate,True
+South Africa,710,2,202,2023,2.23,Estimate,True
+Zimbabwe,716,2,202,2022,3.72,Census,False
+Zimbabwe,716,2,202,2023,3.9,Survey,False
+Spain,724,150,39,1971,2.9,Official statistics,False
+Spain,724,150,39,1972,2.87,Official statistics,False
+Spain,724,150,39,1973,2.84,Official statistics,False
+Spain,724,150,39,1974,2.88,Official statistics,False
+Spain,724,150,39,1975,2.77,Official statistics,False
+Spain,724,150,39,1976,2.77,Official statistics,False
+Spain,724,150,39,1977,2.65,Official statistics,False
+Spain,724,150,39,1978,2.54,Official statistics,False
+Spain,724,150,39,1979,2.37,Official statistics,False
+Spain,724,150,39,1980,2.22,Official statistics,False
+Spain,724,150,39,1981,2.04,Official statistics,False
+Spain,724,150,39,1982,1.94,Official statistics,False
+Spain,724,150,39,1983,1.8,Official statistics,False
+Spain,724,150,39,1984,1.73,Official statistics,False
+Spain,724,150,39,1985,1.64,Official statistics,False
+Spain,724,150,39,1986,1.56,Official statistics,False
+Spain,724,150,39,1987,1.49,Official statistics,False
+Spain,724,150,39,1988,1.45,Official statistics,False
+Spain,724,150,39,1989,1.4,Official statistics,False
+Spain,724,150,39,1990,1.36,Official statistics,False
+Spain,724,150,39,1991,1.33,Official statistics,False
+Spain,724,150,39,1992,1.31,Official statistics,False
+Spain,724,150,39,1993,1.26,Official statistics,False
+Spain,724,150,39,1994,1.19,Official statistics,False
+Spain,724,150,39,1995,1.16,Official statistics,False
+Spain,724,150,39,1996,1.14,Official statistics,False
+Spain,724,150,39,1997,1.15,Official statistics,False
+Spain,724,150,39,1998,1.13,Official statistics,False
+Spain,724,150,39,1999,1.17,Official statistics,False
+Spain,724,150,39,2000,1.22,Official statistics,False
+Spain,724,150,39,2001,1.23,Official statistics,False
+Spain,724,150,39,2002,1.25,Official statistics,False
+Spain,724,150,39,2003,1.3,Official statistics,False
+Spain,724,150,39,2004,1.31,Official statistics,False
+Spain,724,150,39,2005,1.33,Official statistics,False
+Spain,724,150,39,2006,1.36,Official statistics,False
+Spain,724,150,39,2007,1.38,Official statistics,False
+Spain,724,150,39,2008,1.45,Official statistics,False
+Spain,724,150,39,2009,1.38,Official statistics,False
+Spain,724,150,39,2010,1.37,Official statistics,False
+Spain,724,150,39,2011,1.34,Official statistics,False
+Spain,724,150,39,2012,1.32,Official statistics,False
+Spain,724,150,39,2013,1.27,Official statistics,False
+Spain,724,150,39,2014,1.32,Official statistics,False
+Spain,724,150,39,2015,1.33,Official statistics,False
+Spain,724,150,39,2016,1.33,Official statistics,False
+Spain,724,150,39,2017,1.31,Official statistics,False
+Spain,724,150,39,2018,1.26,Official statistics,False
+Spain,724,150,39,2019,1.23,Official statistics,False
+Spain,724,150,39,2020,1.18,Official statistics,False
+Spain,724,150,39,2021,1.18,Official statistics,False
+Spain,724,150,39,2022,1.16,Official statistics,False
+Spain,724,150,39,2023,1.12,Official statistics,False
+Spain,724,150,39,2024,1.1,Official statistics,False
+Suriname,740,19,419,2022,2.27,Estimate,False
+Suriname,740,19,419,2023,2.25,Estimate,False
+Eswatini,748,2,202,2017,3.22,Estimate,True
+Eswatini,748,2,202,2018,3.15,Estimate,True
+Eswatini,748,2,202,2019,3.07,Estimate,True
+Eswatini,748,2,202,2020,3.0,Estimate,True
+Eswatini,748,2,202,2021,3.94,Estimate,True
+Eswatini,748,2,202,2022,2.88,Estimate,True
+Eswatini,748,2,202,2023,2.82,Estimate,True
+Sweden,752,150,154,1968,2.07,Official statistics,False
+Sweden,752,150,154,1969,1.93,Official statistics,False
+Sweden,752,150,154,1970,1.92,Official statistics,False
+Sweden,752,150,154,1971,1.96,Official statistics,False
+Sweden,752,150,154,1972,1.91,Official statistics,False
+Sweden,752,150,154,1973,1.87,Official statistics,False
+Sweden,752,150,154,1974,1.87,Official statistics,False
+Sweden,752,150,154,1975,1.77,Official statistics,False
+Sweden,752,150,154,1976,1.68,Official statistics,False
+Sweden,752,150,154,1977,1.64,Official statistics,False
+Sweden,752,150,154,1978,1.6,Official statistics,False
+Sweden,752,150,154,1979,1.66,Official statistics,False
+Sweden,752,150,154,1980,1.68,Official statistics,False
+Sweden,752,150,154,1981,1.63,Official statistics,False
+Sweden,752,150,154,1982,1.62,Official statistics,False
+Sweden,752,150,154,1983,1.61,Official statistics,False
+Sweden,752,150,154,1984,1.66,Official statistics,False
+Sweden,752,150,154,1985,1.74,Official statistics,False
+Sweden,752,150,154,1986,1.8,Official statistics,False
+Sweden,752,150,154,1987,1.84,Official statistics,False
+Sweden,752,150,154,1988,1.96,Official statistics,False
+Sweden,752,150,154,1989,2.01,Official statistics,False
+Sweden,752,150,154,1990,2.13,Official statistics,False
+Sweden,752,150,154,1991,2.11,Official statistics,False
+Sweden,752,150,154,1992,2.09,Official statistics,False
+Sweden,752,150,154,1993,1.99,Official statistics,False
+Sweden,752,150,154,1994,1.88,Official statistics,False
+Sweden,752,150,154,1995,1.73,Official statistics,False
+Sweden,752,150,154,1996,1.6,Official statistics,False
+Sweden,752,150,154,1997,1.52,Official statistics,False
+Sweden,752,150,154,1998,1.5,Official statistics,False
+Sweden,752,150,154,1999,1.5,Official statistics,False
+Sweden,752,150,154,2000,1.54,Official statistics,False
+Sweden,752,150,154,2001,1.57,Official statistics,False
+Sweden,752,150,154,2002,1.65,Official statistics,False
+Sweden,752,150,154,2003,1.71,Official statistics,False
+Sweden,752,150,154,2004,1.75,Official statistics,False
+Sweden,752,150,154,2005,1.77,Official statistics,False
+Sweden,752,150,154,2006,1.85,Official statistics,False
+Sweden,752,150,154,2007,1.88,Official statistics,False
+Sweden,752,150,154,2008,1.91,Official statistics,False
+Sweden,752,150,154,2009,1.94,Official statistics,False
+Sweden,752,150,154,2010,1.98,Official statistics,False
+Sweden,752,150,154,2011,1.9,Official statistics,False
+Sweden,752,150,154,2012,1.91,Official statistics,False
+Sweden,752,150,154,2013,1.89,Official statistics,False
+Sweden,752,150,154,2014,1.88,Official statistics,False
+Sweden,752,150,154,2015,1.85,Official statistics,False
+Sweden,752,150,154,2016,1.85,Official statistics,False
+Sweden,752,150,154,2017,1.78,Official statistics,False
+Sweden,752,150,154,2018,1.76,Official statistics,False
+Sweden,752,150,154,2019,1.71,Official statistics,False
+Sweden,752,150,154,2020,1.67,Official statistics,False
+Sweden,752,150,154,2021,1.67,Official statistics,False
+Sweden,752,150,154,2022,1.53,Official statistics,False
+Sweden,752,150,154,2023,1.45,Official statistics,False
+Sweden,752,150,154,2024,1.43,Official statistics,False
+Switzerland,756,150,155,1960,2.44,Official statistics,False
+Switzerland,756,150,155,1961,2.52,Official statistics,False
+Switzerland,756,150,155,1962,2.58,Official statistics,False
+Switzerland,756,150,155,1963,2.65,Official statistics,False
+Switzerland,756,150,155,1964,2.66,Official statistics,False
+Switzerland,756,150,155,1965,2.59,Official statistics,False
+Switzerland,756,150,155,1966,2.5,Official statistics,False
+Switzerland,756,150,155,1967,2.39,Official statistics,False
+Switzerland,756,150,155,1968,2.29,Official statistics,False
+Switzerland,756,150,155,1969,2.19,Official statistics,False
+Switzerland,756,150,155,1970,2.1,Official statistics,False
+Switzerland,756,150,155,1971,2.04,Official statistics,False
+Switzerland,756,150,155,1972,1.91,Official statistics,False
+Switzerland,756,150,155,1973,1.81,Official statistics,False
+Switzerland,756,150,155,1974,1.73,Official statistics,False
+Switzerland,756,150,155,1975,1.61,Official statistics,False
+Switzerland,756,150,155,1976,1.55,Official statistics,False
+Switzerland,756,150,155,1977,1.53,Official statistics,False
+Switzerland,756,150,155,1978,1.51,Official statistics,False
+Switzerland,756,150,155,1979,1.52,Official statistics,False
+Switzerland,756,150,155,1980,1.55,Official statistics,False
+Switzerland,756,150,155,1981,1.55,Official statistics,False
+Switzerland,756,150,155,1982,1.56,Official statistics,False
+Switzerland,756,150,155,1983,1.52,Official statistics,False
+Switzerland,756,150,155,1984,1.53,Official statistics,False
+Switzerland,756,150,155,1985,1.52,Official statistics,False
+Switzerland,756,150,155,1986,1.53,Official statistics,False
+Switzerland,756,150,155,1987,1.52,Official statistics,False
+Switzerland,756,150,155,1988,1.57,Official statistics,False
+Switzerland,756,150,155,1989,1.56,Official statistics,False
+Switzerland,756,150,155,1990,1.58,Official statistics,False
+Switzerland,756,150,155,1991,1.58,Official statistics,False
+Switzerland,756,150,155,1992,1.58,Official statistics,False
+Switzerland,756,150,155,1993,1.51,Official statistics,False
+Switzerland,756,150,155,1994,1.49,Official statistics,False
+Switzerland,756,150,155,1995,1.48,Official statistics,False
+Switzerland,756,150,155,1996,1.5,Official statistics,False
+Switzerland,756,150,155,1997,1.48,Official statistics,False
+Switzerland,756,150,155,1998,1.47,Official statistics,False
+Switzerland,756,150,155,1999,1.48,Official statistics,False
+Switzerland,756,150,155,2000,1.5,Official statistics,False
+Switzerland,756,150,155,2001,1.38,Official statistics,False
+Switzerland,756,150,155,2002,1.39,Official statistics,False
+Switzerland,756,150,155,2003,1.39,Official statistics,False
+Switzerland,756,150,155,2004,1.42,Official statistics,False
+Switzerland,756,150,155,2005,1.42,Official statistics,False
+Switzerland,756,150,155,2006,1.44,Official statistics,False
+Switzerland,756,150,155,2007,1.46,Official statistics,False
+Switzerland,756,150,155,2008,1.48,Official statistics,False
+Switzerland,756,150,155,2009,1.5,Official statistics,False
+Switzerland,756,150,155,2010,1.52,Official statistics,False
+Switzerland,756,150,155,2011,1.52,Official statistics,False
+Switzerland,756,150,155,2012,1.52,Official statistics,False
+Switzerland,756,150,155,2013,1.52,Official statistics,False
+Switzerland,756,150,155,2014,1.54,Official statistics,False
+Switzerland,756,150,155,2015,1.54,Official statistics,False
+Switzerland,756,150,155,2016,1.54,Official statistics,False
+Switzerland,756,150,155,2017,1.52,Official statistics,False
+Switzerland,756,150,155,2018,1.52,Official statistics,False
+Switzerland,756,150,155,2019,1.48,Official statistics,False
+Switzerland,756,150,155,2020,1.46,Official statistics,False
+Switzerland,756,150,155,2021,1.52,Official statistics,False
+Switzerland,756,150,155,2022,1.39,Official statistics,False
+Switzerland,756,150,155,2023,1.33,Official statistics,False
+Switzerland,756,150,155,2024,1.29,Official statistics,False
+Tajikistan,762,142,143,2020,2.986,Register,False
+Tajikistan,762,142,143,2021,2.642,Register,False
+Tajikistan,762,142,143,2022,2.799,Register,False
+Tajikistan,762,142,143,2023,3.016,Register,False
+Thailand,764,142,35,2023,1.08,Estimate,False
+Thailand,764,142,35,2024,1.0,Estimate,False
+Togo,768,2,202,2017,4.6,Survey,False
+Togo,768,2,202,2020,4.2,Estimate,False
+Togo,768,2,202,2021,4.2,Estimate,False
+Trinidad and Tobago,780,19,419,2012,1.61,Estimate,False
+Trinidad and Tobago,780,19,419,2013,1.6,Estimate,False
+Trinidad and Tobago,780,19,419,2014,1.6,Estimate,False
+Trinidad and Tobago,780,19,419,2015,1.6,Estimate,False
+Trinidad and Tobago,780,19,419,2016,1.6,Estimate,False
+Trinidad and Tobago,780,19,419,2017,1.59,Estimate,False
+Trinidad and Tobago,780,19,419,2018,1.59,Estimate,False
+Trinidad and Tobago,780,19,419,2019,1.58,Estimate,False
+Trinidad and Tobago,780,19,419,2020,1.57,Estimate,False
+Trinidad and Tobago,780,19,419,2021,1.56,Estimate,False
+Trinidad and Tobago,780,19,419,2022,1.54,Estimate,False
+Trinidad and Tobago,780,19,419,2023,1.53,Estimate,False
+Tunisia,788,2,15,2022,1.7,Estimate,False
+Tunisia,788,2,15,2023,1.58,Estimate,False
+Türkiye,792,142,145,2007,2.13,Official statistics,False
+Türkiye,792,142,145,2008,2.1,Official statistics,False
+Türkiye,792,142,145,2009,2.09,Official statistics,False
+Türkiye,792,142,145,2010,2.04,Official statistics,False
+Türkiye,792,142,145,2011,2.03,Official statistics,False
+Türkiye,792,142,145,2012,2.09,Official statistics,False
+Türkiye,792,142,145,2013,2.08,Official statistics,False
+Türkiye,792,142,145,2014,2.17,Official statistics,False
+Türkiye,792,142,145,2015,2.14,Official statistics,False
+Türkiye,792,142,145,2016,2.11,Official statistics,False
+Türkiye,792,142,145,2017,2.07,Official statistics,False
+Türkiye,792,142,145,2018,1.99,Official statistics,False
+Türkiye,792,142,145,2019,1.88,Official statistics,False
+Türkiye,792,142,145,2022,1.63,Official statistics,False
+Türkiye,792,142,145,2023,1.51,Official statistics,False
+Türkiye,792,142,145,2024,1.48,Official statistics,False
+Turkmenistan,795,142,143,2019,3.0,Survey,False
+Turks and Caicos Islands,796,19,419,2022,1.66,Estimate,False
+Turks and Caicos Islands,796,19,419,2023,1.65,Estimate,False
+Uganda,800,2,202,2022,5.2,Survey,False
+Uganda,800,2,202,2023,5.2,Estimate,False
+Ukraine,804,150,151,2006,1.3,Official statistics,False
+Ukraine,804,150,151,2007,1.33,Official statistics,False
+Ukraine,804,150,151,2008,1.45,Official statistics,False
+Ukraine,804,150,151,2010,1.43,Official statistics,False
+Ukraine,804,150,151,2011,1.46,Official statistics,False
+Ukraine,804,150,151,2012,1.53,Official statistics,False
+Ukraine,804,150,151,2014,1.46,Official statistics,False
+Ukraine,804,150,151,2015,1.36,Official statistics,False
+Ukraine,804,150,151,2016,1.35,Official statistics,False
+Ukraine,804,150,151,2017,1.26,Official statistics,False
+Ukraine,804,150,151,2018,1.2,Official statistics,False
+Ukraine,804,150,151,2019,1.14,Official statistics,False
+Ukraine,804,150,151,2021,1.16,Register,False
+North Macedonia,807,150,39,1994,2.23,Official statistics,False
+North Macedonia,807,150,39,1995,2.13,Official statistics,False
+North Macedonia,807,150,39,1996,2.07,Official statistics,False
+North Macedonia,807,150,39,1997,1.93,Official statistics,False
+North Macedonia,807,150,39,1998,1.9,Official statistics,False
+North Macedonia,807,150,39,1999,1.76,Official statistics,False
+North Macedonia,807,150,39,2000,1.88,Official statistics,False
+North Macedonia,807,150,39,2001,1.73,Official statistics,False
+North Macedonia,807,150,39,2002,1.8,Official statistics,False
+North Macedonia,807,150,39,2003,1.77,Official statistics,False
+North Macedonia,807,150,39,2004,1.52,Official statistics,False
+North Macedonia,807,150,39,2005,1.46,Official statistics,False
+North Macedonia,807,150,39,2006,1.46,Official statistics,False
+North Macedonia,807,150,39,2007,1.46,Official statistics,False
+North Macedonia,807,150,39,2008,1.47,Official statistics,False
+North Macedonia,807,150,39,2009,1.52,Official statistics,False
+North Macedonia,807,150,39,2010,1.56,Official statistics,False
+North Macedonia,807,150,39,2011,1.46,Official statistics,False
+North Macedonia,807,150,39,2012,1.51,Official statistics,False
+North Macedonia,807,150,39,2013,1.49,Official statistics,False
+North Macedonia,807,150,39,2014,1.52,Official statistics,False
+North Macedonia,807,150,39,2015,1.5,Official statistics,False
+North Macedonia,807,150,39,2016,1.5,Official statistics,False
+North Macedonia,807,150,39,2017,1.43,Official statistics,False
+North Macedonia,807,150,39,2018,1.42,Official statistics,False
+North Macedonia,807,150,39,2019,1.34,Official statistics,False
+North Macedonia,807,150,39,2020,1.31,Official statistics,False
+North Macedonia,807,150,39,2021,1.44,Official statistics,False
+North Macedonia,807,150,39,2022,1.58,Official statistics,False
+North Macedonia,807,150,39,2023,1.49,Official statistics,False
+North Macedonia,807,150,39,2024,1.44,Official statistics,False
+Egypt,818,2,15,2020,2.85,Survey,False
+Egypt,818,2,15,2021,2.85,Survey,False
+Egypt,818,2,15,2022,2.76,Estimate,False
+Egypt,818,2,15,2023,2.54,Estimate,False
+Egypt,818,2,15,2024,2.41,Estimate,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1973,2.04,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1974,1.92,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1975,1.81,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1976,1.74,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1977,1.69,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1978,1.75,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1979,1.86,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1980,1.9,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1981,1.82,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1982,1.78,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1983,1.77,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1984,1.77,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1985,1.79,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1986,1.78,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1987,1.81,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1988,1.82,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1989,1.79,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1990,1.83,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1991,1.82,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1992,1.79,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1993,1.76,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1994,1.74,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1995,1.71,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1996,1.73,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1997,1.72,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1998,1.71,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,1999,1.68,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2000,1.64,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2001,1.63,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2002,1.63,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2003,1.7,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2004,1.75,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2005,1.76,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2006,1.82,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2007,1.86,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2008,1.91,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2009,1.89,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2010,1.92,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2011,1.91,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2012,1.92,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2013,1.83,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2014,1.81,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2015,1.8,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2016,1.79,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2017,1.74,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2018,1.68,Official statistics,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2022,1.48,Register,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2023,1.42,Register,False
+United Kingdom of Great Britain and Northern Ireland,826,150,154,2024,1.4,Register,False
+Jersey,832,150,154,2023,1.29,Estimate,False
+"Tanzania, United Republic of",834,2,202,2021,4.9,Estimate,True
+"Tanzania, United Republic of",834,2,202,2022,4.6,Census,False
+"Tanzania, United Republic of",834,2,202,2022,4.8,Estimate,True
+"Tanzania, United Republic of",834,2,202,2023,4.8,Estimate,True
+Virgin Islands (U.S.),850,19,419,2016,2.2,Estimate,False
+Virgin Islands (U.S.),850,19,419,2017,2.19,Estimate,False
+Virgin Islands (U.S.),850,19,419,2018,2.18,Estimate,False
+Virgin Islands (U.S.),850,19,419,2019,2.16,Estimate,False
+Virgin Islands (U.S.),850,19,419,2020,2.14,Estimate,False
+Virgin Islands (U.S.),850,19,419,2021,2.12,Estimate,False
+Virgin Islands (U.S.),850,19,419,2022,2.1,Estimate,False
+Virgin Islands (U.S.),850,19,419,2023,2.09,Estimate,False
+Burkina Faso,854,2,202,2021,4.4,Survey,False
+Uzbekistan,860,142,143,2023,3.4,Register,False
+Uzbekistan,860,142,143,2024,3.4,Register,False
+Uzbekistan,860,142,143,2025,3.2,Register,False
+"Venezuela, Bolivarian Republic of",862,19,419,2020,2.12,Estimate,False
+"Venezuela, Bolivarian Republic of",862,19,419,2021,2.1,Estimate,False
+"Venezuela, Bolivarian Republic of",862,19,419,2022,2.09,Estimate,False
+"Venezuela, Bolivarian Republic of",862,19,419,2023,2.08,Estimate,False
+Samoa,882,9,61,2019,4.7,Survey,False
+Samoa,882,9,61,2020,4.7,Survey,False
+Zambia,894,2,202,2018,4.7,Estimate,False
+Zambia,894,2,202,2019,5.4,Estimate,True
+Zambia,894,2,202,2020,5.3,Estimate,True
+Zambia,894,2,202,2021,5.3,Estimate,True
+Zambia,894,2,202,2022,4.6,Estimate,False
+Zambia,894,2,202,2023,4.6,Estimate,True

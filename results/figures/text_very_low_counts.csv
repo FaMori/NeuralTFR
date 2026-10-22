@@ -1,0 +1,33 @@
+passage,quantity,value
+3.1,populations that started a forecast period below 1.5,40
+3.1,population-origin pairs,90
+3.1,"mean error of the median, neuraltfr",-0.017212712941346346
+3.1,"mean error of the median, spline",-0.02835774671197909
+3.1,"mean error of the median, bayestfr",0.081124395414635
+3.1,"mean error of the median in years 11-15, neuraltfr",-0.03572767814000448
+3.1,"mean error of the median in years 11-15, spline",-0.026970019487511356
+3.1,"mean error of the median in years 11-15, bayestfr",0.11893971467929416
+3.1,pairs lower at year 15 than at the origin,30
+3.1,of which NeuralTFR has the lower sMAPE,28
+3.1,pairs more than 0.15 higher at year 15 than at the origin,34
+3.1,of which BayesTFR has the lower sMAPE,22
+3.2,peak years after the origin of those pairs,2008; 2008; 2008; 2012; 2015; 2015; 2015; 2016; 2016; 2017; 2017; 2017; 2021; 2021; 2021; 2021; 2021; 2021; 2023; 2023; 2023; 2023
+Discussion,populations of those pairs,15
+Discussion,of which latest value below 1.5,11
+Discussion,of which latest value at or above 1.5,"Armenia; Bulgaria; Moldova, Republic of; Slovenia"
+3.2,pairs higher at year 15 than at the origin,60
+3.2,of which latest value below the year-15 value,51
+3.2,of which latest value below the origin value,31
+3.2,years of the latest values,2021-2024
+D,"mean Winkler score of the 95% intervals, neuraltfr",0.9645134085637548
+D,"mean Winkler score of the 95% intervals, spline",0.8673283052700422
+D,"spline minus NeuralTFR Winkler 95, most negative 1: Hong Kong 1995",-3.022081712892678
+D,"spline minus NeuralTFR Winkler 95, most negative 2: Macao 1995",-2.495882754845325
+D,"spline minus NeuralTFR Winkler 95, most negative 3: Hong Kong 2000",-2.262240361415046
+Introduction,populations below 1.5 by 2006,55
+Introduction,of which later at least 0.2 above their lowest level,40
+Introduction,of which latest value below 1.5,32
+Introduction,latest value at or below the lowest level by 2006,32
+Introduction,latest value at or above 1.5,"Armenia; Bulgaria; Georgia; Moldova, Republic of; Monaco; Serbia; Slovenia; Turks and Caicos Islands"
+Introduction,"their 2023 population, millions",25.5905095
+Introduction,their share of the 2023 population of pop_2023.csv,0.0031625493529412

@@ -5,13 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
-    content="Interactive visualization of Total Fertility Rate (TFR) predictions from multiple forecasting models across 195 countries.">
-  <title>NeuralTFR — TFR Model Comparison</title>
+    content="Interactive visualization of total fertility rate (TFR) projections to 2038 from NeuralTFR, UN WPP 2024 and GBD 2021 for 230 countries and territories.">
+  <title>NeuralTFR: Anticipating Continued Global Fertility Decline via Neural Forecasting</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- Country flags: flag-icons (MIT licence) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flag-icons@7.2.3/css/flag-icons.min.css">
   <link rel="stylesheet" href="index.css">
 </head>
 
@@ -26,12 +28,12 @@
   <div class="app">
     <!-- Header -->
     <header>
-      <div class="header-content" style="width: 100%;">
-        <div class="header-title-row" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.5rem;">
-          <h1>NeuralTFR</h1>
-        </div>
-        <p class="subtitle" style="font-size: 0.95rem; color: var(--text-secondary); max-width: 800px; line-height: 1.5;">
-          A global fertility projection model using recurrent neural networks (RNN-GRU) to forecast future trajectories across 195 countries.
+      <div class="header-content">
+        <h1 class="paper-title">NeuralTFR: Anticipating Continued Global Fertility Decline via Neural Forecasting</h1>
+        <p class="subtitle">
+          Total fertility rate projected to 2038 by NeuralTFR, a recurrent neural network trained on pooled fertility
+          histories, compared with UN World Population Prospects 2024 and GBD 2021. Lines are medians, shaded bands
+          95% intervals, and points the reported estimates.
         </p>
       </div>
     </header>
@@ -58,13 +60,13 @@
         <div class="horizon-selector" id="horizon-selector">
           <div class="horizon-label-row">
             <span class="horizon-label" id="horizon-label-text">Forecast until</span>
-            <span class="horizon-value" id="horizon-value">2042</span>
+            <span class="horizon-value" id="horizon-value">2038</span>
           </div>
-          <input type="range" id="horizon-slider" min="2024" max="2042" value="2042" step="1">
+          <input type="range" id="horizon-slider" min="2024" max="2038" value="2038" step="1">
           <div class="horizon-ticks">
             <span>2024</span>
-            <span>2033</span>
-            <span>2042</span>
+            <span>2031</span>
+            <span>2038</span>
           </div>
         </div>
       </div>
@@ -127,6 +129,34 @@
         <div class="glass-card map-legend" id="map-legend"></div>
       </div>
     </main>
+
+    <!-- Footer: sources -->
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Sources</div>
+          <ul class="footer-list">
+            <li><strong>Reported estimates:</strong> compilation of empirical fertility estimates of the United Nations
+              Population Division, updated with national statistical offices, Eurostat and the Economic Commission for
+              Latin America and the Caribbean.</li>
+            <li><strong>UN WPP 2024:</strong> United Nations (2024).
+              <a href="https://population.un.org/wpp/" target="_blank" rel="noopener">World Population Prospects 2024</a>.
+              Department of Economic and Social Affairs, Population Division. Medium-variant medians and 95% intervals.</li>
+            <li><strong>GBD 2021:</strong> GBD 2021 Fertility and Forecasting Collaborators (2024).
+              <a href="https://doi.org/10.1016/S0140-6736(24)00550-6" target="_blank" rel="noopener">Global fertility in
+              204 countries and territories, 1950–2021, with forecasts to 2100</a>. <em>The Lancet</em>, 403(10440),
+              2057–2099. Reference scenario.</li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-title">About</div>
+          <p>NeuralTFR medians and 95% intervals combine ten fits of the network. Projections of the published systems
+            keep their own baselines.</p>
+          <p class="footer-small">Flags: <a href="https://flagicons.lipis.dev/" target="_blank" rel="noopener">flag-icons</a>
+            (MIT). Code: Apache License 2.0.</p>
+        </div>
+      </div>
+    </footer>
   </div>
 
   <!-- Chart.js + Zoom plugin + Leaflet from CDN -->

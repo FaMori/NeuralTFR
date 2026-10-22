@@ -1,173 +1,133 @@
+"""The data of the interactive visualizer (index.html), written to data.js.
+
+Reads the repository's own files, so the page shows what the manuscript reports:
+    ../data/empirical_tfr.csv                              reported estimates and their annual median
+    ../results/neuraltfr/forecast_predictions.parquet      NeuralTFR from 2023, median of the ten fits
+    ../data/raw/wpp2024/WPP_2024_2045_TFR.csv              UN WPP 2024, median and 95% bounds
+    ../data/raw/gbd2021/GBD_1950_2100_TFR.CSV              GBD 2021 reference scenario, 95% interval
+The manuscript projects from 2023 the 149 populations with a reported value that
+year. For the page only, the other populations are projected from their latest
+reported year with the same fitted networks, without refitting: the ten 2023
+fits of NeuralTFR (median of their quantiles), applied to the twelve-year
+history ending at that year. These projections are not part of
+the manuscript; each country records the year its projection starts from.
+Every system is shown up to 2038 with its median and 95% interval; countries carry
+their ISO3 (map) and ISO2 (flag) codes from WPP 2024. data.js holds
+one global variable, so the page also works when opened from the file system.
+
+    python docs/prepare_data.py      # from the repository root
 """
-Preprocess TFR CSV data into a JS file for the web visualization.
-Uses data/estimates/empirical_tfr.csv for raw historical points.
-Uses data/estimates/empirical_mean.csv for historical means.
-Uses data/forecast/NeuralTFR.csv and data/forecast/WPP.csv for forecasts.
-Only includes countries present in the NeuralTFR forecast dataset.
-Outputs data.js with a global variable so it works with file:// protocol.
-"""
-import csv
 import json
-import os
-from collections import defaultdict
+import re
+import sys
+import unicodedata
+from pathlib import Path
 
-DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
-FORECAST_DIR = os.path.join(DATA_DIR, "forecast")
-ESTIMATES_DIR = os.path.join(DATA_DIR, "estimates")
+import numpy as np
+import pandas as pd
 
-EMPIRICAL_TFR_FILE = os.path.join(ESTIMATES_DIR, "empirical_tfr.csv")
-EMPIRICAL_MEAN_FILE = os.path.join(ESTIMATES_DIR, "empirical_mean.csv")
-NEURAL_FORECAST_FILE = os.path.join(FORECAST_DIR, "NeuralTFR.csv")
-WPP_FORECAST_FILE = os.path.join(FORECAST_DIR, "WPP.csv")
-OUTPUT_FILE = os.path.join(os.path.dirname(__file__), "data.js")
+HERE = Path(__file__).resolve().parent
+ROOT = HERE.parent
+sys.path.insert(0, str(ROOT))
+from evaluation import annual_medians, ensemble  # noqa: E402
+from figures import FORWARD_YEARS, GBD_NAMES  # noqa: E402
+from neuraltfr.model import load  # noqa: E402
+from neuraltfr.preprocess import annual_panel, to_tfr  # noqa: E402
+from neuraltfr.runner import ENC_LEN, FORECAST_ORIGIN, HORIZON, SEEDS, predict  # noqa: E402
+from neuraltfr.training import COLUMNS  # noqa: E402
+from neuraltfr.windows import _series, forecast_windows  # noqa: E402
 
-# --- Helpers ---
-
-def read_csv(path):
-    with open(path, "r", encoding="utf-8") as f:
-        return list(csv.DictReader(f))
-
-def safe_float(val):
-    if val is None or val == "":
-        return None
-    try:
-        return round(float(val), 4)
-    except ValueError:
-         return None
-
-# --- Step 1: Determine the set of valid country IDs from NeuralTFR ---
-
-neural_rows = read_csv(NEURAL_FORECAST_FILE)
-valid_ids = set(int(row["id"]) for row in neural_rows)
-print(f"NeuralTFR countries: {len(valid_ids)}")
-
-# --- Step 2: Build country id -> name mapping ---
-# Names come from empirical_mean.csv; for countries not in that file
-# (shouldn't happen after augmentation, but kept as a safety net),
-# fall back to empirical_tfr.csv.
-
-id_to_name = {}
-for path in (EMPIRICAL_MEAN_FILE, EMPIRICAL_TFR_FILE):
-    for row in read_csv(path):
-        cid = int(row["id"])
-        if cid in valid_ids and cid not in id_to_name:
-            id_to_name[cid] = row["name"]
-
-countries = sorted(
-    [{"id": cid, "name": name} for cid, name in id_to_name.items()],
-    key=lambda c: c["name"],
-)
-print(f"Countries with names: {len(countries)}")
-
-# --- Step 3: Historical TFR Means ---
-print(f"Reading empirical mean data from {EMPIRICAL_MEAN_FILE}...")
-mean_rows = read_csv(EMPIRICAL_MEAN_FILE)
-
-historical_mean = defaultdict(list)
-for row in mean_rows:
-    cid = int(row["id"])
-    if cid not in valid_ids:
-        continue
-    tfr = safe_float(row.get("TFR"))
-    if tfr is not None:
-        year = int(row["year"])
-        historical_mean[cid].append({
-            "year": year,
-            "tfr": tfr
-        })
-
-for cid in historical_mean:
-    historical_mean[cid].sort(key=lambda x: x["year"])
-
-print(f"Historical means: {len(historical_mean)} countries")
-
-# --- Step 4: Historical TFR Points ---
-print(f"Reading empirical points data from {EMPIRICAL_TFR_FILE}...")
-points_rows = read_csv(EMPIRICAL_TFR_FILE)
-
-historical_points = defaultdict(list)
-for row in points_rows:
-    cid = int(row["id"])
-    if cid not in valid_ids:
-        continue
-    tfr = safe_float(row.get("TFR"))
-    if tfr is not None:
-        year = int(row["year"])
-        # Handle differing column names
-        source = row.get("source", "")
-        method = row.get("method", "")
-        historical_points[cid].append({
-            "year": year,
-            "tfr": tfr,
-            "source": source,
-            "method": method
-        })
-
-for cid in historical_points:
-    historical_points[cid].sort(key=lambda x: x["year"])
-
-print(f"Historical points: {len(historical_points)} countries")
+DATA, RESULTS, RAW = ROOT / "data", ROOT / "results", ROOT / "data" / "raw"
+OUTPUT = HERE / "data.js"
+DATASETS = {"un_portal": "UN compilation", "national_sources": "national sources", "eurostat": "Eurostat"}
+FIRST, LAST = FORWARD_YEARS[0], FORWARD_YEARS[-1]
+DIGITS = 4
 
 
-# --- Step 5: Forecast predictions ---
+def forecast_rows(frame: pd.DataFrame, median: str, lower: str, upper: str) -> dict:
+    """{id: [{year, median, lower, upper}]} up to LAST."""
+    frame = frame[frame["year"] <= LAST].sort_values(["id", "year"])
+    return {int(i): [{"year": int(r.year), "median": round(float(getattr(r, median)), DIGITS),
+                      "lower": round(float(getattr(r, lower)), DIGITS), "upper": round(float(getattr(r, upper)), DIGITS)}
+                     for r in part.itertuples()]
+            for i, part in frame.groupby("id")}
 
-FORECAST_FILES = {
-    "NeuralTFR": NEURAL_FORECAST_FILE,
-    "WPP": WPP_FORECAST_FILE,
-}
 
-forecast_models = {}
-for model_name, path in FORECAST_FILES.items():
-    rows = read_csv(path)
-    model_data = defaultdict(list)
-    for row in rows:
-        cid = int(row["id"])
-        if cid not in valid_ids:
-            continue
-        entry = {
-            "year": int(row["year"]),
-            "median": safe_float(row.get("y_hat_50")),
-            "lower": safe_float(row.get("y_hat_low")),
-            "upper": safe_float(row.get("y_hat_upp")),
-        }
-        model_data[cid].append(entry)
-    for cid in model_data:
-        model_data[cid].sort(key=lambda x: x["year"])
-    forecast_models[model_name] = dict(model_data)
+def from_latest_year(observations: pd.DataFrame, ids: list) -> tuple:
+    """NeuralTFR, as fitted for 2023, projecting each population in ``ids`` from its latest
+    reported year. Returns the forecasts and the year each one starts from."""
+    series = _series(annual_panel(observations))
+    reported = _series(annual_panel(observations, interpolate=False))
+    networks = [load(RESULTS / "neuraltfr" / "models" / f"forecast_{FORECAST_ORIGIN}_s{seed}.pt") for seed in SEEDS]
+    frames, origins = [], {}
+    for population in ids:
+        first, values, _ = series[population]
+        origin = origins[population] = first + len(values) - 1
+        windows = forecast_windows({population: series[population]}, {population: reported[population]},
+                                   origin, ENC_LEN, HORIZON)
+        path = np.median([to_tfr(predict(network, windows))[0] for network in networks], axis=0)
+        frames.append(pd.DataFrame({"id": population, "year": origin + 1 + np.arange(HORIZON),
+                                    **{column: path[:, j] for j, column in enumerate(COLUMNS)}}))
+    return pd.concat(frames, ignore_index=True), origins
 
-# --- Step 6: Compute forecast year ranges per model ---
 
-model_year_ranges = {}
-for model_name, model_data in forecast_models.items():
-    all_years = set()
-    for cid_data in model_data.values():
-        for d in cid_data:
-            all_years.add(d["year"])
-    if all_years:
-        model_year_ranges[model_name] = {
-            "min": min(all_years),
-            "max": max(all_years),
-        }
+def normalise(name: str) -> str:
+    """Location names compared without accents, case or punctuation (as in figures.forward)."""
+    return re.sub(r"[^a-z]", "", unicodedata.normalize("NFKD", name).encode("ascii", "ignore").decode().lower())
 
-print("Model forecast year ranges:")
-for m, yr in model_year_ranges.items():
-    print(f"  {m}: {yr['min']}-{yr['max']}")
 
-# --- Step 7: Write JSON ---
+def main() -> None:
+    panel = pd.read_csv(DATA / "empirical_tfr.csv")
+    names = panel.drop_duplicates("id").set_index("id")["name"]
+    ids = sorted(names.index)
 
-output = {
-    "countries": countries,
-    "historical_mean": dict(historical_mean),
-    "historical_points": dict(historical_points),
-    "forecast": forecast_models,
-    "modelYearRanges": model_year_ranges,
-}
+    net = pd.read_parquet(RESULTS / "neuraltfr" / "forecast_predictions.parquet")
+    net = ensemble(net[net["row_set"] == "test"])
+    origins = {int(i): FORECAST_ORIGIN for i in net["id"].unique()}
+    extra, latest = from_latest_year(panel, [i for i in ids if i not in origins])
+    origins |= latest
+    net = pd.concat([net, extra], ignore_index=True)
 
-with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
-    f.write("window.FERTCAST_DATA = ")
-    json.dump(output, f, ensure_ascii=False)
-    f.write(";\n")
+    wpp = pd.read_csv(RAW / "wpp2024" / "WPP_2024_2045_TFR.csv", keep_default_na=False)   # Namibia's ISO2 is "NA"
+    codes = wpp.drop_duplicates("LocationId").set_index("LocationId")[["Iso2", "Iso3"]]
+    wpp = (wpp[wpp["LocationId"].isin(ids)].pivot_table(index=["LocationId", "Time"], columns="Variant", values="Value")
+           .reset_index().rename(columns={"LocationId": "id", "Time": "year", "Median": "median",
+                                          "95% lower bound": "lower", "95% upper bound": "upper"}))
 
-file_size_mb = os.path.getsize(OUTPUT_FILE) / (1024 * 1024)
-print(f"Wrote {OUTPUT_FILE} ({file_size_mb:.1f} MB)")
-print(f"Models (forecast): {list(forecast_models.keys())}")
+    gbd = pd.read_csv(RAW / "gbd2021" / "GBD_1950_2100_TFR.CSV")
+    gbd = gbd[(gbd["scenario_name"] == "Reference") & (gbd["year_id"] >= FIRST)]
+    lookup = {normalise(name): name for name in gbd["location_name"].unique()}
+    matched = {i: GBD_NAMES.get(i, lookup.get(normalise(names[i]))) for i in ids}
+    by_name = {name: i for i, name in matched.items() if name}
+    gbd = gbd[gbd["location_name"].isin(by_name)].assign(id=lambda f: f["location_name"].map(by_name),
+                                                          year=lambda f: f["year_id"])
+
+    medians = annual_medians().reset_index()
+    output = {
+        "countries": sorted(({"id": int(i), "name": names[i], "origin": origins[i],
+                              "iso3": codes["Iso3"].get(i) or None,                 # matches the map's shapes
+                              "flag": (codes["Iso2"].get(i) or "").lower() or None}  # flag-icons code
+                             for i in ids),
+                            key=lambda c: c["name"]),
+        "projectionOrigin": FORECAST_ORIGIN,
+        "historical_mean": {int(i): [{"year": int(r.year), "tfr": round(float(r.TFR), DIGITS)} for r in part.itertuples()]
+                            for i, part in medians.groupby("id")},
+        "historical_points": {int(i): [{"year": int(r.year), "tfr": round(float(r.TFR), DIGITS), "source": r.source,
+                                        "method": DATASETS[r.dataset]} for r in part.itertuples()]
+                              for i, part in panel.sort_values(["id", "year", "TFR"]).groupby("id")},
+        "forecast": {"NeuralTFR": forecast_rows(net, "y_hat_500", "y_hat_025", "y_hat_975"),
+                     "WPP": forecast_rows(wpp, "median", "lower", "upper"),
+                     "GBD": forecast_rows(gbd, "val", "lower", "upper")},
+    }
+    output["modelYearRanges"] = {model: {"min": min(d["year"] for rows in data.values() for d in rows),
+                                         "max": max(d["year"] for rows in data.values() for d in rows)}
+                                 for model, data in output["forecast"].items()}
+    OUTPUT.write_text("window.NEURALTFR_DATA = " + json.dumps(output, ensure_ascii=False) + ";\n", encoding="utf-8")
+    print(f"{OUTPUT.name}: {len(ids)} countries ({sum(o == FORECAST_ORIGIN for o in origins.values())} projected from "
+          f"{FORECAST_ORIGIN} as in the manuscript, {len(latest)} from their latest reported year), "
+          f"{OUTPUT.stat().st_size / 1e6:.1f} MB; populations per system: "
+          + ", ".join(f"{model} {len(data)}" for model, data in output["forecast"].items()))
+
+
+if __name__ == "__main__":
+    main()

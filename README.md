@@ -1,147 +1,114 @@
 # NeuralTFR
 
-Reproducibility code for the paper **"Anticipating Continued Global Fertility Decline via Neural Forecasting"**. The repository includes the forecasting model, harmonized data, evaluation and forecast outputs, and an interactive visualizer.
+Code, data and trained models for **"Anticipating Continued Global Fertility
+Decline via Neural Forecasting"**. NeuralTFR is a recurrent
+encoder-decoder network that forecasts the total fertility rate (TFR) fifteen
+years ahead, as five predictive quantiles, from twelve-year histories pooled
+across 230 countries and territories.
 
-NeuralTFR is an **encoder-decoder GRU ensemble** trained with a multi-quantile loss to forecast country-level Total Fertility Rate (TFR) series. It is evaluated against a historical holdout period and benchmarked against established projections (WPP, WCDE, bayesTFR) and a naive-drift baseline.
+The repository rebuilds the fertility panel from its raw inputs; fits
+NeuralTFR, a random walk with drift and two pooled quantile regressions at the
+historical origins 1995, 2000 and 2006 and from 2023; re-estimates BayesTFR at
+the historical origins; and recomputes, from the recorded forecasts, every
+score, paired comparison and figure table the manuscript reports. The recorded
+forecasts and the trained models are included, so the evaluation can be
+checked without refitting anything.
 
----
+## Layout
 
-## Table of Contents
-
-1. [Motivation](#motivation)
-2. [Key Features](#key-features)
-3. [Repository Structure](#repository-structure)
-4. [Setup and Installation](#setup-and-installation)
-5. [Quick-Start Tutorial](#quick-start-tutorial)
-6. [Interactive Visualizer](#interactive-visualizer)
-7. [Anonymization Note](#anonymization-note)
-8. [License and Data Sources](#license-and-data-sources)
-
----
-
-## Motivation
-
-Total Fertility Rate (TFR) projections underpin population forecasts that guide decades of demographic, public health, and economic policy. Established approaches - from the UN's probabilistic Bayesian methods to expert-based scenario models - either impose strong parametric assumptions about convergence dynamics or lack formal uncertainty quantification. At the same time, the empirical record of fertility transitions has grown rich enough to support purely data-driven learning.
-
-NeuralTFR addresses this gap by training directly on a harmonized global panel of TFR series and learning temporal dynamics without committing to a pre-specified functional form for the demographic transition. By combining an encoder-decoder GRU ensemble with a multi-quantile loss, the framework produces calibrated prediction intervals that capture the heterogeneity of national trajectories. Systematic benchmarking against WPP, WCDE, and bayesTFR projections positions NeuralTFR as a principled, data-driven complement to established demographic methods.
-
----
-
-## Key Features
-
-- **Encoder-decoder GRU ensemble** with categorical embeddings for country/region identity.
-- **Multi-quantile loss** (q = 0.05, 0.10, 0.50, 0.90, 0.95) producing calibrated prediction intervals.
-- **Data augmentation** by oversampling recent windows of low-TFR series.
-- **Two execution modes**: historical evaluation against a holdout, and future forecasting up to user-defined horizons.
-- **Baseline comparison** against WPP, WCDE, bayesTFR and a naive-drift benchmark.
-- **Interactive visualizer** ([docs/](docs/)).
-
----
-
-## Repository Structure
-
-```text
-NeuralTFR/
-|-- compute/                   # Reproducibility code
-|   |-- run_neuraltfr.py       # CLI entry point (eval / forecast / all)
-|   |-- neuraltfr.py           # Model wrapper and training pipeline
-|   |-- common/                # Dataset, preprocessing, trainer, losses, evaluation, Optuna
-|   |-- models/                # ENC_DEC_GRU and NAIVE_DRIFT baselines
-|   |-- data/                  # Raw and harmonized TFR series (WPP, GBD, empirical)
-|   |-- results/               # Precomputed outputs, figures, predictions, and metrics
-|   `-- GUIDE.md               # Short usage guide
-|-- doc/                       # Interactive visualizer
-|-- environment.yml            # Conda environment specification
-|-- LICENSE                    # Apache 2.0
-`-- README.md
+```
+data/raw/                 external inputs, unchanged (see Data below)
+data/build_panel.py       raw -> empirical_tfr.csv (drops flagged projections, one row
+                          per exact observation); --reference compares with a recorded panel
+data/empirical_tfr.csv    the panel every model reads: 55,194 observations, 230 populations
+neuraltfr/                the network, as a package
+  preprocess.py           annual medians, interpolation, model scale (LOCATION, SCALE)
+  windows.py              training and forecast windows; the network's fold and the
+                          regressions' validation fold, which reads nothing after its cut
+  training.py             QUANTILES, the quantile loss, the training loop
+  model.py                the GRU encoder-decoder; save/load of checkpoints
+  runner.py               the two-fit protocol; writes results/neuraltfr/
+baselines/                the benchmarks, fitted from the same panel
+  drift.py                random walk with drift per country; writes results/baselines/drift/
+  regression.py           pooled linear and spline quantile regressions: selection of k and
+                          of the penalty, refits, projection; writes results/baselines/<model>/
+bayestfr/                 BayesTFR re-estimated at each origin (see its README)
+  input/                  the panel cut at each origin in the package's layout
+  run.R                   one re-estimation: MCMC, diagnostics, prediction (R, bayesTFR)
+  tidy.py                 the recorded summaries in the layout of the other models' forecasts
+evaluation.py             scores of every model's recorded forecasts, population by
+                          population, and the paired comparisons between models,
+                          pooled and within fertility groups
+figures.py                the tables behind every figure, appendix analysis and text passage
+                          that cites numbers no figure shows; nothing is
+                          drawn here, the published figures sit beside the tables
+results/                  the recorded forecasts, trained models and scores (see its README)
+  figures/                the figure tables and the figures as published (see its README)
+docs/                     interactive visualizer (index.html): reported estimates and the
+                          projections to 2038 of NeuralTFR, UN WPP 2024 and GBD 2021; the
+                          populations the manuscript does not project from 2023 are projected
+                          from their latest reported year with the same fitted networks
+  prepare_data.py         writes docs/data.js from the panel and the recorded projections
+requirements.txt          the Python packages and versions
 ```
 
----
+## Setup
 
-## Setup and Installation
-
-### 1. Create the Conda environment
-
-The environment is fully specified in [environment.yml](environment.yml) and pins Python 3.12 with PyTorch, scikit-learn, scipy, matplotlib, seaborn, joblib, tqdm and optuna.
+Python 3.12 and the packages in `requirements.txt`, on CPU:
 
 ```bash
-conda env create -f environment.yml
+conda create -y -n neuraltfr python=3.12
 conda activate neuraltfr
+pip install torch==2.14.0 --index-url https://download.pytorch.org/whl/cpu
+pip install -r requirements.txt
 ```
 
-### 2. Verify the install
+Re-estimating BayesTFR also needs R with the `bayesTFR` package (the recorded
+runs used bayesTFR 7.4.4; see `bayestfr/README.md`).
 
-From the repository root, run a short sanity check:
+## Reproducing the results
 
-```bash
-python -c "import torch, sklearn, optuna; print('torch', torch.__version__)"
-```
+Commands run from the repository root. The model runners are resumable: they
+skip the runs already recorded in their output folder, so a full reproduction
+writes to a new folder with `--out` and leaves `results/` as recorded.
 
-> **GPU note:** the default `pytorch` build from the `pytorch` channel installs the CPU version. The CLI runs comfortably on CPU; if you want CUDA, replace the `pytorch` dependency in `environment.yml` with the appropriate `pytorch` / `pytorch-cuda` combination for your driver (see [pytorch.org](https://pytorch.org/get-started/locally/)).
+| step | command | time |
+|---|---|---|
+| panel | `python data/build_panel.py` | seconds |
+| NeuralTFR, historical origins and 2023 | `python -m neuraltfr.runner --stage all --jobs 10 --out <folder>` | 40 runs on one core each: about 5-9 minutes per historical run, 10-23 minutes per 2023 run |
+| drift | `python -m baselines.drift --out <folder>` | seconds |
+| spline regression | `python -m baselines.regression --model spline --stage all --jobs 4 --out <folder>` | 37 fits, 1-2 minutes each |
+| linear regression | `python -m baselines.regression --model linear --stage select --out <folder>`, then `--stage eval` | 12 fits, about 1 minute each |
+| BayesTFR | from `bayestfr/`: `Rscript run.R 1995`, `Rscript run.R 2000 13830` (phase III extended by 13,830 iterations to converge) and `Rscript run.R 2006`; then `python -m bayestfr.tidy` | about 17 hours per origin on three cores |
+| scores and comparisons | `python evaluation.py` | seconds |
+| figure and text tables | `python figures.py` | seconds |
+| visualizer data | `python docs/prepare_data.py` | seconds |
 
----
+`evaluation.py` and `figures.py` read the forecasts in `results/` and
+reproduce the recorded scores and tables exactly. Refitting reproduces the
+drift exactly. The regressions and the network are deterministic for a given
+machine and environment, and the regressions also depend on the number of
+torch threads, which `baselines/regression.py` fixes to the recorded runs'
+setting: on the machine that recorded them, the runs regenerate bit for bit;
+fits made elsewhere differ by up to about 1e-3 births per woman per fit, and
+by about 1e-4 in the network's ten-fit ensemble. `results/README.md` says
+which runs come from which machine.
 
-## Quick-Start Tutorial
+## Data
 
-All commands are run from the [compute/](compute/) directory:
+`data/raw/` holds the external inputs, unchanged:
 
-```bash
-cd compute
-```
+- `un_empirical_portal/EMPIRICAL_TFR.csv`: the UN Population Division's
+  compilation of empirical fertility estimates;
+- `new_sources/NEW_SOURCES_TFR.csv`: the estimates added from national
+  statistical offices, Eurostat and the Economic Commission for Latin America
+  and the Caribbean;
+- `wpp2024/`: the World Population Prospects 2024 projections and 2023
+  population estimates;
+- `gbd2021/`: the GBD 2021 fertility forecasts.
 
-### Run a historical evaluation
+## License
 
-Trains the ensemble on data up to `--eval-split-year` (default 2009) and scores predictions against the observed holdout.
-
-```bash
-python run_neuraltfr.py --mode eval
-```
-
-Outputs:
-
-- `results/evaluation/metrics/metrics.csv` - per-series scores (RMSE, RMSSE, sMAPE, CRPS, 90% coverage and MPIW).
-- `results/evaluation/predictions/predictions.csv` - point and quantile predictions.
-- `results/evaluation/predictions/plot_evaluation.pdf` - per-country prediction plots.
-
-### Run a forecast to the future
-
-Trains on all available history and projects forward.
-
-```bash
-python run_neuraltfr.py --mode forecast
-```
-
-Outputs land in `results/forecast/predictions/`.
-
-### Run both in a single call
-
-```bash
-python run_neuraltfr.py --mode all
-```
-
-### Hyperparameter search (optional)
-
-```bash
-python common/run_optuna.py --search-mode minimize --n-trials 10
-```
-
-For the full list of CLI flags and a more detailed walkthrough, see [compute/GUIDE.md](compute/GUIDE.md).
-
----
-
-## Interactive Visualizer
-
-The interactive dashboard is available from [docs/](docs/). It provides a lightweight companion to the reproducibility pipeline and the paper figures, making it easier to inspect country-level TFR trajectories and compare alternative forecast sources without running the training code.
-
-The visualizer supports:
-
-- Country search across the 195 series included in the NeuralTFR forecast set.
-- Time-series comparison of historical TFR estimates, raw empirical points, and forecast trajectories from NeuralTFR and benchmark models.
-- Model toggles and an adjustable forecast horizon for inspecting how projected paths change over time.
-- A map view for comparing forecast levels across countries at a selected horizon.
-
----
-
-## License and Data Sources
-
-The code in this project is released under the [Apache License 2.0](LICENSE). Data files derived from external sources are redistributed only for reproducibility and remain subject to the terms of their original providers.
+The code is released under the [Apache License 2.0](LICENSE). Data files
+derived from external sources are redistributed only for reproducibility and
+remain subject to the terms of their original providers.

@@ -8,17 +8,21 @@
   // ── Color & Style Config (light-theme friendly) ──
   const MODEL_COLORS = {
     NeuralTFR: { line: "#2563eb", fill: "rgba(37,99,235,0.12)" },
-    NeuralTFR_New: { line: "#f97316", fill: "rgba(249,115,22,0.12)" },
-    WPP: { line: "#08b224ff", fill: "rgba(8,145,178,0.10)" },
-    gbd: { line: "#059669", fill: "rgba(5,150,105,0.10)" },
+    WPP: { line: "#f97316", fill: "rgba(249,115,22,0.10)" },
+    GBD: { line: "#7c3aed", fill: "rgba(124,58,237,0.10)" },
   };
 
   const MODEL_LABELS = {
     NeuralTFR: "NeuralTFR",
-    NeuralTFR_New: "NeuralTFR New",
-    WPP: "WPP (UN)",
-    gbd: "GBD",
+    WPP: "UN WPP 2024",
+    GBD: "GBD 2021",
   };
+
+  // Display order of the model toggles; the projections cover 2024-2038.
+  const MODEL_ORDER = ["NeuralTFR", "WPP", "GBD"];
+  const LAST_YEAR = 2038;
+  // The map opens on a year that the projections from earlier latest estimates still reach.
+  const MAP_YEAR = 2030;
 
   const HISTORICAL_MEAN_COLOR = "rgba(51, 65, 85, 0.6)";
 
@@ -34,7 +38,7 @@
   let worldGeoJson = null;
 
   let selectedCountryId = null;
-  let horizonYear = 2042;
+  let horizonYear = LAST_YEAR;
   let enabledModels = new Set();
 
   let showHistPoints = true;
@@ -89,10 +93,26 @@
     return { key, ...methodStyleMap.get(key) };
   }
 
-  function getModelMaxYear(models) {
-    if (!DATA?.modelYearRanges) return 2042;
+  // NeuralTFR projects from each country's latest reported year where that is not the
+  // manuscript's origin (see prepare_data.py); its label says so.
+  function projectionLabel(model, country) {
+    const label = MODEL_LABELS[model] || model;
+    return model === "NeuralTFR" && country && country.origin !== DATA.projectionOrigin ? `${label} (from ${country.origin})` : label;
+  }
 
-    let maxYear = 2042;
+  // Country flag from flag-icons (see index.html); decorative.
+  function flagHTML(country) {
+    return country && country.flag ? `<span class="fi fi-${country.flag} flag" aria-hidden="true"></span>` : "";
+  }
+
+  function selectedCountry() {
+    return DATA.countries.find(c => c.id === selectedCountryId);
+  }
+
+  function getModelMaxYear(models) {
+    if (!DATA?.modelYearRanges) return LAST_YEAR;
+
+    let maxYear = LAST_YEAR;
     let foundRange = false;
     for (const model of models) {
       const range = DATA.modelYearRanges[model];
@@ -100,28 +120,23 @@
       maxYear = Math.max(maxYear, range.max);
       foundRange = true;
     }
-    return foundRange ? maxYear : 2042;
+    return foundRange ? maxYear : LAST_YEAR;
   }
 
   // ── Init ──
   async function init() {
-    if (!window.FERTCAST_DATA) {
+    if (!window.NEURALTFR_DATA) {
       $loading.innerHTML = `<p style="color:#e11d48">Error: data.js not loaded. Run <code>python prepare_data.py</code> first.</p>`;
       return;
     }
-    DATA = window.FERTCAST_DATA;
+    DATA = window.NEURALTFR_DATA;
 
     // Collect all model names from forecast only
     const availableModels = Object.keys(DATA.forecast || {});
-    // Filter to allowed specific comparison models
-    const allowed = new Set(["WPP", "gbd", "NeuralTFR", "NeuralTFR_New"]);
-    const allModels = new Set(availableModels.filter(m => allowed.has(m)));
+    const allModels = new Set(availableModels.filter(m => MODEL_ORDER.includes(m)));
 
-    // Default model
-    enabledModels = new Set();
-    if (allModels.has("NeuralTFR")) enabledModels.add("NeuralTFR");
-    if (allModels.has("NeuralTFR_New")) enabledModels.add("NeuralTFR_New");
-    //if (allModels.has("WPP")) enabledModels.add("WPP");
+    // Every system shown by default, NeuralTFR first (the map colours by the first one)
+    enabledModels = new Set(MODEL_ORDER.filter(m => allModels.has(m)));
     if (enabledModels.size === 0 && allModels.size > 0) enabledModels.add(Array.from(allModels)[0]);
 
     // Set horizon slider limits
@@ -131,8 +146,8 @@
       $horizonSlider.min = globalMin;
       $horizonSlider.max = globalMax;
 
-      window.horizonYearChart = Math.min(2042, globalMax);
-      window.horizonYearMap = Math.min(2030, globalMax);
+      window.horizonYearChart = globalMax;
+      window.horizonYearMap = Math.min(MAP_YEAR, globalMax);
       horizonYear = window.horizonYearChart;
       $horizonSlider.value = horizonYear;
       $horizonValue.textContent = horizonYear;
@@ -174,7 +189,7 @@
     );
     $countryList.innerHTML = filtered.map(c => `
       <div class="country-item ${c.id === selectedCountryId ? 'active' : ''}"
-           data-id="${c.id}" title="${c.name}">${c.name}</div>
+           data-id="${c.id}" title="${c.name}">${flagHTML(c)}<span>${c.name}</span></div>
     `).join("");
   }
 
@@ -213,7 +228,7 @@
   function selectCountry(id) {
     selectedCountryId = id;
     const country = DATA.countries.find(c => c.id === id);
-    $chartTitle.textContent = country ? country.name : "Unknown";
+    $chartTitle.innerHTML = country ? `${flagHTML(country)}<span>${country.name}</span>` : "Unknown";
     document.querySelectorAll(".country-item").forEach(el => {
       el.classList.toggle("active", parseInt(el.dataset.id) === id);
     });
@@ -223,12 +238,7 @@
 
   // ── Model Toggles ──
   function renderModelToggles(allModels) {
-    const ordered = [
-      "NeuralTFR",
-      "NeuralTFR_New",
-      ...Array.from(allModels).filter(m => m !== "NeuralTFR" && m !== "NeuralTFR_New").sort()
-    ];
-    $modelToggles.innerHTML = ordered.filter(m => allModels.has(m)).map(model => {
+    $modelToggles.innerHTML = MODEL_ORDER.filter(m => allModels.has(m)).map(model => {
       const color = MODEL_COLORS[model]?.line || "#888";
       const label = MODEL_LABELS[model] || model;
       return `
@@ -296,7 +306,7 @@
     activeTab = tabId;
     if (tabId === "chart") {
       if (activeTab === "map") window.horizonYearMap = horizonYear;
-      horizonYear = window.horizonYearChart || 2042;
+      horizonYear = window.horizonYearChart || LAST_YEAR;
       $horizonLabelText.textContent = "Forecast until";
       $dataOptionsPanel.style.display = "block";
       $horizonSlider.value = horizonYear;
@@ -312,7 +322,7 @@
       updateChart();
     } else {
       if (activeTab === "chart") window.horizonYearChart = horizonYear;
-      horizonYear = window.horizonYearMap || 2030;
+      horizonYear = window.horizonYearMap || MAP_YEAR;
       $horizonLabelText.textContent = "Selected Map Year";
       $dataOptionsPanel.style.display = "none";
       $horizonSlider.value = horizonYear;
@@ -481,7 +491,7 @@
       if (filtered.length === 0) continue;
 
       const color = MODEL_COLORS[model] || { line: "#888", fill: "rgba(136,136,136,0.1)" };
-      const label = MODEL_LABELS[model] || model;
+      const label = projectionLabel(model, selectedCountry());
 
       datasets.push({
         label: `${label}`,
@@ -563,7 +573,7 @@
 
     for (const model of enabledModels) {
       const color = MODEL_COLORS[model]?.line || "#888";
-      const label = MODEL_LABELS[model] || model;
+      const label = projectionLabel(model, selectedCountry());
       const fcData = DATA.forecast?.[model]?.[cid];
       if (!fcData || fcData.length === 0) continue;
       items.push(`
@@ -583,12 +593,8 @@
       attributionControl: false
     }).setView([20, 0], 2);
     L.control.zoom({ position: 'topright' }).addTo(map);
-
-    // Basic light tiles
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png', {
-      subdomains: 'abcd',
-      maxZoom: 10
-    }).addTo(map);
+    // No tile layer: the country shapes are drawn on a plain background.
+    map.getContainer().style.background = "#f8fafc";
 
     geojsonLayer = L.geoJson(worldGeoJson, {
       style: getMapStyle,
@@ -601,7 +607,7 @@
 
             const cInfo = findCountryByISO(feature.id);
             let name = cInfo ? cInfo.name : feature.properties.name;
-            let tooltipHTML = `<div style="font-family: Inter, sans-serif;"><b>${name} (${horizonYear})</b><div style="margin-top:4px; font-size:12px;">`;
+            let tooltipHTML = `<div style="font-family: Inter, sans-serif;"><div style="display:flex; align-items:center; gap:6px;">${flagHTML(cInfo)}<b>${name} (${horizonYear})</b></div><div style="margin-top:4px; font-size:12px;">`;
             if (cInfo) {
               let hasData = false;
               for (const model of enabledModels) {
@@ -609,7 +615,7 @@
                 if (fcData) {
                   const point = fcData.find(d => d.year === horizonYear);
                   if (point) {
-                    tooltipHTML += `<div><span style="display:inline-block;width:8px;height:8px;background:${MODEL_COLORS[model]?.line||'#000'};margin-right:4px;"></span>${MODEL_LABELS[model] || model}: ${point.median.toFixed(3)}</div>`;
+                    tooltipHTML += `<div><span style="display:inline-block;width:8px;height:8px;background:${MODEL_COLORS[model]?.line||'#000'};margin-right:4px;"></span>${projectionLabel(model, cInfo)}: ${point.median.toFixed(3)}</div>`;
                     hasData = true;
                   }
                 }
@@ -641,20 +647,10 @@
   }
 
   function findCountryByISO(iso3) {
-    // We only have names and IDs in `DATA.countries`, no ISO codes.
-    // Try matching on name as a best effort, or fallback to custom lookup.
-    // GitHub world.geo.json uses id for ISO3 (e.g., "USA", "ARG").
-    // We will do a simple mapping by comparing feature.properties.name with our dataset name.
+    // world.geo.json identifies countries by ISO3 code (e.g., "USA", "ARG"), as do
+    // the countries in data.js (taken from WPP 2024).
     if (!iso3) return null;
-    const feats = worldGeoJson.features.filter(f => f.id === iso3);
-    if (!feats || feats.length === 0) return null;
-    const name = feats[0].properties.name.toLowerCase();
-
-    // Heuristic string match
-    return DATA.countries.find(c => {
-      const cn = c.name.toLowerCase();
-      return cn === name || cn.includes(name) || name.includes(cn);
-    });
+    return DATA.countries.find(c => c.iso3 === iso3) || null;
   }
 
   function getMapStyle(feature) {
