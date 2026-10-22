@@ -1,5 +1,8 @@
 # NeuralTFR
 
+**Authors:** Daniel Ciganda, Facundo Morini, Francisco Piriz, Henrik-Alexander Schubert,
+Ugofilippo Basellini and Mikko Myrskylä
+
 Code, data and trained models for **"Anticipating Continued Global Fertility
 Decline via Neural Forecasting"**. NeuralTFR is a recurrent
 encoder-decoder network that forecasts the total fertility rate (TFR) fifteen
@@ -13,44 +16,6 @@ the historical origins; and recomputes, from the recorded forecasts, every
 score, paired comparison and figure table the manuscript reports. The recorded
 forecasts and the trained models are included, so the evaluation can be
 checked without refitting anything.
-
-## Layout
-
-```
-data/raw/                 external inputs, unchanged (see Data below)
-data/build_panel.py       raw -> empirical_tfr.csv (drops flagged projections, one row
-                          per exact observation); --reference compares with a recorded panel
-data/empirical_tfr.csv    the panel every model reads: 55,194 observations, 230 populations
-neuraltfr/                the network, as a package
-  preprocess.py           annual medians, interpolation, model scale (LOCATION, SCALE)
-  windows.py              training and forecast windows; the network's fold and the
-                          regressions' validation fold, which reads nothing after its cut
-  training.py             QUANTILES, the quantile loss, the training loop
-  model.py                the GRU encoder-decoder; save/load of checkpoints
-  runner.py               the two-fit protocol; writes results/neuraltfr/
-baselines/                the benchmarks, fitted from the same panel
-  drift.py                random walk with drift per country; writes results/baselines/drift/
-  regression.py           pooled linear and spline quantile regressions: selection of k and
-                          of the penalty, refits, projection; writes results/baselines/<model>/
-bayestfr/                 BayesTFR re-estimated at each origin (see its README)
-  input/                  the panel cut at each origin in the package's layout
-  run.R                   one re-estimation: MCMC, diagnostics, prediction (R, bayesTFR)
-  tidy.py                 the recorded summaries in the layout of the other models' forecasts
-evaluation.py             scores of every model's recorded forecasts, population by
-                          population, and the paired comparisons between models,
-                          pooled and within fertility groups
-figures.py                the tables behind every figure, appendix analysis and text passage
-                          that cites numbers no figure shows; nothing is
-                          drawn here, the published figures sit beside the tables
-results/                  the recorded forecasts, trained models and scores (see its README)
-  figures/                the figure tables and the figures as published (see its README)
-docs/                     interactive visualizer (index.html): reported estimates and the
-                          projections to 2038 of NeuralTFR, UN WPP 2024 and GBD 2021; the
-                          populations the manuscript does not project from 2023 are projected
-                          from their latest reported year with the same fitted networks
-  prepare_data.py         writes docs/data.js from the panel and the recorded projections
-requirements.txt          the Python packages and versions
-```
 
 ## Setup
 
